@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/dues.css">   
     <link rel="stylesheet" href="css/main.css">   
     <script src="js/dues.js" defer></script>
-    <script src="js/home.js" defer></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -266,74 +265,54 @@
     </div>
 
     <div class="main-content">
-        <h1 class="page-title">Fees</h1>
+        <h1 class="page-title">Dues</h1>
         
         <div class="grades-form-container">
+            <!-- Replacing fee term and academic year with date range selectors -->
             <div class="info-row">
                 <div class="info-group">
-                    <label>RollNo</label>
-                    <input type="text" class="form-control" value="BL.SC.U4AIE24004" readonly>
+                    <label for="start-date">Start Date</label>
+                    <input type="date" id="start-date" class="form-control" value="2024-08-01">
                 </div>
                 <div class="info-group">
-                    <label>Name</label>
-                    <input type="text" class="form-control" value="Aditya Kundu" readonly>
+                    <label for="end-date">End Date</label>
+                    <input type="date" id="end-date" class="form-control" value="2025-07-31">
                 </div>
                 <div class="info-group">
-                    <label>Academic Program & Branch</label>
-                    <input type="text" class="form-control" value="B.Tech2024 AIE" readonly>
-                </div>
-            </div>
-
-            <div class="info-row">
-                <div class="info-group">
-                    <label>Fee Term</label>
-                    <select id="fee-term" class="form-control">
-                        <option value="1">Sem-1</option>
-                        <option value="2">Sem-2</option>
-                        <option value="3">Sem-3</option>
-                        <option value="4">Sem-4</option>
-                        <option value="5">Sem-5</option>
-                        <option value="6">Sem-6</option>
-                        <option value="7">Sem-7</option>
-                        <option value="8">Sem-8</option>
-                    </select>
-                </div>
-                <div class="info-group">
-                    <label>Academic Year</label>
-                    <select id="academic-year" class="form-control">
-                        <option value="2024">2024-2025</option>
-                        <option value="2023">2023-2024</option>
-                    </select>
+                    <button id="search-btn" class="secondary-button">
+                        <i class='bx bx-search'></i> Search
+                    </button>
                 </div>
             </div>
         </div>
         
-        <div class="fees-container">
-            <div class="fee-table">
-                <table id="fees-table" class="table">
+        <div class="dues-container">
+            <div class="due-table">
+                <table class="table">
                     <thead>
                         <tr>
-                            <th>Fee Section</th>
+                            <th>Section</th>
                             <th>Currency</th>
-                            <th>Assigned Amt.</th>
-                            <th>Paid Amt.</th>
-                            <th>Amt. to Pay</th>
+                            <th>Assigned</th>
+                            <th>Paid</th>
+                            <th>To Pay</th>
+                            <th>Assigned Date</th>
                             <th>Due Date</th>
                         </tr>
                     </thead>
-                    <tbody id="fees-data">
-                        <!-- Fee data will be populated here dynamically -->
+                    <tbody id="dues-data">
+                        <!-- Dues data will be populated here -->
                     </tbody>
                 </table>
             </div>
             <div id="no-data-message" class="warning-message">
-                No fee data available for this semester.
-                <span class="warning-subtext">Please select a different semester or contact the finance department.</span>
+                No dues found for the selected date range.
+                <span class="warning-subtext">Try selecting a different date range or contact the finance office for assistance.</span>
             </div>
             
-            <div id="fee-summary" class="fee-summary">
+            <div class="due-summary">
                 <div class="summary-row">
-                    <span>Total Due:</span>
+                    <span>Total Due Amount:</span>
                     <span id="total-due" class="amount-due">INR 0</span>
                 </div>
             </div>
