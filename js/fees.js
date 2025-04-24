@@ -1,22 +1,25 @@
-ocument.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
+    // Sidebar functionality
     let btn = document.querySelector("#btn");
     let sidebar = document.querySelector(".sidebar");
     let dropdownTriggers = document.querySelectorAll(".dropdown-trigger");
 
     // Toggle sidebar with improved handling
-    btn.onclick = function() {
-        sidebar.classList.toggle("active");
-        if(sidebar.classList.contains("active")) {
-            btn.classList.replace("bx-menu", "bx-menu-alt-right");
-        } else {
-            btn.classList.replace("bx-menu-alt-right", "bx-menu");
-            
-            // Close all dropdowns immediately when sidebar collapses
-            document.querySelectorAll(".dropdown").forEach(dropdown => {
-                dropdown.classList.remove("open");
-            });
-        }
-    };
+    if (btn && sidebar) {
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+            if(sidebar.classList.contains("active")) {
+                btn.classList.replace("bx-menu", "bx-menu-alt-right");
+            } else {
+                btn.classList.replace("bx-menu-alt-right", "bx-menu");
+                
+                // Close all dropdowns immediately when sidebar collapses
+                document.querySelectorAll(".dropdown").forEach(dropdown => {
+                    dropdown.classList.remove("open");
+                });
+            }
+        };
+    }
 
     const sidebarItems = document.querySelectorAll(".sidebar ul li");
     
@@ -70,8 +73,7 @@ ocument.addEventListener("DOMContentLoaded", function() {
             });
         }
     });
-});
-document.addEventListener('DOMContentLoaded', function() {
+
     // Sample fee data structure - in a real application, this would come from a backend
     const feeData = {
         '1': [
@@ -93,16 +95,6 @@ document.addEventListener('DOMContentLoaded', function() {
         '7': [],
         '8': []
     };
-
-    // Initialize sidebar toggle functionality
-    const btn = document.querySelector('#btn');
-    const sidebar = document.querySelector('.sidebar');
-    
-    if (btn && sidebar) {
-        btn.addEventListener('click', function() {
-            sidebar.classList.toggle('active');
-        });
-    }
 
     // Fee term change handler
     const feeTermSelect = document.getElementById('fee-term');
@@ -183,22 +175,4 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize the view with default values
     updateFeeData();
-    
-    // Dropdown menu functionality for sidebar
-    const dropdownTriggers = document.querySelectorAll('.dropdown-trigger');
-    
-    dropdownTriggers.forEach(trigger => {
-        trigger.addEventListener('click', function(e) {
-            e.preventDefault();
-            const subMenu = this.nextElementSibling;
-            
-            if (subMenu.style.display === 'block') {
-                subMenu.style.display = 'none';
-                this.classList.remove('active');
-            } else {
-                subMenu.style.display = 'block';
-                this.classList.add('active');
-            }
-        });
-    });
 });

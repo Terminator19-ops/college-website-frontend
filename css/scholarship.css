@@ -1,0 +1,226 @@
+:root {
+    /* Color palette */
+    --primary-color: #D72638;
+    --primary-dark: #b31e2d;
+    --background-color: #FCE4EC;
+    --form-bg-color: #FEE8EE;
+    --table-header-color: #c1004b;
+    --text-color: #333333;
+    --white: #FFFFFF;
+    --light-gray: #f5f5f5;
+    --border-light: #dddddd;
+    --table-row-even: #f9f9f9;
+    --warning-bg: #ffe0e0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --shadow-strong: rgba(0, 0, 0, 0.15);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Page title styling */
+.page-title {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 15px 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* Main content container */
+.main-content {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    margin: 80px 20px 20px 98px;
+    transition: margin-left 0.5s ease;
+}
+
+.sidebar.active ~ .main-content {
+    margin-left: 290px;
+}
+
+/* Info row and group styling */
+.info-row {
+    display: flex;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.info-group {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    text-align: left;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+/* Form container with pink background */
+.grades-form-container {
+    background-color: var(--form-bg-color);
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 15px;
+}
+
+/* Label styling */
+.grades-form-container label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--text-color);
+}
+
+/* Input field styling */
+.grades-form-container .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    background-color: var(--white);
+    margin-bottom: 15px;
+}
+
+/* Scholarship table container */
+.scholarship-container {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+/* Table styling */
+.scholarship-table {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    box-shadow: 0 0 20px var(--shadow-strong);
+}
+
+.table thead tr {
+    background-color: var(--table-header-color);
+    color: var(--white);
+    text-align: left;
+    font-weight: bold;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid var(--border-light);
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: var(--table-row-even);
+}
+
+.table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--table-header-color);
+}
+
+/* Warning message styling */
+.warning-message {
+    background-color: var(--warning-bg);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.warning-subtext {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+/* Button styling */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.action-button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    min-width: 120px;
+}
+
+.reset-button {
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    border: 1px solid var(--border-light);
+}
+
+.action-button:hover {
+    background-color: var(--primary-dark);
+}
+
+.reset-button:hover {
+    background-color: var(--border-light);
+}
+
+/* Document upload styling */
+.file-upload {
+    margin-bottom: 15px;
+}
+
+.file-upload label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .info-row {
+        flex-direction: column;
+    }
+    
+    .info-group {
+        margin-right: 0;
+        width: 100%;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .action-button {
+        width: 100%;
+    }
+}
