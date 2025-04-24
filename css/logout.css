@@ -65,7 +65,7 @@ body {
 }
 
 .background-image.active {
-    opacity: 1; /* Increased opacity to make background more visible */
+    opacity: 0.5; /* Increased opacity to make background more visible */
 }
 
 .logout-container {

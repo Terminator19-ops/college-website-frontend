@@ -1,0 +1,338 @@
+:root {
+    /* Primary colors */
+    --primary-color: #007bff;
+    --primary-hover: #0069d9;
+    
+    /* Accent colors */
+    --accent-color: #D72638;
+    --info-color: #17a2b8;
+    --info-hover: #138496;
+    
+    /* Status colors */
+    --status-success: #28a745;
+    --status-warning: #ffc107;
+    --status-danger: #dc3545;
+    
+    /* Neutral colors */
+    --text-dark: #343a40;
+    --text-medium: #495057;
+    --text-light: #6c757d;
+    --text-muted: #333;
+    
+    /* Border colors */
+    --border-color: #ced4da;
+    --border-light: #e9ecef;
+    
+    /* Background colors */
+    --bg-light: #f8f9fa;
+    --bg-white: #fff;
+    --bg-secondary: #6c757d;
+    --bg-secondary-hover: #5a6268;
+    
+    /* Shadow color */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --modal-overlay: rgba(0, 0, 0, 0.5);
+    --modal-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.main-content {
+    padding: 20px;
+    margin-left: 80px;
+    transition: margin-left 0.5s;
+}
+
+.sidebar.active ~ .main-content {
+    margin-left: 260px;
+}
+
+.page-title {
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.info-box {
+    background-color: var(--bg-light);
+    border-left: 4px solid var(--accent-color);
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.info-box i {
+    font-size: 24px;
+    color: var(--accent-color);
+    margin-right: 10px;
+}
+
+.card {
+    background-color: var(--bg-white);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px var(--shadow-color);
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: var(--bg-light);
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: var(--text-dark);
+}
+
+.search-container {
+    position: relative;
+    width: 250px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 8px 12px;
+    padding-right: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search-container i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-light);
+}
+
+.filters {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-light);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.filters select {
+    padding: 6px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn-refresh {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.2s;
+}
+
+.btn-refresh:hover {
+    background-color: var(--border-light);
+}
+
+.table-container {
+    padding: 0 20px 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table thead {
+    background-color: var(--bg-light);
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-light);
+}
+
+table th {
+    font-weight: 600;
+    color: var(--text-medium);
+}
+
+/* Status cell styling */
+td.status {
+    font-weight: 500;
+}
+
+td.status.normal {
+    color: var(--status-success);
+}
+
+td.status.due-soon {
+    color: var(--status-warning);
+}
+
+td.status.overdue {
+    color: var(--status-danger);
+}
+
+/* Action buttons */
+.action-btn {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.renew-btn {
+    background-color: var(--info-color);
+    color: white;
+}
+
+.renew-btn:hover {
+    background-color: var(--info-hover);
+}
+
+.renew-card {
+    background-color: var(--bg-light);
+}
+
+.policy-info {
+    padding: 15px 20px;
+}
+
+.policy-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.policy-info li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.policy-info li i {
+    color: var(--status-success);
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--modal-overlay);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: var(--bg-white);
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    box-shadow: 0 4px 20px var(--modal-shadow);
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--text-light);
+}
+
+.close:hover {
+    color: var(--text-dark);
+}
+
+.modal-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-secondary {
+    background-color: var(--bg-secondary);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: var(--bg-secondary-hover);
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-container {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .filters {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    .table-container {
+        padding: 0 10px 10px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    table th, table td {
+        padding: 8px 10px;
+    }
+}
