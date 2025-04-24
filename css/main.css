@@ -1,0 +1,310 @@
+:root{
+    --background-clr: #FCE4EC;
+    --content-container-clr: #FFFFFF;
+    --border-clr: #CCCCCC;
+    --highlights-clr: #D72638;
+    --dark-base-clr: #2E2E2E;
+    --hover-clr: #B31E2D;
+    --text-clr: #333333;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-clr);
+    color: var(--dark-base-clr);
+    position: relative;
+}
+
+/* Top Bar Styling */
+.top-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+    background-color: var(--content-container-clr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Logo text styling with color updates */
+.logo-text {
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--dark-base-clr);
+}
+
+/* "AMRITA" styling */
+.logo-text .amrita {
+    color: #c1004b;
+    font-weight: bold;
+}
+
+/* "UNIVERSITY" styling */
+.logo-text .university {
+    color: #FFAA33;
+    font-weight: bold;
+}
+
+/* "MANAGEMENT SYSTEM" styling */
+.logo-text span:last-child {
+    color: #FFAA33;
+    font-weight: bold;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.top-btn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--dark-base-clr);
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.top-btn:hover {
+    background-color: var(--hover-clr);
+    color: var(--content-container-clr);
+}
+
+.top-btn i {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    top: 60px; /* Position below top bar */
+    left: 0;
+    height: calc(100% - 60px);
+    width: 78px;
+    background-color: var(--content-container-clr);
+    padding: 6px 3px;
+    transition: all 0.5s ease;
+    z-index: 99;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.sidebar.active {
+    width: 270px;
+}
+
+.sidebar .top {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}
+
+.sidebar .top i {
+    font-size: 28px;
+    color: var(--dark-base-clr);
+    min-width: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sidebar ul {
+    margin-top: 20px;
+    list-style: none;
+}
+
+/* Main menu item styling */
+.sidebar ul li {
+    position: relative;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.sidebar ul li a,
+.sidebar ul li .dropdown-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align icons and text to the left by default */
+    text-decoration: none;
+    border-radius: 0.5em;
+    padding: 0.85em;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    color: var(--text-clr);
+    gap: 1em;
+    cursor: pointer;
+}
+
+.sidebar ul li a i,
+.sidebar ul li .dropdown-trigger i {
+    min-width: 30px; /* Ensure icons have a fixed width */
+    font-size: 18px;
+    text-align: center;
+}
+
+.sidebar.active ul li a,
+.sidebar.active ul li .dropdown-trigger {
+    justify-content: flex-start; /* Align icons and text to the left when sidebar is open */
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li .dropdown-trigger:hover {
+    background-color: var(--hover-clr);
+    color: var(--content-container-clr);
+}
+
+.sidebar ul li a i {
+    margin-right: 0; /* Ensure proper spacing for icons */
+}
+
+.sidebar .nav-item {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    flex-grow: 1;
+}
+
+.sidebar.active .nav-item {
+    opacity: 1;
+    pointer-events: auto;
+    flex-grow: 1;
+}
+
+/* Dropdown styling */
+.dropdown-trigger {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+.sidebar li.dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Handle the arrows */
+.sidebar .dropdown-arrow {
+    margin-left: auto;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.sidebar ul li .down-icon {
+    display: block;
+}
+
+.sidebar ul li .up-icon {
+    display: none;
+}
+
+.sidebar ul li.open .down-icon {
+    display: none;
+}
+
+.sidebar ul li.open .up-icon {
+    display: block;
+}
+
+/* Fix for Registration section arrows */
+.sidebar ul li .bxs-up-arrow,
+.sidebar ul li .bxs-down-arrow {
+    margin-left: auto;
+}
+
+.sidebar ul li .bxs-up-arrow {
+    display: none;
+}
+
+.sidebar ul li.open .bxs-down-arrow {
+    display: none;
+}
+
+.sidebar ul li.open .bxs-up-arrow {
+    display: block;
+}
+
+/* Submenu styling with improved animations */
+.sidebar .sub-menu {
+    width: 100%;
+    margin-left: -1px;
+    padding-left: 0;
+    background-color: var(--background-clr);
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.25s ease-out, opacity 0.2s ease-out;
+    pointer-events: none;
+    will-change: max-height, opacity;
+}
+
+.sidebar li.open .sub-menu {
+    max-height: 500px;
+    opacity: 1;
+    transition: max-height 0.3s ease-in, opacity 0.2s ease-in;
+    pointer-events: auto;
+}
+
+/* Additional style to reduce delay in hiding submenus */
+.sidebar li:not(.open) .sub-menu {
+    transition: max-height 0.15s ease-out, opacity 0.1s ease-out;
+}
+
+.sidebar .sub-menu li {
+    margin: 5px 0;
+}
+
+.sidebar .sub-menu li a {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sidebar .sub-menu li a i {
+    min-width: 20px;
+    font-size: 16px;
+}
+.tooltip {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    background-color: var(--dark-base-clr);
+    color: var(--content-container-clr);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}

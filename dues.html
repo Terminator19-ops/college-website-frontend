@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dues.css">   
+    <link rel="stylesheet" href="css/main.css">   
+    <script src="js/dues.js" defer></script>
+    <script src="js/home.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <nav class="top-bar">
+        <div class="top-left">
+            <img src="img/logo.png" alt="Logo" class="logo-img">
+            <div class="logo-text">
+                <span class="amrita">AMRITA</span> <span class="university">UNIVERSITY</span><br>
+                <span>MANAGEMENT SYSTEM</span>
+            </div>
+        </div>
+
+        <div class="top-right">
+            <a href="#" class="top-btn">
+                <i class='bx bx-bell'></i>
+            </a>
+            <a href="courselist.html" class="top-btn">
+                <i class='bx bx-book'></i>
+                <span>Current Courses</span>
+            </a>
+            <a href="#dashboard" class="top-btn">
+                <i class='bx bx-home'></i>
+                <span>Home</span>
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- Sidebar -->
+    <div class ="sidebar">
+        <!-- Logo -->
+        <div class="top">
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <!--list of items-->
+        <ul>
+            <li>
+                <a href="home.html">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="nav-item">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-trigger">
+                    <i class='bx bxs-user-badge'></i>
+                    <span class="nav-item">Registration</span>
+                    <i class='bx bxs-down-arrow'></i>
+                    <i class='bx bxs-up-arrow'></i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="course_reg.html">
+                            <i class='bx bx-edit-alt'></i>
+                            Course Registration
+                        </a>
+                        <span class="tooltip">Course Registration</span>
+                    </li>
+                    <li>
+                        <a href="reg_status.html">
+                            <i class='bx bxs-check-square'></i>
+                            Registration Status
+                        </a>
+                        <span class="tooltip">Registration Status</span>
+                    </li>
+                </ul>
+                <span class="tooltip">Registration</span>
+            </li>
+                     
+            <li class="dropdown">
+                <a href="#" class="dropdown-trigger">
+                    <i class='bx bx-book-bookmark'></i>
+                    <span class="nav-item">Courses</span>
+                    <i class='bx bxs-down-arrow dropdown-arrow down-icon'></i>
+                    <i class='bx bxs-up-arrow dropdown-arrow up-icon'></i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="courselist.html">
+                            <i class='bx bxs-book-alt'></i>
+                            Course List
+                        </a>
+                        <span class="tooltip">Course List</span>
+                    </li>
+                    <li>
+                        <a href="coursedetails.html">
+                            <i class='bx bx-info-circle' ></i>
+                            <nav>Course Details</nav>
+                        </a>
+                        <span class="tooltip">Course Details</span>
+                    </li>
+                    <li>
+                        <a href="announcements.html">
+                            <i class='bx bx-broadcast'></i>
+                            <nav>Announcements</nav>
+                        </a>
+                        <span class="tooltip">Announcements</span>
+                    </li>
+                    <li>
+                        <a href="feedback.html">
+                            <i class='bx bx-message-edit' ></i>
+                            Course Feedback
+                        </a>
+                        <span class="tooltip">Course Feedback</span>
+                    </li>
+                </ul>
+                <span class="tooltip">Courses</span>
+            </li>
+
+            <!-- Performance -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-trigger">
+                    <i class='bx bx-trending-up'></i>
+                    <span class="nav-item">Performance</span>
+                    <i class='bx bxs-down-arrow dropdown-arrow down-icon'></i>
+                    <i class='bx bxs-up-arrow dropdown-arrow up-icon'></i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="grades.html">
+                            <i class='bx bxs-bar-chart-alt-2' ></i>
+                            Grades
+                        </a>
+                        <span class="tooltip">Grades</span>
+                    </li>
+                    <li>
+                        <a href="attendance.html">
+                            <i class='bx bxs-calendar-check' ></i>
+                            Attendance
+                        </a>
+                        <span class="tooltip">Attendance</span>
+                    </li>
+                    <li>
+                        <a href="marks.html">
+                            <i class='bx bxs-report'></i>
+                            Marks
+                        </a>
+                        <span class="tooltip">Marks</span>
+                    </li>
+                </ul>
+                <span class="tooltip">Performance</span>
+            </li>
+
+            <!-- Fees & Dues -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-trigger">
+                    <i class='bx bx-money-withdraw'></i>
+                    <span class="nav-item">Fees&Dues</span>
+                    <i class='bx bxs-down-arrow dropdown-arrow down-icon'></i>
+                    <i class='bx bxs-up-arrow dropdown-arrow up-icon'></i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="fees.html">
+                            <i class='bx bx-money' ></i>
+                            Fees
+                        </a>
+                        <span class="tooltip">Fees</span>
+                    </li>
+                    <li>
+                        <a href="dues.html">
+                            <i class='bx bx-receipt' ></i>
+                            Dues
+                        </a>
+                        <span class="tooltip">Dues</span>
+                    </li>
+                    <li>
+                        <a href="scholarship.html">
+                            <i class='bx bxs-award'></i>
+                            Scholarship
+                        </a>
+                        <span class="tooltip">Scholarship</span>
+                    </li>
+                    <li>
+                        <a href="fines.html">
+                            <i class='bx bx-error' ></i>
+                            Fines
+                        </a>
+                        <span class="tooltip">Fines</span>
+                    </li>
+                </ul>
+                <span class="tooltip">Fees&Dues</span>
+            </li>
+
+            <!-- Library -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-trigger">
+                    <i class='bx bx-bar-chart-alt-2'></i>
+                    <span class="nav-item">Library</span>
+                    <i class='bx bxs-down-arrow dropdown-arrow down-icon'></i>
+                    <i class='bx bxs-up-arrow dropdown-arrow up-icon'></i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="issuedbooks.html">
+                            <i class='bx bxs-book-bookmark'></i>
+                            Issued Books
+                        </a>
+                        <span class="tooltip">Issued Books</span>
+                    </li>
+                    <li>
+                        <a href="pyq.html">
+                            <i class='bx bx-folder-open'></i>
+                            PYQ's
+                        </a>
+                        <span class="tooltip">PYQ's</span>
+                    </li>
+                    <li>
+                        <a href="elibrary.html">
+                            <i class='bx bx-desktop' ></i>
+                            E-Library
+                        </a>
+                        <span class="tooltip">E-Library</span>
+                    </li>
+                </ul>
+                <span class="tooltip">Library</span>
+            </li>
+
+            <!-- Settings -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-trigger">
+                    <i class='bx bx-cog'></i>
+                    <span class="nav-item">Settings</span>
+                    <i class='bx bxs-down-arrow dropdown-arrow down-icon'></i>
+                    <i class='bx bxs-up-arrow dropdown-arrow up-icon'></i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="account.html">
+                            <i class='bx bx-user'></i>
+                            Account
+                        </a>
+                        <span class="tooltip">Account</span>
+                    </li>
+                    <li>
+                        <a href="preferences.html">
+                            <i class='bx bx-slider-alt' ></i>
+                            Preferences
+                        </a>
+                        <span class="tooltip">Preferences</span>
+                    </li>
+                </ul>
+                <span class="tooltip">Settings</span>
+            </li>
+            <li>
+                <a href="logout.html">
+                    <i class='bx bx-log-out'></i>
+                    <span class="nav-item">Logout</span>
+                </a>
+                <span class="tooltip">Logout</span>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1 class="page-title">Fees</h1>
+        
+        <div class="grades-form-container">
+            <div class="info-row">
+                <div class="info-group">
+                    <label>RollNo</label>
+                    <input type="text" class="form-control" value="BL.SC.U4AIE24004" readonly>
+                </div>
+                <div class="info-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control" value="Aditya Kundu" readonly>
+                </div>
+                <div class="info-group">
+                    <label>Academic Program & Branch</label>
+                    <input type="text" class="form-control" value="B.Tech2024 AIE" readonly>
+                </div>
+            </div>
+
+            <div class="info-row">
+                <div class="info-group">
+                    <label>Fee Term</label>
+                    <select id="fee-term" class="form-control">
+                        <option value="1">Sem-1</option>
+                        <option value="2">Sem-2</option>
+                        <option value="3">Sem-3</option>
+                        <option value="4">Sem-4</option>
+                        <option value="5">Sem-5</option>
+                        <option value="6">Sem-6</option>
+                        <option value="7">Sem-7</option>
+                        <option value="8">Sem-8</option>
+                    </select>
+                </div>
+                <div class="info-group">
+                    <label>Academic Year</label>
+                    <select id="academic-year" class="form-control">
+                        <option value="2024">2024-2025</option>
+                        <option value="2023">2023-2024</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="fees-container">
+            <div class="fee-table">
+                <table id="fees-table" class="table">
+                    <thead>
+                        <tr>
+                            <th>Fee Section</th>
+                            <th>Currency</th>
+                            <th>Assigned Amt.</th>
+                            <th>Paid Amt.</th>
+                            <th>Amt. to Pay</th>
+                            <th>Due Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="fees-data">
+                        <!-- Fee data will be populated here dynamically -->
+                    </tbody>
+                </table>
+            </div>
+            <div id="no-data-message" class="warning-message">
+                No fee data available for this semester.
+                <span class="warning-subtext">Please select a different semester or contact the finance department.</span>
+            </div>
+            
+            <div id="fee-summary" class="fee-summary">
+                <div class="summary-row">
+                    <span>Total Due:</span>
+                    <span id="total-due" class="amount-due">INR 0</span>
+                </div>
+            </div>
+            
+            <button id="pay-now-btn" class="action-button">Pay Now</button>
+        </div>
+    </div>
+</body>
+</html>

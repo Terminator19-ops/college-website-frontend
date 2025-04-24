@@ -1,0 +1,219 @@
+:root{
+    --background-clr: #FCE4EC;
+    --content-container-clr: #FFFFFF;
+    --border-clr: #CCCCCC;
+    --highlights-clr: #D72638;
+    --dark-base-clr: #2E2E2E;
+    --hover-clr: #B31E2D;
+    --text-clr: #333333;
+}
+
+/* Main Content Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-clr);
+    margin: 0;
+    padding: 0;
+}
+
+/* Main content container styling */
+.main-content {
+    background-color: var(--content-container-clr);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 80px 20px 20px 98px;
+    transition: margin-left 0.5s ease;
+}
+
+.sidebar.active ~ .main-content {
+    margin-left: 290px;
+}
+
+/* Page title styling */
+.page-title {
+    color: var(--highlights-clr);
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 15px 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* Form container styling */
+.grades-form-container {
+    background-color: #FEE8EE;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 15px;
+}
+
+/* Row layout for form elements */
+.info-row {
+    display: flex;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.info-group {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    text-align: left;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-clr);
+}
+
+/* Label styling */
+.grades-form-container label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--text-clr);
+}
+
+/* Input field styling */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-clr);
+    border-radius: 4px;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+
+/* Fees container styling */
+.fees-container {
+    background-color: var(--content-container-clr);
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+/* Fee table styling */
+.fee-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table thead tr {
+    background-color: var(--highlights-clr);
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.table th:first-child,
+.table td:first-child {
+    text-align: left;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+.table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--highlights-clr);
+}
+
+/* Warning message styling */
+.warning-message {
+    background-color: #fff2f2;
+    border: 2px solid var(--highlights-clr);
+    color: var(--highlights-clr);
+    padding: 25px 15px;
+    margin: 25px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: none; /* Hidden by default */
+    box-shadow: 0 4px 8px rgba(215, 38, 56, 0.15);
+}
+
+/* Pay now button styling */
+.action-button {
+    background-color: var(--highlights-clr);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+.action-button:hover {
+    background-color: var(--hover-clr);
+}
+
+/* Amount due highlight */
+.amount-due {
+    font-weight: bold;
+    color: var(--highlights-clr);
+}
+
+/* Zero amount styling */
+.zero-amount {
+    color: green;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .info-row {
+        flex-direction: column;
+    }
+    
+    .info-group {
+        margin-right: 0;
+        width: 100%;
+    }
+    
+    .table {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main-content {
+        margin: 80px 10px 10px 88px;
+        padding: 15px;
+    }
+    
+    .sidebar.active ~ .main-content {
+        margin-left: 250px;
+    }
+    
+    .table th, 
+    .table td {
+        padding: 8px 10px;
+    }
+}
+

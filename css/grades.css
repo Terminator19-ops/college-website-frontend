@@ -1,0 +1,220 @@
+/* Main Content Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FCE4EC;
+    margin: 0;
+    padding: 0;
+}
+
+/* Student info styling */
+.student-info {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 80px 20px 20px 98px;
+    transition: margin-left 0.5s ease;
+}
+
+.sidebar.active ~ .student-info {
+    margin-left: 290px;
+}
+
+/* Update the page-title styling to match the image format */
+.page-title {
+    color: #D72638;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 15px 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* Add styling for the container layout similar to the image */
+.main-content {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 80px 20px 20px 98px;
+    transition: margin-left 0.5s ease;
+}
+
+.sidebar.active ~ .main-content {
+    margin-left: 290px;
+}
+
+.info-row {
+    display: flex;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.info-group {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    text-align: left;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #333333;
+}
+
+.info-value {
+    padding: 5px 0;
+    font-weight: 500;
+}
+
+.dropdown select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+/* Grades Table Styling */
+.grades-container {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 20px 20px 98px;
+    transition: margin-left 0.5s ease;
+    overflow-x: auto;
+}
+
+.sidebar.active ~ .grades-container {
+    margin-left: 290px;
+}
+
+.section-title {
+    color: #D72638;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #D72638;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.grades-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.grades-table thead tr {
+    background-color: #c1004b;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.grades-table th,
+.grades-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.grades-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.grades-table tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+.grades-table tbody tr:last-of-type {
+    border-bottom: 2px solid #c1004b;
+}
+
+.sgpa-row {
+    font-weight: bold;
+    background-color: #f1f1f1;
+}
+
+.sgpa-row td:first-child {
+    text-align: right;
+}
+
+#sgpa-value {
+    font-weight: bold;
+}
+
+.warning-message {
+    background-color: #ffe0e0;
+    border: 1px solid #D72638;
+    color: #D72638;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Style for the inner content area with pink background */
+.grades-form-container {
+    background-color: #FEE8EE;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 15px;
+}
+
+/* Label styling to match the image */
+.grades-form-container label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Input field styling */
+.grades-form-container .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+
+/* Button styling to match the image */
+.action-button {
+    background-color: #D72638;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+.action-button:hover {
+    background-color: #b31e2d;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .info-row {
+        flex-direction: column;
+    }
+    
+    .info-group {
+        margin-right: 0;
+        width: 100%;
+    }
+}

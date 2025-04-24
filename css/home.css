@@ -1,0 +1,264 @@
+
+/* Main Content */
+.main-content {
+    position: relative;
+    margin-left: 78px;
+    margin-top: 60px;
+    padding: 20px;
+    transition: margin-left 0.5s ease;
+}
+
+.sidebar.active ~ .main-content {
+    margin-left: 240px;
+}
+
+.container {
+    background-color: var(--content-container-clr);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    color: var(--highlights-clr);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Create highlight for active dropdown */
+.sidebar ul li.dropdown.open .dropdown-trigger {
+    background-color: var(--highlights-clr);
+    color: var(--content-container-clr);
+    border-radius: 0.5em;
+}
+
+.sidebar .icon-text-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+/* Content Boxes - Updated with consistent spacing */
+.box {
+    background-color: var(--content-container-clr);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 1px solid var(--border-clr);
+}
+
+/* Quote Box */
+.quote-box {
+    padding: 0;
+}
+
+.quote-box h3 {
+    background-color: var(--highlights-clr);
+    color: var(--content-container-clr);
+    padding: 12px 20px;
+    margin: 0;
+    font-size: 16px;
+}
+
+.quote-content {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quote-text-container {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.quote-image {
+    flex: 0 0 auto;
+    margin-right: 20px; /* Add margin to push it more to the right */
+}
+
+.quote-img {
+    width: 100px; /* Increase from 80px to 100px */
+    height: 100px; /* Increase from 80px to 100px */
+    border-radius: 50%; /* Creates circular shape */
+    border: 2px solid var(--highlights-clr); /* Adds colored border */
+    object-fit: cover; /* Ensures image fills the circle properly */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    transition: transform 0.3s ease; /* Adds smooth scaling effect */
+    white-space: pre-wrap; /* Prevents text from wrapping */
+}
+
+.quote-text {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: var(--dark-base-clr);
+}
+
+.quote-author {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--highlights-clr);
+}
+
+/* Box Row for Two Columns */
+.box-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.box-row .box {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+/* Announcements Box */
+.announcements-box {
+    padding: 0;
+}
+
+.announcements-box h3 {
+    background-color: var(--highlights-clr);
+    color: var(--content-container-clr);
+    padding: 12px 20px;
+    margin: 0;
+    font-size: 16px;
+}
+
+.announcement {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border-clr);
+}
+
+.announcement:last-child {
+    border-bottom: none;
+}
+
+.announcement h4 {
+    font-size: 16px;
+    color: var(--dark-base-clr);
+    margin-bottom: 5px;
+}
+
+.announcement-date {
+    color: var(--highlights-clr);
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+/* Calendar Box */
+.calendar-box {
+    padding: 0;
+}
+
+.calendar-box h3 {
+    background-color: var(--highlights-clr);
+    color: var(--content-container-clr);
+    padding: 12px 20px;
+    margin: 0;
+    font-size: 16px;
+}
+
+.calendar {
+    padding: 20px;
+}
+
+.calendar-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.calendar-header h4 {
+    color: var(--dark-base-clr);
+    font-size: 16px;
+}
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: bold;
+    color: var(--dark-base-clr);
+    margin-bottom: 5px;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day {
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.day.current {
+    background-color: var(--highlights-clr);
+    color: var(--content-container-clr);
+}
+
+.day.empty {
+    visibility: hidden;
+}
+
+/* Links Box */
+.links-box {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.links-box h3 {
+    background-color: var(--highlights-clr);
+    color: var(--content-container-clr);
+    padding: 12px 20px;
+    margin: 0;
+    font-size: 16px;
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+
+.link-card {
+    flex: 0 0 auto;
+    width: 150px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+}
+
+.link-card img {
+    width: 100%;
+    height: auto;
+    max-height: 90px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid var(--border-clr);
+    margin-bottom: 10px;
+}
+
+.link-card span {
+    color: var(--dark-base-clr);
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Added for responsive design */
+

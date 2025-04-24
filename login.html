@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8b+z4+2e5c5e5e5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="img/clipify.mp4" type="video/mp4">
+        </video>
+    </div>
+    <header class="header">
+        <div class="logo-container">
+            <img src="https://webfiles.amrita.edu/2024/04/ZvmNQEuB-amrita-vishwa-vidyapeetham-university-logo-white-version.svg" alt="Amrita University Logo" class="logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="login-form">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="button" id="loginBtn">Login</button>
+                <!-- Move error message div below the login button -->
+                <div id="error-message" class="error-message"></div>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set video playback speed
+            const video = document.getElementById("bg-video");
+            video.playbackRate = 0.6;
+            
+            // Login validation
+            const loginBtn = document.getElementById('loginBtn');
+            const errorMessage = document.getElementById('error-message');
+            
+            loginBtn.addEventListener('click', function() {
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+                
+                // Check if credentials match
+                if(username === 'project' && password === 'project') {
+                    window.location.href = 'home.html';
+                } else {
+                    errorMessage.textContent = 'Invalid!! Try Again!';
+                    errorMessage.style.display = 'block';
+                    
+                    // Optional: Clear the password field
+                    document.getElementById('password').value = '';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
