@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>AUMS</title>
+    <title>Course Registration</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
-    <link rel="stylesheet" href="css/grades.css">   
+    <link rel="stylesheet" href="css/dues.css">   
     <link rel="stylesheet" href="css/main.css">   
-    <script src="js/grades.js" defer></script>
+    <link rel="stylesheet" href="css/announcements.css">
+    <script src="js/dues.js" defer></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_arrow_left" />
 </head>
 <body>
 
@@ -31,7 +30,7 @@
                 <i class='bx bx-book'></i>
                 <span>Current Courses</span>
             </a>
-            <a href="home.html" class="top-btn">
+            <a href="#dashboard" class="top-btn">
                 <i class='bx bx-home'></i>
                 <span>Home</span>
             </a>
@@ -266,75 +265,61 @@
         </ul>
     </div>
 
-    <!-- Main Content -->
     <div class="main-content">
-        <h1 class="page-title">GRADES</h1>
+        <h1 class="page-title">Announcements</h1>
         
-        <div class="grades-form-container">
+        <div class="announcements-form-container">
             <div class="info-row">
                 <div class="info-group">
-                    <label>RollNo</label>
-                    <input type="text" class="form-control" value="BL.SC.U4AIE24004" readonly>
-                </div>
-                <div class="info-group">
-                    <label>Name</label>
-                    <input type="text" class="form-control" value="Aditya Kundu" readonly>
-                </div>
-                <div class="info-group">
-                    <label>Academic Program & Branch</label>
-                    <input type="text" class="form-control" value="B.Tech2024 AIE" readonly>
-                </div>
-            </div>
-
-            <div class="info-row">
-                <div class="info-group">
-                    <label>Semester</label>
-                    <select id="semester" class="form-control">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
+                    <label for="announcement-type">Type</label>
+                    <select id="announcement-type" class="form-control">
+                        <option value="all">All Announcements</option>
+                        <option value="academic">Academic</option>
+                        <option value="examination">Examination</option>
+                        <option value="event">Events</option>
+                        <option value="placement">Placement</option>
                     </select>
+                </div>
+                <div class="info-group">
+                    <label for="course-filter">Course</label>
+                    <select id="course-filter" class="form-control">
+                        <option value="all">All Courses</option>
+                        <option value="CSE101">CSE101 - Introduction to Programming</option>
+                        <option value="MAT201">MAT201 - Linear Algebra</option>
+                        <option value="PHY301">PHY301 - Quantum Mechanics</option>
+                        <option value="ENG202">ENG202 - Technical Writing</option>
+                    </select>
+                </div>
+                <div class="info-group">
+                    <label for="date-filter">Date Range</label>
+                    <select id="date-filter" class="form-control">
+                        <option value="all">All Time</option>
+                        <option value="today">Today</option>
+                        <option value="week">This Week</option>
+                        <option value="month">This Month</option>
+                        <option value="semester">This Semester</option>
+                    </select>
+                </div>
+                <div class="info-group">
+                    <button id="search-btn" class="secondary-button">
+                        <i class='bx bx-search'></i> Filter
+                    </button>
                 </div>
             </div>
         </div>
-
-        <!-- Grades Table Section -->
-        <div class="grades-container">
-            <h2 class="section-title">Semester Grades</h2>
-            <div class="table-container">
-                <table class="grades-table">
-                    <thead>
-                        <tr>
-                            <th>Sem</th>
-                            <th>Course Code</th>
-                            <th>Course Name</th>
-                            <th>Academic Term Period</th>
-                            <th>Type</th>
-                            <th>Grade</th>
-                        </tr>
-                    </thead>
-                    <tbody id="grades-data">
-                        <!-- Data will be populated by JavaScript -->
-                    </tbody>
-                    <tfoot>
-                        <tr class="sgpa-row">
-                            <td colspan="5">SGPA</td>
-                            <td id="sgpa-value"></td>
-                        </tr>
-                    </tfoot>
-                </table>
+        
+        <div class="announcements-container">
+            <div id="announcements-list">
+                <!-- Announcements will be populated here by JavaScript -->
             </div>
-            <div id="no-data-message" class="warning-message" style="display: none;">
-                No grade data available for this semester.
+            
+            <div id="no-announcements-message" class="warning-message">
+                No announcements found for the selected filters.
+                <span class="warning-subtext">Try selecting different filters or check back later.</span>
             </div>
         </div>
     </div>
+
+    <script src="js/announcements.js" defer></script>
 </body>
 </html>
-
-
