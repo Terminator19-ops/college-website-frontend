@@ -288,9 +288,45 @@ document.addEventListener("DOMContentLoaded", function() {
     const searchBtn = document.getElementById("search-btn");
     const announcementsContainer = document.getElementById("announcements-list");
     const noAnnouncementsMessage = document.getElementById("no-announcements-message");
-
+    
+    // Load saved filters from localStorage
+    function loadSavedFilters() {
+        if (localStorage.getItem('announcementFilters')) {
+            const savedFilters = JSON.parse(localStorage.getItem('announcementFilters'));
+            
+            if (typeFilter && savedFilters.type) {
+                typeFilter.value = savedFilters.type;
+            }
+            
+            if (courseFilter && savedFilters.course) {
+                courseFilter.value = savedFilters.course;
+            }
+            
+            if (dateFilter && savedFilters.date) {
+                dateFilter.value = savedFilters.date;
+            }
+        }
+    }
+    
+    // Save current filters to localStorage
+    function saveFilters() {
+        const currentFilters = {
+            type: typeFilter.value,
+            course: courseFilter.value,
+            date: dateFilter.value
+        };
+        
+        localStorage.setItem('announcementFilters', JSON.stringify(currentFilters));
+    }
+    
     // Apply filters and update announcements list
     function updateAnnouncements() {
+        // Save current filters
+        saveFilters();
+        
+        // Update filter indicators
+        updateFilterIndicators();
+        
         // Get filter values
         const typeValue = typeFilter.value;
         const courseValue = courseFilter.value;
@@ -409,9 +445,14 @@ document.addEventListener("DOMContentLoaded", function() {
                         `).join('')}
                     </div>
                     <div class="announcement-actions">
-                        <button class="action-button mark-read" data-id="${announcement.id}">
-                            <i class='bx bx-check'></i> Mark as Read
-                        </button>
+                        ${announcement.isUnread ? 
+                            `<button class="action-button mark-read" data-id="${announcement.id}">
+                                <i class='bx bx-check'></i> Mark as Read
+                            </button>` : 
+                            `<button class="action-button mark-read" data-id="${announcement.id}" disabled>
+                                <i class='bx bx-check-double'></i> Read
+                            </button>`
+                        }
                         <button class="action-button bookmark" data-id="${announcement.id}">
                             <i class='bx bx-bookmark'></i> Save
                         </button>
@@ -423,7 +464,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
         
         // Add event listeners to mark as read buttons
-        document.querySelectorAll('.mark-read').forEach(button => {
+        document.querySelectorAll('.mark-read:not([disabled])').forEach(button => {
             button.addEventListener('click', function() {
                 const announcementId = parseInt(this.getAttribute('data-id'));
                 const index = announcements.findIndex(a => a.id === announcementId);
@@ -450,11 +491,73 @@ document.addEventListener("DOMContentLoaded", function() {
                     '<i class="bx bx-bookmark"></i> Save';
             });
         });
+        
+        // Update counter
+        updateAnnouncementCounter(filteredAnnouncements.length);
+    }
+    
+    // Update filter indicators to show which filters are active
+    function updateFilterIndicators() {
+        // Reset all indicators first
+        document.querySelectorAll('.filter-label').forEach(label => {
+            label.classList.remove('active-filter');
+        });
+        
+        // Check which filters are active and update indicators
+        if (typeFilter.value !== 'all') {
+            typeFilter.previousElementSibling.classList.add('active-filter');
+        }
+        
+        if (courseFilter.value !== 'all') {
+            courseFilter.previousElementSibling.classList.add('active-filter');
+        }
+        
+        if (dateFilter.value !== 'all') {
+            dateFilter.previousElementSibling.classList.add('active-filter');
+        }
+    }
+    
+    // Update announcement counter
+    function updateAnnouncementCounter(count) {
+        const counterElem = document.getElementById('announcement-counter');
+        if (counterElem) {
+            counterElem.textContent = `Showing ${count} announcement${count !== 1 ? 's' : ''}`;
+        }
+    }
+    
+    // Reset all filters
+    function resetFilters() {
+        if (typeFilter) typeFilter.value = 'all';
+        if (courseFilter) courseFilter.value = 'all';
+        if (dateFilter) dateFilter.value = 'all';
+        
+        // Clear localStorage
+        localStorage.removeItem('announcementFilters');
+        
+        // Update UI
+        updateAnnouncements();
     }
 
     // Initialize the announcements list
-    if (searchBtn) {
-        searchBtn.addEventListener('click', updateAnnouncements);
+    if (typeFilter && courseFilter && dateFilter) {
+        // Load saved filters
+        loadSavedFilters();
+        
+        // Add event listeners for filter changes
+        typeFilter.addEventListener('change', updateAnnouncements);
+        courseFilter.addEventListener('change', updateAnnouncements);
+        dateFilter.addEventListener('change', updateAnnouncements);
+        
+        // Keep the search button for accessibility
+        if (searchBtn) {
+            searchBtn.addEventListener('click', updateAnnouncements);
+        }
+        
+        // Add reset button functionality
+        const resetBtn = document.getElementById('reset-filters');
+        if (resetBtn) {
+            resetBtn.addEventListener('click', resetFilters);
+        }
         
         // Initial load of announcements
         updateAnnouncements();

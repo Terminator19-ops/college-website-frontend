@@ -183,13 +183,6 @@
                         </a>
                         <span class="tooltip">Scholarship</span>
                     </li>
-                    <li>
-                        <a href="fines.html">
-                            <i class='bx bx-error' ></i>
-                            Fines
-                        </a>
-                        <span class="tooltip">Fines</span>
-                    </li>
                 </ul>
                 <span class="tooltip">Fees&Dues</span>
             </li>
@@ -281,7 +274,6 @@
                 <li class="tab-item"><a href="#contact-tab">Contact</a></li>
                 <li class="tab-item"><a href="#health-tab">Health</a></li>
                 <li class="tab-item"><a href="#attribute-tab">Attribute</a></li>
-                <li class="tab-item"><a href="#photo-tab">Photo</a></li>
                 <li class="tab-item"><a href="#affidavit-tab">Affidavit</a></li>
             </ul>
         </div>
@@ -292,7 +284,7 @@
 
                 <form class="tab-form">
                     <div class="form-group">
-                        <h2>Student Information</h2>
+                        <h2>Student Information</h2><br>    
                         
                         <div class="tab-row">
                             <div>
@@ -385,96 +377,798 @@
                     </div>
                 </form>
             </div>
-<!--             
            
+           <!-- Qualifying Exams Tab -->
             <div id="qualifying-exam-tab" class="tab">
                 <h2>Qualifying Exam Information</h2>
-                <form class="tab-form">
-                    <div class="form-group">
-                        <div class="tab-row">
-                            <label for="exam-type">Exam Type:</label>
-                            <input type="text" id="exam-type" name="exam-type" value="JEE Mains" readonly>
-                            
-                            <label for="exam-year">Year:</label>
-                            <input type="number" id="exam-year" name="exam-year" value="2024" readonly>
+                <br>
+                <table class="qualifying-exam-table">
+                    <thead>
+                        <tr class="table-heading">
+                            <th>Sl. No.</th>
+                            <th>Exam Type</th>
+                            <th>Exam Name</th>
+                            <th>Year Of Passing</th>
+                            <th>Branch</th>
+                            <th>Percent/Percentile/SGPA</th>
+                            <th>Mark Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>plus 2</td>
+                            <td>CBSE Class XII</td>
+                            <td>2024</td>
+                            <td>PCM</td>
+                            <td>85.6%</td>
+                            <td><button class="view-btn">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Entrance Test</td>
+                            <td>AEEE</td>
+                            <td>2024</td>
+                            <td>PCM</td>
+                            <td>97.8</td>
+                            <td><button class="view-btn">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Semester Exam</td>
+                            <td>Semester-1</td>
+                            <td>2024</td>
+                            <td>CS(AI)</td>
+                            <td>8.9</td>
+                            <td><button class="view-btn">View</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Personal Tab-->
+             <div id="personal-tab" class="tab-heading-active">
+                <div class="form-group">
+                    <h2>Personal Information</h2><br>    
+                    
+                    <div class="tab-row">
+                        <div>
+                            <label for="father-name">Father's Name:</label>
+                            <input type="text" id="father-name" name="father-name" value="Sujit Kundu" readonly>
                         </div>
-                        <div class="tab-row">
-                            <label for="exam-rank">Rank:</label>
-                            <input type="text" id="exam-rank" name="exam-rank" value="15842" readonly>
-                            
-                            <label for="exam-score">Score/Percentile:</label>
-                            <input type="text" id="exam-score" name="exam-score" value="95.36" readonly>
+                        <div>
+                            <label for="father-email">Father's Email:</label>
+                            <input type="email" id="father-email" name="father-email" value="kundu242@gmail.com" readonly> 
+                        </div>
+                        <div>
+                            <label for="father-occupation">Father's Occupation:</label>
+                            <input type="text" id="father-occupation" name="father-occupation" value="GOI" readonly>
+                        </div>
+                        <div>
+                            <label for="father-mobile">Father's Mobile:</label>
+                            <input type="text" id="father-mobile" name="father-mobile" value="4398574022" readonly>
+                        </div>
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <div class="tab-row">
+                        <div>
+                            <label for="mother-name">Mother's Name:</label>
+                            <input type="text" id="mother-name" name="mother-name" value="Sukla Kundu" readonly>
+                        </div>
+                        <div>
+                            <label for="mother-email">Mother's Email:</label>
+                            <input type="email" id="mother-email" name="mother-email" value="sukla5324@gmail.com" readonly> 
+                        </div>
+                        <div>
+                            <label for="mother-occupation">Mother's Occupation:</label>
+                            <input type="text" id="mother-occupation" name="mother-occupation" value="Entreprenuer" readonly>
+                        </div>
+                        <div>
+                            <label for="mother-mobile">Mother's Mobile:</label>
+                            <input type="text" id="mother-mobile" name="mother-mobile" value="9872453210" readonly>
                         </div>
                     </div>
-                </form>
-            </div>
-            
-          
-            <div id="personal-tab" class="tab">
-                <h2>Personal Information</h2>
-                <form class="tab-form">
-                    <div class="form-group">
-                        <div class="tab-row">
-                            <label for="father-name">Father's Name:</label>
-                            <input type="text" id="father-name" name="father-name" value="Rajesh Kundu" readonly>
-                            
-                            <label for="mother-name">Mother's Name:</label>
-                            <input type="text" id="mother-name" name="mother-name" value="Sharmila Kundu" readonly>
+                    <div class="tab-row">
+                        <div>
+                            <label for="guardian-name">Local Guardian's Name:</label>
+                            <input type="text" id="guardian-name" name="guardian-name" value="Shilpi Ganguly" readonly>
                         </div>
-                        <div class="tab-row">
-                            <label for="nationality">Nationality:</label>
-                            <input type="text" id="nationality" name="nationality" value="Indian" readonly>
-                            
+                        <div>
+                            <label for="guardian-email">Guardian's Email:</label>
+                            <input type="email" id="guardian-email" name="guardian-email" value="ganguly23@gmail.com" readonly> 
+                        </div> 
+                        <div>
+                            <label for="guardian-occupation">Local Guardian's Relation:</label>
+                            <input type="text" id="guardian-occupation" name="guardian-occupation" value="Aunt" readonly> 
+                        </div> 
+                        <div>
+                            <label for="guardian-mobile">Local Guardian's Mobile:</label>
+                            <input type="text" id="guardian-mobile" name="guardian-mobile" value="8430643210" readonly> 
+                        </div>
+                    </div>
+                        <!-- Add more fields as needed -->  
+
+                    <div class="tab-row">
+                        <div>
+                            <label for="Nationality">Nationality:</label>
+                            <input type="text" id="Nationality" name="Nationality" value="Indian" readonly>
+                        </div>
+                        <div>
+                            <label for="Native-State">Native State:</label>
+                            <input type="text" id="Native-State" name="Native-State" value="West Bengal" readonly>
+                        </div>
+                        <div>
+                            <label for="Native-District">Native District:</label>
+                            <input type="text" id="Native-District" name="Native-District" value="North-24-Parghanas" readonly>
+                        </div>
+                    </div>
+                    <div class="tab-row">
+                        <div>
+                            <label for="Religion">Religion:</label>
+                            <input type="text" id="Religion" name="Religion" value="Hindu" readonly>
+                        </div>
+                        <div>
+                            <label for="Caste">Caste</label>
+                            <input type="text" id="Caste" name="Caste" value="General" readonly>
+                        </div>
+                        <div>
+                            <label for="mother-tongue">Mother Tongue:</label>
+                            <input type="text" id="mother-tongue" name="mother-tongue" value="Bengali" readonly>    
+                        </div>
+                    </div>
+                    <div class="tab-row">
+                        <div>
                             <label for="blood-group">Blood Group:</label>
                             <input type="text" id="blood-group" name="blood-group" value="B+" readonly>
                         </div>
-                    </div>
-                </form>
-            </div>
-            
-           
-            <div id="address-tab" class="tab">
-                <h2>Address Information</h2>
-                <form class="tab-form">
-                    <div class="form-group">
-                        <div class="tab-row">
-                            <label for="permanent-address">Permanent Address:</label>
-                            <input type="text" id="permanent-address" name="permanent-address" value="123 Navy Officers Colony, Mumbai" readonly>
+                        <div>
+                            <label for="aadhar-number">Aadhar Number:</label>
+                            <input type="text" id="aadhar-number" name="aadhar-number" value="1234 5678 9012" readonly>    
                         </div>
-                        <div class="tab-row">
-                            <label for="current-address">Current Address:</label>
-                            <input type="text" id="current-address" name="current-address" value="Amrita Vishwa Vidyapeetham, Bengaluru Campus" readonly>
+                        <div>
+                            <label for="phone-number">Phone Number:</label>
+                            <input type="text" id="phone-number" name="phone-number" value="9876543210" readonly>
                         </div>
                     </div>
-                </form>
-            </div>
-            
-            <div id="contact-tab" class="tab">
-                <h2>Contact Information</h2>
-                <form class="tab-form">
-                    <div class="form-group">
-                        <div class="tab-row">
-                            <label for="mobile">Mobile Number:</label>
-                            <input type="text" id="mobile" name="mobile" value="9900092435" readonly>
-                            
-                            <label for="alt-email">Alternative Email:</label>
-                            <input type="email" id="alt-email" name="alt-email" value="adityakundu984@gmail.com" readonly>
+                    <div class="tab-row">
+                        <div>
+                            <label for="Hostellite">Hostellite:</label>
+                            <div>
+                                <label><input type="radio" name="gender" value="male" checked disabled> Yes</label>
+                                <label><input type="radio" name="gender" value="female" disabled> No</label>
+                            </div>
                         </div>
-                        <div class="tab-row">
-                            <label for="emergency-contact">Emergency Contact:</label>
-                            <input type="text" id="emergency-contact" name="emergency-contact" value="9823456789" readonly>
-                            
-                            <label for="emergency-relation">Relationship:</label>
-                            <input type="text" id="emergency-relation" name="emergency-relation" value="Father" readonly>
+                        <div>
+                            <label for="Hostel-Name">Hostel Name:</label>
+                            <input type="text" id="Hostel-Name" name="Hostel-Name" value="Govardhan" readonly>
+                        </div>
+                        <div>
+                            <label for="Room-Number">Room Number:</label>
+                            <input type="text" id="Room-Number" name="Room-Number" value="G-123" readonly>
                         </div>
                     </div>
-                </form>
+                    <div class="tab-row">
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" value="adityakundu984@gmail.com" readonly>
+                        </div>
+                        <div>
+                            <label for="College-email">College Email:</label>
+                            <input type="email" id="College-email" name="College-email" value="bl.sc.u4aie24004@bl.students.amrita.edu" readonly>
+                        </div>
+                    </div>
+                     <!--bank  -->
+                    <div class="tab-row">
+                        <div>
+                            <label for="bank-name">Bank Name:</label>
+                            <input type="text" id="bank-name" name="bank-name" value="SBI" readonly>
+                        </div>
+                        <div>
+                            <label for="bank-account-number">Bank Account Number:</label>
+                            <input type="text" id="bank-account-number" name="bank-account-number" value="1234567890123456" readonly>    
+                        </div>
+                        <div>
+                            <label for="ifsc-code">IFSC Code:</label>
+                            <input type="text" id="ifsc-code" name="ifsc-code" value="SBIN0001234" readonly>    
+                        </div>
+                    </div>
+                    <div class="tab-row">
+                        <div>
+                            <label for="bank-branch">Bank Branch:</label>
+                            <input type="text" id="bank-branch" name="bank-branch" value="Main Branch" readonly>    
+                        </div>
+                        <div>
+                            <label for="bank-address">Bank Address:</label>
+                            <input type="text" id="bank-address" name="bank-address" value="123 Main St, City, State, ZIP" readonly>    
+                        </div>
+                        <div>
+                            <label for="bank-phone">Bank Phone:</label>
+                            <input type="text" id="bank-phone" name="bank-phone" value="123-456-7890" readonly>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div id="health-tab" class="tab">
-                <h2>Health Information</h2>
-                <form class="tab-form">
-                    <div class="form-group">
+            <!-- Address Tab -->
+            <div id="address-tab" class="tab-heading-active">
+                <div class="form-group">
+                    <!-- Address Information -->
+                    <h2>Address Information</h2>
+                    <br><br>
+                    <!-- Permanent Address -->
+                    <div class="address-section">
+                        <h3>Permanent Address</h3>
                         <div class="tab-row">
-                            <label for="medical-condition">Medical Conditions:</label>
-                            <input type="text" id="medical-condition" name="medical-condition" value="None" readonly> -->
+                            <div>
+                                <label for="permanent-address-line1">Address Line 1:</label>
+                                <input type="text" id="permanent-address-line1" name="permanent-address-line1" value="142/A, Lake Town" readonly>
+                            </div>
+                            <div>
+                                <label for="permanent-address-line2">Address Line 2:</label>
+                                <input type="text" id="permanent-address-line2" name="permanent-address-line2" value="Block B, Jessore Road" readonly>
+                            </div>
+                        </div>
+                        <div class="tab-row">
+                            <div>
+                                <label for="permanent-pincode">Pincode:</label>
+                                <input type="text" id="permanent-pincode" name="permanent-pincode" value="700089" readonly>
+                            </div>
+                            <div>
+                                <label for="permanent-district">District:</label>
+                                <input type="text" id="permanent-district" name="permanent-district" value="North 24 Parganas" readonly>
+                            </div>
+                        </div>
+                        <div class="tab-row">
+                            <div>
+                                <label for="permanent-city">City:</label>
+                                <input type="text" id="permanent-city" name="permanent-city" value="Kolkata" readonly>
+                            </div>
+                            <div>
+                                <label for="permanent-state">State:</label>
+                                <input type="text" id="permanent-state" name="permanent-state" value="West Bengal" readonly>
+                            </div>
+                        </div>
+                        <div class="tab-row">
+                            <div>
+                                <label for="permanent-country">Country:</label>
+                                <input type="text" id="permanent-country" name="permanent-country" value="India" readonly>
+                            </div>
+                            <div>
+                                <label for="permanent-phone">Phone:</label>
+                                <input type="text" id="permanent-phone" name="permanent-phone" value="033-25429876" readonly>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Parents' Address (Communication) -->
+                    <div class="address-section">
+                        <h3>Parents' Address (Communication)</h3>
+                        <div class="tab-row">
+                            <div>
+                                <label for="parents-address-line1">Address Line 1:</label>
+                                <input type="text" id="parents-address-line1" name="parents-address-line1" value="142/A, Lake Town" readonly>
+                            </div>
+                            <div>
+                                <label for="parents-address-line2">Address Line 2:</label>
+                                <input type="text" id="parents-address-line2" name="parents-address-line2" value="Block B, Jessore Road" readonly>
+                            </div>
+                        </div>
+                        <div class="tab-row">
+                            <div>
+                                <label for="parents-pincode">Pincode:</label>
+                                <input type="text" id="parents-pincode" name="parents-pincode" value="700089" readonly>
+                            </div>
+                            <div>
+                                <label for="parents-district">District:</label>
+                                <input type="text" id="parents-district" name="parents-district" value="North 24 Parganas" readonly>
+                            </div>
+                        </div>
+                        <div class="tab-row">
+                            <div>
+                                <label for="parents-city">City:</label>
+                                <input type="text" id="parents-city" name="parents-city" value="Kolkata" readonly>
+                            </div>
+                            <div>
+                                <label for="parents-state">State:</label>
+                                <input type="text" id="parents-state" name="parents-state" value="West Bengal" readonly>
+                            </div>
+                        </div>
+                        <div class="tab-row">
+                            <div>
+                                <label for="parents-country">Country:</label>
+                                <input type="text" id="parents-country" name="parents-country" value="India" readonly>
+                            </div>
+                            <div>
+                                <label for="parents-phone">Phone:</label>
+                                <input type="text" id="parents-phone" name="parents-phone" value="033-25429876" readonly>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Current Address (College Address) -->
+                    <div class="address-section">
+                        <h3>Current Address (College Address)</h3>
+                        <div class="tab-row">
+                            <div>
+                                <label for="current-address-line1">Address Line 1:</label>
+                                <input type="text" id="current-address-line1" name="current-address-line1" value="Govardhan Hostel, Room G-123" readonly>
+                            </div>
+                            <div>
+                                <label for="current-address-line2">Address Line 2:</label>
+                                <input type="text" id="current-address-line2" name="current-address-line2" value="Amrita Vishwa Vidyapeetham" readonly>
+                            </div>
+                        </div>
+                        <div class="tab-row">
+                            <div>
+                                <label for="current-pincode">Pincode:</label>
+                                <input type="text" id="current-pincode" name="current-pincode" value="641112" readonly>
+                            </div>
+                            <div>
+                                <label for="current-district">District:</label>
+                                <input type="text" id="current-district" name="current-district" value="Coimbatore" readonly>
+                            </div>
+                        </div>
+                        <div class="tab-row">
+                            <div>
+                                <label for="current-city">City:</label>
+                                <input type="text" id="current-city" name="current-city" value="Coimbatore" readonly>
+                            </div>
+                            <div>
+                                <label for="current-state">State:</label>
+                                <input type="text" id="current-state" name="current-state" value="Tamil Nadu" readonly>
+                            </div>
+                        </div>
+                        <div class="tab-row">
+                            <div>
+                                <label for="current-country">Country:</label>
+                                <input type="text" id="current-country" name="current-country" value="India" readonly>
+                            </div>
+                            <div>
+                                <label for="current-phone">Phone:</label>
+                                <input type="text" id="current-phone" name="current-phone" value="9876543210" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Tab -->
+            <div id="contact-tab" class="tab-heading-active">
+                <div class="form-group">
+                    <h2>Contact Information</h2><br>
+                    
+                    <!-- Emergency Contacts -->
+                    <div class="address-section">
+                        <h3>Emergency Contacts</h3>
+                        <div class="tab-row">
+                            <div>
+                                <label for="emergency-contact-name1">Primary Contact Name:</label>
+                                <input type="text" id="emergency-contact-name1" name="emergency-contact-name1" value="Sujit Kundu" readonly>
+                            </div>
+                            <div>
+                                <label for="emergency-contact-relation1">Relation:</label>
+                                <input type="text" id="emergency-contact-relation1" name="emergency-contact-relation1" value="Father" readonly>
+                            </div>
+                            <div>
+                                <label for="emergency-contact-mobile1">Mobile:</label>
+                                <input type="text" id="emergency-contact-mobile1" name="emergency-contact-mobile1" value="4398574022" readonly>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-row">
+                            <div>
+                                <label for="emergency-contact-name2">Secondary Contact Name:</label>
+                                <input type="text" id="emergency-contact-name2" name="emergency-contact-name2" value="Shilpi Ganguly" readonly>
+                            </div>
+                            <div>
+                                <label for="emergency-contact-relation2">Relation:</label>
+                                <input type="text" id="emergency-contact-relation2" name="emergency-contact-relation2" value="Aunt" readonly>
+                            </div>
+                            <div>
+                                <label for="emergency-contact-mobile2">Mobile:</label>
+                                <input type="text" id="emergency-contact-mobile2" name="emergency-contact-mobile2" value="8430643210" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Campus Contact Information -->
+                    <div class="address-section">
+                        <h3>Campus Contact Information</h3>
+                        <div class="tab-row">
+                            <div>
+                                <label for="campus-email">Campus Email:</label>
+                                <input type="email" id="campus-email" name="campus-email" value="bl.sc.u4aie24004@bl.students.amrita.edu" readonly>
+                            </div>
+                            <div>
+                                <label for="campus-phone">Campus Phone Extension:</label>
+                                <input type="text" id="campus-phone" name="campus-phone" value="1234" readonly>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-row">
+                            <div>
+                                <label for="hostel-warden">Hostel Warden Contact:</label>
+                                <input type="text" id="hostel-warden" name="hostel-warden" value="Mr. Ramakrishnan - 9445123780" readonly>
+                            </div>
+                            <div>
+                                <label for="faculty-advisor">Faculty Advisor:</label>
+                                <input type="text" id="faculty-advisor" name="faculty-advisor" value="Dr. Sairam V - sairam_v@bl.amrita.edu" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <!-- Health Tab -->
+            <div id="health-tab" class="tab-heading-active">
+                <div class="form-group">
+                    <h2>Health Information</h2><br>
+                    
+                    <!-- Basic Health Information -->
+                    <div class="address-section">
+                        <h3>Basic Health Information</h3>
+                        <div class="tab-row">
+                            <div>
+                                <label for="blood-group-health">Blood Group:</label>
+                                <input type="text" id="blood-group-health" name="blood-group-health" value="O+" readonly>
+                            </div>
+                            <div>
+                                <label for="height">Height (cm):</label>
+                                <input type="text" id="height" name="height" value="178" readonly>
+                            </div>
+                            <div>
+                                <label for="weight">Weight (kg):</label>
+                                <input type="text" id="weight" name="weight" value="75" readonly>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-row">
+                            <div>
+                                <label for="allergies">Known Allergies:</label>
+                                <input type="text" id="allergies" name="allergies" value="Dust" readonly>
+                            </div>
+                            <div>
+                                <label for="chronic-conditions">Chronic Conditions:</label>
+                                <input type="text" id="chronic-conditions" name="chronic-conditions" value="Asthama" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Medical History -->
+                    <div class="address-section">
+                        <h3>Medical History</h3>
+                        <div class="tab-row">
+                            <div>
+                                <label for="past-surgeries">Past Surgeries:</label>
+                                <input type="text" id="past-surgeries" name="past-surgeries" value="None" readonly>
+                            </div>
+                            <div>
+                                <label for="medications">Current Medications:</label>
+                                <input type="text" id="medications" name="medications" value="None" readonly>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-row">
+                            <div>
+                                <label for="family-medical-history">Family Medical History:</label>
+                                <textarea id="family-medical-history" name="family-medical-history" readonly>No significant hereditary conditions</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Immunization Records -->
+                    <div class="address-section">
+                        <h3>Immunization Records</h3>
+                        <table class="qualifying-exam-table">
+                            <thead>
+                                <tr class="table-heading">
+                                    <th>Sl. No.</th>
+                                    <th>Vaccine</th>
+                                    <th>Date Administered</th>
+                                    <th>Validity Period</th>
+                                    <th>Certificate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>COVID-19 (Covishield)</td>
+                                    <td>12/05/2022</td>
+                                    <td>N/A</td>
+                                    <td><button class="view-btn">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Tetanus Toxoid</td>
+                                    <td>23/08/2023</td>
+                                    <td>10 years</td>
+                                    <td><button class="view-btn">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Hepatitis B</td>
+                                    <td>05/01/2022</td>
+                                    <td>N/A</td>
+                                    <td><button class="view-btn">View</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- Emergency Medical Information -->
+                    <div class="address-section">
+                        <br>
+                        <h3>Emergency Medical Information</h3>
+                        <div class="tab-row">
+                            <div>
+                                <label for="emergency-medical-contact">Emergency Medical Contact:</label>
+                                <input type="text" id="emergency-medical-contact" name="emergency-medical-contact" value="Dr. Ranjan Ghosh - 9876543210" readonly>
+                            </div>
+                            <div>
+                                <label for="health-insurance">Health Insurance Provider:</label>
+                                <input type="text" id="health-insurance" name="health-insurance" value="National Health Insurance" readonly>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-row">
+                            <div>
+                                <label for="insurance-policy-number">Insurance Policy Number:</label>
+                                <input type="text" id="insurance-policy-number" name="insurance-policy-number" value="NHIP-789456123" readonly>
+                            </div>
+                            <div>
+                                <label for="campus-medical-center">Campus Medical Center ID:</label>
+                                <input type="text" id="campus-medical-center" name="campus-medical-center" value="AMC-ST24004" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <!-- Attribute Tab -->
+            <div id="attribute-tab" class="tab-heading-active">
+                <div class="form-group">
+                    <h2>Student Attributes</h2><br>
+                    
+                    <!-- Academic Attributes -->
+                    <div class="address-section">
+                        <h3>Academic Attributes</h3>
+                        <div class="tab-row">
+                            <div>
+                                <label for="academic-strength">Academic Strengths:</label>
+                                <input type="text" id="academic-strength" name="academic-strength" value="Mathematics, Programming, Problem Solving" readonly>
+                            </div>
+                            <div>
+                                <label for="learning-style">Learning Style:</label>
+                                <input type="text" id="learning-style" name="learning-style" value="Visual, Hands-on" readonly>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-row">
+                            <div>
+                                <label for="study-habits">Study Habits:</label>
+                                <input type="text" id="study-habits" name="study-habits" value="Group study, Late-night focused sessions" readonly>
+                            </div>
+                            <div>
+                                <label for="academic-goals">Academic Goals:</label>
+                                <input type="text" id="academic-goals" name="academic-goals" value="Graduate with honors, Research publication" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Skills & Competencies -->
+                    <div class="address-section">
+                        <h3>Skills & Competencies</h3>
+                        <div class="tab-row">
+                            <div>
+                                <label for="technical-skills">Technical Skills:</label>
+                                <input type="text" id="technical-skills" name="technical-skills" value="Python, Java, Machine Learning, Web Development" readonly>
+                            </div>
+                            <div>
+                                <label for="soft-skills">Soft Skills:</label>
+                                <input type="text" id="soft-skills" name="soft-skills" value="Leadership, Communication, Teamwork" readonly>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-row">
+                            <div>
+                                <label for="languages">Languages Known:</label>
+                                <input type="text" id="languages" name="languages" value="English, Hindi, Bengali, Tamil (Basic)" readonly>
+                            </div>
+                            <div>
+                                <label for="certifications">Certifications:</label>
+                                <input type="text" id="certifications" name="certifications" value="Google ML Certification, AWS Associate" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Extra-Curricular Activities -->
+                    <div class="address-section">
+                        <h3>Extra-Curricular Activities</h3>
+                        <table class="qualifying-exam-table">
+                            <thead>
+                                <tr class="table-heading">
+                                    <th>Sl. No.</th>
+                                    <th>Activity Type</th>
+                                    <th>Organization/Event</th>
+                                    <th>Position/Achievement</th>
+                                    <th>Duration/Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Club Membership</td>
+                                    <td>Amrita Coding Club</td>
+                                    <td>Core Member</td>
+                                    <td>2024-Present</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Volunteer Work</td>
+                                    <td>Amritavarsham Tech Team</td>
+                                    <td>Technical Support</td>
+                                    <td>September 2024</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Sports</td>
+                                    <td>Amrita Powerlifting Team</td>
+                                    <td>Powerlifter</td>
+                                    <td>Jnauary-March-2024</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- Career Preferences -->
+                    <div class="address-section">
+                        <br>
+                        <h3>Career Preferences</h3>
+                        <div class="tab-row">
+                            <div>
+                                <label for="career-interests">Career Interests:</label>
+                                <input type="text" id="career-interests" name="career-interests" value="AI Research, Full Stack Development, Data Science" readonly>
+                            </div>
+                            <div>
+                                <label for="preferred-industries">Preferred Industries:</label>
+                                <input type="text" id="preferred-industries" name="preferred-industries" value="Tech, Healthcare, Education" readonly>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-row">
+                            <div>
+                                <label for="internship-preferences">Internship Preferences:</label>
+                                <input type="text" id="internship-preferences" name="internship-preferences" value="Summer 2025, Software Development, Remote/Bangalore" readonly>
+                            </div>
+                            <div>
+                                <label for="work-preferences">Work Preferences:</label>
+                                <input type="text" id="work-preferences" name="work-preferences" value="Hybrid, Innovative environment, Work-life balance" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <!-- Affidavit Tab -->
+            <div id="affidavit-tab" class="tab-heading-active">
+                <div class="form-group">
+                    <h2>Affidavits & Declarations</h2><br>
+                    
+                    <!-- Submitted Affidavits -->
+                    <div class="address-section">
+                        <h3>Submitted Affidavits</h3>
+                        <table class="qualifying-exam-table">
+                            <thead>
+                                <tr class="table-heading">
+                                    <th>Sl. No.</th>
+                                    <th>Affidavit Type</th>
+                                    <th>Submission Date</th>
+                                    <th>Status</th>
+                                    <th>Document</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Anti-Ragging Declaration</td>
+                                    <td>01/08/2024</td>
+                                    <td>Verified</td>
+                                    <td><button class="view-btn">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Code of Conduct Agreement</td>
+                                    <td>01/08/2024</td>
+                                    <td>Verified</td>
+                                    <td><button class="view-btn">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Medical Fitness Certificate</td>
+                                    <td>30/07/2024</td>
+                                    <td>Verified</td>
+                                    <td><button class="view-btn">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Hostel Rules Acceptance</td>
+                                    <td>02/08/2024</td>
+                                    <td>Verified</td>
+                                    <td><button class="view-btn">View</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- Declarations -->
+                    <div class="address-section">
+                        <h3>Student Declarations</h3>
+                        <div class="tab-row">
+                            <div>
+                                <label for="plagiarism-declaration">Plagiarism Declaration:</label>
+                                <div class="declaration-box">
+                                    I hereby declare that I understand what constitutes plagiarism and that all work submitted by me will be my own original work. I understand the consequences of academic dishonesty.
+                                    <div class="declaration-status">
+                                        <span class="verified-badge">Acknowledged: August 1, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-row">
+                            <div>
+                                <label for="academic-integrity">Academic Integrity Pledge:</label>
+                                <div class="declaration-box">
+                                    I pledge to uphold the principles of academic integrity and ethical conduct during my academic career at Amrita Vishwa Vidyapeetham. I will maintain honesty in all academic activities.
+                                    <div class="declaration-status">
+                                        <span class="verified-badge">Acknowledged: August 1, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-row">
+                            <div>
+                                <label for="disciplinary-declaration">Disciplinary Declaration:</label>
+                                <div class="declaration-box">
+                                    I declare that I have not been subject to any disciplinary action at previous academic institutions. I understand and agree to abide by all disciplinary codes of the university.
+                                    <div class="declaration-status">
+                                        <span class="verified-badge">Acknowledged: August 1, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Parent/Guardian Declarations -->
+                    <div class="address-section">
+                        <h3>Parent/Guardian Declarations</h3>
+                        <div class="tab-row">
+                            <div>
+                                <label for="parent-consent">Parent/Guardian Consent:</label>
+                                <div class="declaration-box">
+                                    I, Sujit Kundu, parent of Aditya Kundu, hereby consent to my ward's enrollment at Amrita Vishwa Vidyapeetham. I acknowledge all financial and administrative responsibilities related to the course of study.
+                                    <div class="declaration-status">
+                                        <span class="verified-badge">Verified: July 29, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-row">
+                            <div>
+                                <label for="fees-declaration">Fee Payment Declaration:</label>
+                                <div class="declaration-box">
+                                    I understand the fee structure and payment schedule of the institution and agree to comply with all financial obligations in a timely manner. I understand that failure to pay fees may result in administrative action.
+                                    <div class="declaration-status">
+                                        <span class="verified-badge">Verified: July 29, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

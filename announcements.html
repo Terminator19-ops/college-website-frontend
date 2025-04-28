@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/dues.css">   
     <link rel="stylesheet" href="css/main.css">   
     <link rel="stylesheet" href="css/announcements.css">
-    <script src="js/dues.js" defer></script>
+    <script src="js/announements.js" defer></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -183,13 +183,6 @@
                         </a>
                         <span class="tooltip">Scholarship</span>
                     </li>
-                    <li>
-                        <a href="fines.html">
-                            <i class='bx bx-error' ></i>
-                            Fines
-                        </a>
-                        <span class="tooltip">Fines</span>
-                    </li>
                 </ul>
                 <span class="tooltip">Fees&Dues</span>
             </li>
@@ -271,7 +264,7 @@
         <div class="announcements-form-container">
             <div class="info-row">
                 <div class="info-group">
-                    <label for="announcement-type">Type</label>
+                    <label for="announcement-type" class="filter-label">Type</label>
                     <select id="announcement-type" class="form-control">
                         <option value="all">All Announcements</option>
                         <option value="academic">Academic</option>
@@ -281,7 +274,7 @@
                     </select>
                 </div>
                 <div class="info-group">
-                    <label for="course-filter">Course</label>
+                    <label for="course-filter" class="filter-label">Course</label>
                     <select id="course-filter" class="form-control">
                         <option value="all">All Courses</option>
                         <option value="CSE101">CSE101 - Introduction to Programming</option>
@@ -291,7 +284,7 @@
                     </select>
                 </div>
                 <div class="info-group">
-                    <label for="date-filter">Date Range</label>
+                    <label for="date-filter" class="filter-label">Date Range</label>
                     <select id="date-filter" class="form-control">
                         <option value="all">All Time</option>
                         <option value="today">Today</option>
@@ -300,11 +293,17 @@
                         <option value="semester">This Semester</option>
                     </select>
                 </div>
-                <div class="info-group">
+                <div class="info-group button-group">
                     <button id="search-btn" class="secondary-button">
                         <i class='bx bx-search'></i> Filter
                     </button>
+                    <button id="reset-filters" class="reset-button">
+                        <i class='bx bx-reset'></i> Reset
+                    </button>
                 </div>
+            </div>
+            <div class="filter-info">
+                <span id="announcement-counter">Showing 0 announcements</span>
             </div>
         </div>
         
