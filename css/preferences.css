@@ -1,0 +1,346 @@
+:root {
+    /* Primary colors */
+    --highlights-clr: #c1004b;
+    --form-background: #FCE4EC;
+    --text-dark: #333333;
+    --text-light: #666666;
+    
+    /* Common colors */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-red: #ff0000;
+    --color-dark-red: #c01f2d;
+}
+
+
+/* Main Content positioning */
+.main-content {
+    margin-left: 78px; /* Match sidebar width */
+    margin-top: 64px; /* Match top-bar height */
+    padding: 20px;
+    transition: margin-left 0.4s ease;
+    background-color: var(--form-background);
+    min-height: calc(100vh - 64px);
+}
+
+.sidebar.active ~ .main-content {
+    margin-left: 250px; /* Match expanded sidebar width */
+}
+
+/* Preference Section */
+.preference-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.preference-section h3 {
+    margin-top: 0;
+    color: #003366;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+/* Section Box Styling */
+.section-box {
+    background-color: var(--color-white);
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.section-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-box h2 {
+    color: var(--highlights-clr);
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Radio and Checkbox Options */
+.radio-options, .checkbox-options {
+    padding-left: 10px;
+}
+
+.radio-option, .checkbox-option {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.radio-option input, .checkbox-option input {
+    margin-right: 12px;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
+
+.radio-option label, .checkbox-option label {
+    font-size: 15px;
+    color: var(--text-dark);
+    cursor: pointer;
+}
+
+.radio-option:hover, .checkbox-option:hover {
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    padding: 2px 5px;
+}
+
+/* Dropdown Selects */
+.dropdown-select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    font-size: 15px;
+    background-color: var(--color-white);
+    transition: border-color 0.3s;
+}
+
+.dropdown-select:focus {
+    border-color: var(--highlights-clr);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(193, 0, 75, 0.2);
+}
+
+.input-field {
+    margin-bottom: 15px;
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+/* Sites Container */
+.sites-container {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.semester-column {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 18px;
+    border-radius: 5px;
+    background-color: var(--color-white);
+    transition: box-shadow 0.3s;
+}
+
+.semester-column:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.semester-column h4 {
+    margin-top: 0;
+    color: var(--highlights-clr);
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Button Container */
+.button-container {
+    margin-top: 30px;
+    text-align: right;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.save-button, .reset-button {
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+.save-button {
+    background-color: var(--highlights-clr);
+    color: white;
+    border: none;
+    margin-right: 12px;
+}
+
+.save-button:hover {
+    background-color: #a10039;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reset-button {
+    background-color: #f2f2f2;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.reset-button:hover {
+    background-color: #e5e5e5;
+    transform: translateY(-2px);
+}
+
+/* Success Message */
+.save-success {
+    display: none;
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-align: center;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Section boxes with different colors */
+.notification-box {
+    background-color: #fef8e8;
+    border-left: 4px solid #f6c23e;
+}
+
+.timezone-box {
+    background-color: #e8f4fd;
+    border-left: 4px solid #36b9cc;
+}
+
+.language-box {
+    background-color: #e8fcf1;
+    border-left: 4px solid #1cc88a;
+}
+
+.sites-box {
+    background-color: #eeeef5;
+    border-left: 4px solid #4e73df;
+}
+
+.editor-box {
+    background-color: #f8effc;
+    border-left: 4px solid #9c27b0;
+}
+
+/* Banner area styling */
+.banner-area {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.banner-area p {
+    margin: 0;
+    color: #555;
+    font-size: 15px;
+}
+
+/* Top bar styling for completion */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 64px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 992px) {
+    .sites-container {
+        flex-direction: column;
+    }
+    
+    .semester-column {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-content {
+        padding: 15px;
+    }
+    
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .save-button, .reset-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    .save-button {
+        margin-right: 0;
+    }
+    
+    /* Adjust sidebar transition for mobile */
+    .sidebar.active ~ .main-content {
+        margin-left: 0;
+    }
+    
+    .sidebar.active {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main-content {
+        margin-left: 0;
+        padding: 15px 10px;
+    }
+    
+    .section-box {
+        padding: 15px 10px;
+    }
+    
+    /* Create a mobile sidebar overlay */
+    .sidebar {
+        width: 0;
+        padding: 6px 0;
+    }
+    
+    .sidebar.active {
+        width: 250px;
+    }
+    
+    /* Create overlay effect when sidebar is active */
+    .sidebar.active ~ .main-content::before {
+        content: "";
+        position: fixed;
+        top: 64px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 98;
+    }
+}

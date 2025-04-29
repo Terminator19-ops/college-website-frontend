@@ -72,28 +72,54 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Tab functionality
+    // Improved Tab functionality
     const tabLinks = document.querySelectorAll('.tab-nav a');
-    const tabContents = document.querySelectorAll('.tab');
+    const tabContents = document.querySelectorAll('.tab-content > div');
+    let viewAllMode = false;
 
-    // Initialize tabs - show the active tab only
-    function initializeTabs() {
-        // Hide all tabs except the active one
+    // Hide all tabs except the active one
+    function showTab(targetId) {
+        // First hide all tabs
         tabContents.forEach(tab => {
-            tab.classList.remove('active');
+            tab.style.display = 'none';
         });
         
-        // Get active tab link
+        // If in view all mode, show all tabs
+        if (viewAllMode && targetId === '#view-all') {
+            tabContents.forEach(tab => {
+                tab.style.display = 'block';
+            });
+            return;
+        }
+        
+        // Otherwise show only the selected tab
+        const targetTab = document.querySelector(targetId);
+        if (targetTab) {
+            targetTab.style.display = 'block';
+            
+            // Scroll to tab content with smooth behavior
+            targetTab.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
+
+    // Initialize tabs on page load - show only the first tab
+    function initializeTabs() {
+        // Hide all tabs first
+        tabContents.forEach(tab => {
+            tab.style.display = 'none';
+        });
+        
+        // Show only the active tab
         const activeTabLink = document.querySelector('.tab-item.active a');
         if (activeTabLink) {
             const targetId = activeTabLink.getAttribute('href');
             const targetTab = document.querySelector(targetId);
             if (targetTab) {
-                targetTab.classList.add('active');
+                targetTab.style.display = 'block';
             }
         } else if (tabContents[0]) {
             // If no active tab, show the first one
-            tabContents[0].classList.add('active');
+            tabContents[0].style.display = 'block';
             if (tabLinks[0]) {
                 tabLinks[0].parentElement.classList.add('active');
             }
@@ -105,22 +131,22 @@ document.addEventListener("DOMContentLoaded", function() {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             
-            // Remove active class from all tabs and links
+            // Remove active class from all links
             tabLinks.forEach(l => l.parentElement.classList.remove('active'));
-            tabContents.forEach(tab => tab.classList.remove('active'));
             
             // Add active class to clicked link
             this.parentElement.classList.add('active');
             
-            // Show corresponding tab content
+            // Check if View All is clicked
             const targetId = this.getAttribute('href');
-            const targetTab = document.querySelector(targetId);
-            if (targetTab) {
-                targetTab.classList.add('active');
-                
-                // Scroll to tab content with smooth behavior
-                targetTab.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            if (targetId === '#view-all') {
+                viewAllMode = true;
+            } else {
+                viewAllMode = false;
             }
+            
+            // Show the appropriate tab content
+            showTab(targetId);
         });
     });
 

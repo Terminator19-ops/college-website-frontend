@@ -246,6 +246,28 @@ body {
     margin: 0 auto;
 }
 
+/* View All button styling */
+.tab-item.view-all a {
+    background-color: #f0f0f0;
+    color: var(--highlights-clr);
+    font-weight: bold;
+}
+
+.tab-item.view-all.active a {
+    background-color: #a10039;
+    color: white;
+}
+
+/* Ensure tabs are hidden by default */
+.tab-content > div {
+    display: none;
+}
+
+/* Show active tab */
+.tab-content > div.active {
+    display: block;
+}
+
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
     .tab-row {
@@ -269,4 +291,74 @@ body {
         padding: 10px 15px;
         font-size: 0.9rem;
     }
+}
+
+/* Add these styles at the end of your account.css file */
+
+/* Section Box Styling */
+.section-box {
+    background-color: #fdf1f5;
+    border-left: 4px solid var(--highlights-clr);
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Add these styles to your existing section styling */
+
+/* Health box styling */
+.health-box {
+    background-color: #f0f8f7;
+    border-left: 4px solid #3eb1a8;
+}
+
+.health-box h4 {
+    color: #3eb1a8;
+    border-bottom: 1px solid #c5e8e5;
+}
+
+/* Add styling for textareas */
+.tab-row textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    min-height: 80px;
+    resize: vertical;
+    background-color: #f9f9f9;
+}
+
+/* Make sure section headings are consistent */
+.section-box h3,
+.section-box h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+/* Specific section styling for different types */
+.personal-box {
+    background-color: #f8f1f4;
+}
+
+.contact-box {
+    background-color: #f1f3f9;
+}
+
+.academic-box {
+    background-color: #f0f4f8;
+}
+
+.declaration-box {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 5px;
 }

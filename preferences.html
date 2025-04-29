@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AUMS - Preferences</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">    
+    <link rel="stylesheet" href="css/preferences.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_arrow_left" />
+    <script src="js/preferences.js" defer></script>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <nav class="top-bar">
+        <div class="top-left">
+            <img src="img/logo.png" alt="Logo" class="logo-img">
+            <div class="logo-text">
+                <span class="amrita">AMRITA</span> <span class="university">UNIVERSITY</span><br>
+                <span>MANAGEMENT SYSTEM</span>
+            </div>
+        </div>
+
+        <div class="top-right">
+            <a href="#" class="top-btn">
+                <i class='bx bx-bell'></i>
+            </a>
+            <a href="courselist.html" class="top-btn">
+                <i class='bx bx-book'></i>
+                <span>Current Courses</span>
+            </a>
+            <a href="home.html" class="top-btn">
+                <i class='bx bx-home'></i>
+                <span>Home</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- Logo -->
+        <div class="top">
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <!--list of items-->
+        <ul>
+            <li>
+                <a href="home.html">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="nav-item">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-trigger">
+                    <i class='bx bxs-user-badge'></i>
+                    <span class="nav-item">Registration</span>
+                    <i class='bx bxs-down-arrow'></i>
+                    <i class='bx bxs-up-arrow'></i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="course_reg.html">
+                            <i class='bx bx-edit-alt'></i>
+                            Course Registration
+                        </a>
+                        <span class="tooltip">Course Registration</span>
+                    </li>
+                    <li>
+                        <a href="reg_status.html">
+                            <i class='bx bxs-check-square'></i>
+                            Registration Status
+                        </a>
+                        <span class="tooltip">Registration Status</span>
+                    </li>
+                </ul>
+                <span class="tooltip">Registration</span>
+            </li>
+                     
+            <!-- Keep the rest of your sidebar navigation -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-trigger">
+                    <i class='bx bx-book-bookmark'></i>
+                    <span class="nav-item">Courses</span>
+                    <i class='bx bxs-down-arrow dropdown-arrow down-icon'></i>
+                    <i class='bx bxs-up-arrow dropdown-arrow up-icon'></i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="courselist.html">
+                            <i class='bx bxs-book-alt'></i>
+                            Course List
+                        </a>
+                        <span class="tooltip">Course List</span>
+                    </li>
+                    <li>
+                        <a href="coursedetails.html">
+                            <i class='bx bx-info-circle' ></i>
+                            <nav>Course Details</nav>
+                        </a>
+                        <span class="tooltip">Course Details</span>
+                    </li>
+                    <li>
+                        <a href="announcements.html">
+                            <i class='bx bx-broadcast'></i>
+                            <nav>Announcements</nav>
+                        </a>
+                        <span class="tooltip">Announcements</span>
+                    </li>
+                    <li>
+                        <a href="feedback.html">
+                            <i class='bx bx-message-edit' ></i>
+                            Course Feedback
+                        </a>
+                        <span class="tooltip">Course Feedback</span>
+                    </li>
+                </ul>
+                <span class="tooltip">Courses</span>
+            </li>
+
+            <!-- Performance -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-trigger">
+                    <i class='bx bx-trending-up'></i>
+                    <span class="nav-item">Performance</span>
+                    <i class='bx bxs-down-arrow dropdown-arrow down-icon'></i>
+                    <i class='bx bxs-up-arrow dropdown-arrow up-icon'></i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="grades.html">
+                            <i class='bx bxs-bar-chart-alt-2' ></i>
+                            Grades
+                        </a>
+                        <span class="tooltip">Grades</span>
+                    </li>
+                    <li>
+                        <a href="attendance.html">
+                            <i class='bx bxs-calendar-check' ></i>
+                            Attendance
+                        </a>
+                        <span class="tooltip">Attendance</span>
+                    </li>
+                    <li>
+                        <a href="marks.html">
+                            <i class='bx bxs-report'></i>
+                            Marks
+                        </a>
+                        <span class="tooltip">Marks</span>
+                    </li>
+                </ul>
+                <span class="tooltip">Performance</span>
+            </li>
+
+            <!-- Fees & Dues -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-trigger">
+                    <i class='bx bx-money-withdraw'></i>
+                    <span class="nav-item">Fees&Dues</span>
+                    <i class='bx bxs-down-arrow dropdown-arrow down-icon'></i>
+                    <i class='bx bxs-up-arrow dropdown-arrow up-icon'></i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="fees.html">
+                            <i class='bx bx-money' ></i>
+                            Fees
+                        </a>
+                        <span class="tooltip">Fees</span>
+                    </li>
+                    <li>
+                        <a href="dues.html">
+                            <i class='bx bx-receipt' ></i>
+                            Dues
+                        </a>
+                        <span class="tooltip">Dues</span>
+                    </li>
+                    <li>
+                        <a href="scholarship.html">
+                            <i class='bx bxs-award'></i>
+                            Scholarship
+                        </a>
+                        <span class="tooltip">Scholarship</span>
+                    </li>
+                </ul>
+                <span class="tooltip">Fees&Dues</span>
+            </li>
+
+            <!-- Library -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-trigger">
+                    <i class='bx bx-bar-chart-alt-2'></i>
+                    <span class="nav-item">Library</span>
+                    <i class='bx bxs-down-arrow dropdown-arrow down-icon'></i>
+                    <i class='bx bxs-up-arrow dropdown-arrow up-icon'></i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="issuedbooks.html">
+                            <i class='bx bxs-book-bookmark'></i>
+                            Issued Books
+                        </a>
+                        <span class="tooltip">Issued Books</span>
+                    </li>
+                    <li>
+                        <a href="pyq.html">
+                            <i class='bx bx-folder-open'></i>
+                            PYQ's
+                        </a>
+                        <span class="tooltip">PYQ's</span>
+                    </li>
+                    <li>
+                        <a href="elibrary.html">
+                            <i class='bx bx-desktop' ></i>
+                            E-Library
+                        </a>
+                        <span class="tooltip">E-Library</span>
+                    </li>
+                </ul>
+                <span class="tooltip">Library</span>
+            </li>
+            <!-- ... existing sidebar items ... -->
+            
+            <!-- Settings -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-trigger">
+                    <i class='bx bx-cog'></i>
+                    <span class="nav-item">Settings</span>
+                    <i class='bx bxs-down-arrow dropdown-arrow down-icon'></i>
+                    <i class='bx bxs-up-arrow dropdown-arrow up-icon'></i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="account.html">
+                            <i class='bx bx-user'></i>
+                            Account
+                        </a>
+                        <span class="tooltip">Account</span>
+                    </li>
+                    <li>
+                        <a href="preferences.html">
+                            <i class='bx bx-slider-alt' ></i>
+                            Preferences
+                        </a>
+                        <span class="tooltip">Preferences</span>
+                    </li>
+                </ul>
+                <span class="tooltip">Settings</span>
+            </li>
+            <li>
+                <a href="logout.html">
+                    <i class='bx bx-log-out'></i>
+                    <span class="nav-item">Logout</span>
+                </a>
+                <span class="tooltip">Logout</span>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="main-content">
+        <h1 class="page-title">Preferences</h1>
+        
+        <!-- Banner area for custom content -->
+        <div class="banner-area">
+            <p>Configure your system preferences below. Changes are automatically saved.</p>
+        </div>
+        
+        <!-- Notifications Section -->
+        <div class="section-box">
+            <h2>Notifications</h2>
+            
+            <!-- Announcements -->
+            <div class="preference-section">
+                <h3>Announcements</h3>
+                <div class="radio-options">
+                    <div class="radio-option">
+                        <input type="radio" id="announcements-none" name="announcements" value="none">
+                        <label for="announcements-none">Do not send me low priority announcements</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="announcements-daily" name="announcements" value="daily" checked>
+                        <label for="announcements-daily">Send me one email per day summarizing all low priority announcements</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="announcements-each" name="announcements" value="each">
+                        <label for="announcements-each">Send me each notification separately</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Assignments -->
+            <div class="preference-section">
+                <h3>Assignments</h3>
+                <div class="radio-options">
+                    <div class="radio-option">
+                        <input type="radio" id="assignments-none" name="assignments" value="none">
+                        <label for="assignments-none">Do not send me assignment due date notifications</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="assignments-send" name="assignments" value="send" checked>
+                        <label for="assignments-send">Send me assignment due date notifications</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Resources and Drop Box -->
+            <div class="preference-section">
+                <h3>Resources and Drop Box</h3>
+                <div class="radio-options">
+                    <div class="radio-option">
+                        <input type="radio" id="resources-none" name="resources" value="none">
+                        <label for="resources-none">Do not send me low priority resource notifications</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="resources-daily" name="resources" value="daily" checked>
+                        <label for="resources-daily">Send me one email per day summarizing all low priority resource notifications</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="resources-each" name="resources" value="each">
+                        <label for="resources-each">Send me each resource separately</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Email Archive -->
+            <div class="preference-section">
+                <h3>Email Archive</h3>
+                <div class="radio-options">
+                    <div class="radio-option">
+                        <input type="radio" id="email-none" name="email" value="none">
+                        <label for="email-none">Do not send me email messages</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="email-daily" name="email" value="daily" checked>
+                        <label for="email-daily">Send me one notification per day summarising all email messages</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="email-each" name="email" value="each">
+                        <label for="email-each">Send me each mail message separately</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Syllabus -->
+            <div class="preference-section">
+                <h3>Syllabus</h3>
+                <div class="radio-options">
+                    <div class="radio-option">
+                        <input type="radio" id="syllabus-none" name="syllabus" value="none">
+                        <label for="syllabus-none">Do not send me low priority Syllabus items</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="syllabus-daily" name="syllabus" value="daily" checked>
+                        <label for="syllabus-daily">Send me one email per day summarizing all notifications</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="syllabus-each" name="syllabus" value="each">
+                        <label for="syllabus-each">Send me each notification separately</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tests & Quizzes -->
+            <div class="preference-section">
+                <h3>Tests & Quizzes</h3>
+                <div class="radio-options">
+                    <div class="radio-option">
+                        <input type="radio" id="tests-none" name="tests" value="none">
+                        <label for="tests-none">Do not send me any email confirmations</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="tests-daily" name="tests" value="daily" checked>
+                        <label for="tests-daily">Send me one email per day confirming all of my submissions</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="tests-each" name="tests" value="each">
+                        <label for="tests-each">Send me an email confirmation each time I submit an assessment</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Time Zone Section -->
+        <div class="section-box">
+            <h2>Time Zone</h2>
+            <div class="preference-section">
+                <div class="input-field">
+                    <label for="timezone">Select your time zone:</label>
+                    <select id="timezone" name="timezone" class="dropdown-select">
+                        <option value="GMT-12">GMT-12:00 International Date Line West</option>
+                        <option value="GMT-11">GMT-11:00 Midway Island, Samoa</option>
+                        <option value="GMT-10">GMT-10:00 Hawaii</option>
+                        <option value="GMT-9">GMT-09:00 Alaska</option>
+                        <option value="GMT-8">GMT-08:00 Pacific Time (US & Canada)</option>
+                        <option value="GMT-7">GMT-07:00 Mountain Time (US & Canada)</option>
+                        <option value="GMT-6">GMT-06:00 Central Time (US & Canada), Mexico City</option>
+                        <option value="GMT-5">GMT-05:00 Eastern Time (US & Canada), Bogota, Lima</option>
+                        <option value="GMT-4">GMT-04:00 Atlantic Time (Canada), Caracas, La Paz</option>
+                        <option value="GMT-3">GMT-03:00 Brazil, Buenos Aires, Georgetown</option>
+                        <option value="GMT-2">GMT-02:00 Mid-Atlantic</option>
+                        <option value="GMT-1">GMT-01:00 Azores, Cape Verde Islands</option>
+                        <option value="GMT+0" selected>GMT+00:00 Western Europe Time, London, Lisbon, Casablanca</option>
+                        <option value="GMT+1">GMT+01:00 Brussels, Copenhagen, Madrid, Paris</option>
+                        <option value="GMT+2">GMT+02:00 Kaliningrad, South Africa</option>
+                        <option value="GMT+3">GMT+03:00 Baghdad, Riyadh, Moscow, St. Petersburg</option>
+                        <option value="GMT+4">GMT+04:00 Abu Dhabi, Muscat, Baku, Tbilisi</option>
+                        <option value="GMT+5">GMT+05:00 Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+                        <option value="GMT+5.5">GMT+05:30 Bombay, Calcutta, Madras, New Delhi</option>
+                        <option value="GMT+6">GMT+06:00 Almaty, Dhaka, Colombo</option>
+                        <option value="GMT+7">GMT+07:00 Bangkok, Hanoi, Jakarta</option>
+                        <option value="GMT+8">GMT+08:00 Beijing, Perth, Singapore, Hong Kong</option>
+                        <option value="GMT+9">GMT+09:00 Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+                        <option value="GMT+10">GMT+10:00 Eastern Australia, Guam, Vladivostok</option>
+                        <option value="GMT+11">GMT+11:00 Magadan, Solomon Islands, New Caledonia</option>
+                        <option value="GMT+12">GMT+12:00 Auckland, Wellington, Fiji, Kamchatka</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Language Section -->
+        <div class="section-box">
+            <h2>Language</h2>
+            <div class="preference-section">
+                <div class="input-field">
+                    <label for="language">Select your preferred language:</label>
+                    <select id="language" name="language" class="dropdown-select">
+                        <option value="en" selected>English</option>
+                        <option value="hi">Hindi</option>
+                        <option value="ta">Tamil</option>
+                        <option value="te">Telugu</option>
+                        <option value="ml">Malayalam</option>
+                        <option value="kn">Kannada</option>
+                        <option value="bn">Bengali</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="ja">Japanese</option>
+                        <option value="zh">Chinese</option>
+                        <option value="ar">Arabic</option>
+                        <option value="ru">Russian</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sites Section -->
+        <div class="section-box">
+            <h2>Sites</h2>
+            <div class="preference-section">
+                <h3>Site Display Options</h3>
+                <div class="radio-options">
+                    <div class="radio-option">
+                        <input type="radio" id="show-desc-yes" name="show-desc" value="yes" checked>
+                        <label for="show-desc-yes">Show site descriptions</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="show-desc-no" name="show-desc" value="no">
+                        <label for="show-desc-no">Hide site descriptions</label>
+                    </div>
+                </div>
+                
+                <h3>Favorite Sites</h3>
+                <div class="sites-container">
+                    <div class="semester-column">
+                        <h4>2024-25 Odd Semester</h4>
+                        <div class="checkbox-options">
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="odd-subject1" name="favorite-sites" value="odd-subject1" checked>
+                                <label for="odd-subject1">19AIE301 - Data Structures</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="odd-subject2" name="favorite-sites" value="odd-subject2" checked>
+                                <label for="odd-subject2">19AIE302 - Artificial Intelligence</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="odd-subject3" name="favorite-sites" value="odd-subject3" checked>
+                                <label for="odd-subject3">19AIE303 - Machine Learning</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="odd-subject4" name="favorite-sites" value="odd-subject4" checked>
+                                <label for="odd-subject4">19AIE304 - Computer Networks</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="odd-subject5" name="favorite-sites" value="odd-subject5" checked>
+                                <label for="odd-subject5">19AIE305 - Database Systems</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="odd-subject6" name="favorite-sites" value="odd-subject6">
+                                <label for="odd-subject6">19AIE306 - Web Programming</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="odd-subject7" name="favorite-sites" value="odd-subject7">
+                                <label for="odd-subject7">19AIE307 - Operations Research</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="odd-subject8" name="favorite-sites" value="odd-subject8">
+                                <label for="odd-subject8">19AIE308 - Professional Ethics</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="semester-column">
+                        <h4>2024-25 Even Semester</h4>
+                        <div class="checkbox-options">
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="even-subject1" name="favorite-sites" value="even-subject1">
+                                <label for="even-subject1">19AIE401 - Deep Learning</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="even-subject2" name="favorite-sites" value="even-subject2">
+                                <label for="even-subject2">19AIE402 - Computer Vision</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="even-subject3" name="favorite-sites" value="even-subject3">
+                                <label for="even-subject3">19AIE403 - Natural Language Processing</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="even-subject4" name="favorite-sites" value="even-subject4">
+                                <label for="even-subject4">19AIE404 - Cloud Computing</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="even-subject5" name="favorite-sites" value="even-subject5">
+                                <label for="even-subject5">19AIE405 - IoT Systems</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="even-subject6" name="favorite-sites" value="even-subject6">
+                                <label for="even-subject6">19AIE406 - Robotics</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="even-subject7" name="favorite-sites" value="even-subject7">
+                                <label for="even-subject7">19AIE407 - Capstone Project</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Editor Options Section -->
+        <div class="section-box">
+            <h2>Editor Options</h2>
+            <div class="preference-section">
+                <div class="radio-options">
+                    <div class="radio-option">
+                        <input type="radio" id="editor-auto" name="editor-mode" value="auto" checked>
+                        <label for="editor-auto">Auto detected based on browser size</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="editor-basic" name="editor-mode" value="basic">
+                        <label for="editor-basic">Force basic/mobile mode (Limited set of buttons and features)</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="editor-full" name="editor-mode" value="full">
+                        <label for="editor-full">Force full/desktop mode (Full set of buttons, all features)</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Save Button -->
+        <div class="button-container">
+            <button type="button" class="save-button">Save Preferences</button>
+            <button type="button" class="reset-button">Reset to Defaults</button>
+        </div>
+    </div>
+
+    
+</body>
+</html>
