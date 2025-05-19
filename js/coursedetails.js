@@ -1,4 +1,3 @@
-
 // Sample course data for demonstration
 const coursesData = {
     1: [
@@ -85,7 +84,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-3: Limits and Continuity, Week 4-6: Differentiation...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [5, 12, 19, 26],
+                events: [
+                    { date: "May 5", title: "Limits & Continuity Quiz", description: "Epsilon-delta definitions, limits of functions" },
+                    { date: "May 12", title: "Differentiation Problems", description: "Chain rule and applications" },
+                    { date: "May 19", title: "Integration Test", description: "Techniques and applications of integration" },
+                    { date: "May 26", title: "Matrices Assignment Due", description: "Matrix operations and determinants" }
+                ]
+            },
             resources: "Textbook: Thomas' Calculus, Reference Books: Advanced Engineering Mathematics",
             assignments: "Assignment 1: Due on June 15, Assignment 2: Due on July 20...",
             testsQuizzes: "Quiz 1: May 25, Mid-term: July 10, Final Exam: August 15",
@@ -142,7 +151,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-2: Newton's Laws, Week 3-4: Work and Energy...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [3, 10, 17, 24],
+                events: [
+                    { date: "May 3", title: "Newton's Laws Lab", description: "Experimental verification of Newton's laws" },
+                    { date: "May 10", title: "Work & Energy Quiz", description: "Conservation principles and applications" },
+                    { date: "May 17", title: "Momentum and Collisions", description: "Elastic and inelastic collisions" },
+                    { date: "May 24", title: "Rotational Dynamics Assignment", description: "Angular momentum and torque problems" }
+                ]
+            },
             resources: "Textbook: University Physics, Lab Manual: Basic Physics Experiments",
             assignments: "Assignment 1: Due on June 10, Assignment 2: Due on July 15...",
             testsQuizzes: "Quiz 1: May 30, Mid-term: July 5, Final Exam: August 10",
@@ -199,7 +218,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-2: Atomic Structure, Week 3-4: Chemical Bonding...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [7, 14, 21, 28],
+                events: [
+                    { date: "May 7", title: "Atomic Structure Review", description: "Electronic configuration and periodic properties" },
+                    { date: "May 14", title: "Chemical Bonding Quiz", description: "Ionic, covalent, and metallic bonds" },
+                    { date: "May 21", title: "Thermodynamics Lab", description: "Enthalpy and entropy experiments" },
+                    { date: "May 28", title: "Reaction Kinetics Assignment", description: "Rate laws and reaction mechanisms" }
+                ]
+            },
             resources: "Textbook: Chemistry for Engineers, Reference: Physical Chemistry",
             assignments: "Assignment 1: Due on June 12, Assignment 2: Due on July 18...",
             testsQuizzes: "Quiz 1: May 28, Mid-term: July 8, Final Exam: August 12",
@@ -323,7 +352,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-2: Programming Basics, Week 3-4: Control Structures...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [4, 11, 18, 25],
+                events: [
+                    { date: "May 4", title: "Programming Basics Quiz", description: "Variables, data types, and operators" },
+                    { date: "May 11", title: "Control Structures Assignment", description: "Loops, conditionals, and switch statements" },
+                    { date: "May 18", title: "Functions and Methods Lab", description: "Parameter passing and return values" },
+                    { date: "May 25", title: "Arrays Exercise", description: "Array manipulation and algorithms" }
+                ]
+            },
             resources: "Textbook: C Programming Language, Online tutorials: codecademy.com",
             assignments: "Assignment 1: Due on June 5, Assignment 2: Due on July 25...",
             testsQuizzes: "Quiz 1: May 22, Mid-term: July 12, Final Exam: August 18",
@@ -448,7 +487,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-2: Circuit Elements, Week 3-4: Kirchhoff's Laws...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [6, 13, 20, 27],
+                events: [
+                    { date: "May 6", title: "Circuit Elements Introduction", description: "Passive and active components, circuit laws" },
+                    { date: "May 13", title: "Kirchhoff's Laws Quiz", description: "KVL and KCL applications" },
+                    { date: "May 20", title: "Nodal Analysis Lab", description: "Hands-on exercise with circuit analysis" },
+                    { date: "May 27", title: "Mesh Analysis Assignment", description: "Analysis of complex circuits using mesh method" }
+                ]
+            },
             resources: "Textbook: Fundamentals of Electrical Engineering, Circuit Simulation Software",
             assignments: "Assignment 1: Due on June 8, Assignment 2: Due on July 22...",
             testsQuizzes: "Quiz 1: May 26, Mid-term: July 15, Final Exam: August 20",
@@ -573,7 +622,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-3: Statics, Week 4-6: Dynamics...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [2, 9, 16, 23],
+                events: [
+                    { date: "May 2", title: "Mechanics Fundamentals", description: "Statics principles and applications" },
+                    { date: "May 9", title: "Force Analysis Quiz", description: "Free body diagrams and force calculations" },
+                    { date: "May 16", title: "Dynamics Lab", description: "Motion analysis experiments" },
+                    { date: "May 23", title: "Equilibrium Project Due", description: "Group project on structural equilibrium" }
+                ]
+            },
             resources: "Textbook: Engineering Mechanics by Hibbeler, Problem Set Collection",
             assignments: "Assignment 1: Due on June 20, Assignment 2: Due on July 30...",
             testsQuizzes: "Quiz 1: June 2, Mid-term: July 18, Final Exam: August 25",
@@ -698,7 +757,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-2: Basics of Communication, Week 3-4: Technical Writing...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [8, 15, 19, 30],
+                events: [
+                    { date: "May 8", title: "Communication Workshop", description: "Effective technical communication exercises" },
+                    { date: "May 15", title: "Technical Writing Assignment", description: "Technical report preparation" },
+                    { date: "May 19", title: "Presentation Skills Practice", description: "Group presentations with feedback" },
+                    { date: "May 30", title: "Professional Communication Exam", description: "Final evaluation of all topics covered" }
+                ]
+            },
             resources: "Textbook: Technical Communication Today, Style Guide, Presentation Templates",
             assignments: "Assignment 1: Due on June 14, Assignment 2: Due on July 14...",
             testsQuizzes: "Quiz 1: May 27, Mid-term: July 7, Final Exam: August 14",
@@ -823,7 +892,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-2: Introduction to Environment, Week 3-4: Ecosystems...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [2, 9, 16, 23],
+                events: [
+                    { date: "May 2", title: "Environmental Science Intro", description: "Basic concepts and importance of environmental studies" },
+                    { date: "May 9", title: "Ecosystems Analysis", description: "Structure and function of ecosystems" },
+                    { date: "May 16", title: "Biodiversity Quiz", description: "Assessment on biodiversity and conservation" },
+                    { date: "May 23", title: "Pollution Control Project", description: "Group presentations on pollution control measures" }
+                ]
+            },
             resources: "Textbook: Environmental Science, Documentary Collection, Case Studies",
             assignments: "Assignment 1: Due on June 18, Assignment 2: Due on July 28...",
             testsQuizzes: "Quiz 1: June 5, Mid-term: July 20, Final Exam: August 22",
@@ -950,7 +1029,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-3: First Order ODEs, Week 4-6: Second Order ODEs...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [3, 10, 17, 24],
+                events: [
+                    { date: "May 3", title: "First Order ODEs", description: "Linear and nonlinear first order differential equations" },
+                    { date: "May 10", title: "Second Order ODEs Quiz", description: "Homogeneous and non-homogeneous equations" },
+                    { date: "May 17", title: "Series Solutions Lab", description: "Power series methods for solving ODEs" },
+                    { date: "May 24", title: "Laplace Transforms Assignment", description: "Applications of Laplace transforms in solving ODEs" }
+                ]
+            },
             resources: "Textbook: Differential Equations with Applications by Zill, Problem Set Collection",
             assignments: "Assignment 1: Due on June 22, Assignment 2: Due on July 25...",
             testsQuizzes: "Quiz 1: June 5, Mid-term: July 15, Final Exam: August 20",
@@ -1075,7 +1164,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-2: Crystal Structure, Week 3-4: Band Theory...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [7, 14, 21, 28],
+                events: [
+                    { date: "May 7", title: "Crystal Structure Basics", description: "Lattice structures and crystal symmetry" },
+                    { date: "May 14", title: "Band Theory Quiz", description: "Energy bands in solids and band gaps" },
+                    { date: "May 21", title: "Semiconductor Materials Lab", description: "Properties of semiconductor materials" },
+                    { date: "May 28", title: "Quantum Physics Applications", description: "Practical applications in modern electronics" }
+                ]
+            },
             resources: "Textbook: Semiconductor Physics and Devices, Lab Manual",
             assignments: "Assignment 1: Due on June 10, Assignment 2: Due on July 18...",
             testsQuizzes: "Quiz 1: May 25, Mid-term: July 10, Final Exam: August 15",
@@ -1200,7 +1299,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-2: Arrays and Linked Lists, Week 3-4: Stacks and Queues...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [1, 8, 15, 22],
+                events: [
+                    { date: "May 1", title: "Data Structures Introduction", description: "Overview of arrays and linked lists" },
+                    { date: "May 8", title: "Stack and Queue Assignment", description: "Implementation and applications" },
+                    { date: "May 15", title: "Trees and Graphs Lab", description: "Hands-on implementation of tree traversals" },
+                    { date: "May 22", title: "Searching & Sorting Algorithms Quiz", description: "Binary search and sorting techniques" }
+                ]
+            },
             resources: "Textbook: Data Structures and Algorithm Analysis in C++, Online Practice Platform",
             assignments: "Assignment 1: Due on June 15, Assignment 2: Due on July 20...",
             testsQuizzes: "Quiz 1: May 30, Mid-term: July 12, Final Exam: August 18",
@@ -1325,7 +1434,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-2: Number Systems and Codes, Week 3-4: Logic Gates...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [6, 13, 20, 27],
+                events: [
+                    { date: "May 6", title: "Number Systems Overview", description: "Binary, octal, hexadecimal and conversions" },
+                    { date: "May 13", title: "Logic Gates Quiz", description: "Basic and universal logic gates" },
+                    { date: "May 20", title: "Combinational Circuits Lab", description: "Design and implementation of combinational circuits" },
+                    { date: "May 27", title: "Sequential Circuits Project", description: "Flip-flops and sequential circuit design" }
+                ]
+            },
             resources: "Textbook: Digital Design by Morris Mano, Logic Design Simulator",
             assignments: "Assignment 1: Due on June 12, Assignment 2: Due on July 22...",
             testsQuizzes: "Quiz 1: May 28, Mid-term: July 8, Final Exam: August 12",
@@ -1450,7 +1569,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-2: Basics of Engineering Drawing, Week 3-4: Projections...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [4, 11, 18, 25],
+                events: [
+                    { date: "May 4", title: "Engineering Drawing Basics", description: "Dimensioning and annotations techniques" },
+                    { date: "May 11", title: "Orthographic Projections", description: "First and third angle projection methods" },
+                    { date: "May 18", title: "Isometric Drawing Exercise", description: "Creating 3D isometric views from 2D drawings" },
+                    { date: "May 25", title: "AutoCAD Introduction", description: "Computer-aided drafting basics and tools" }
+                ]
+            },
             resources: "Textbook: Engineering Drawing, AutoCAD Tutorials, Drawing Equipment List",
             assignments: "Assignment 1: Due on June 18, Assignment 2: Due on July 28...",
             testsQuizzes: "Quiz 1: June 2, Mid-term: July 18, Final Exam: August 22",
@@ -1575,7 +1704,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-2: Introduction to Ethics, Week 3-4: Professional Codes...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [5, 12, 19, 26],
+                events: [
+                    { date: "May 5", title: "Ethics Introduction", description: "Fundamental ethical theories and principles" },
+                    { date: "May 12", title: "Professional Codes Discussion", description: "Analysis of engineering code of ethics" },
+                    { date: "May 19", title: "Case Studies Analysis", description: "Ethical dilemmas in engineering practice" },
+                    { date: "May 26", title: "Social Responsibility Project", description: "Group presentations on ethical issues in technology" }
+                ]
+            },
             resources: "Textbook: Ethics in Engineering, Case Studies Collection",
             assignments: "Assignment 1: Due on June 20, Assignment 2: Due on July 30...",
             testsQuizzes: "Quiz 1: June 5, Mid-term: July 20, Final Exam: August 25",
@@ -1628,6 +1767,7 @@ const coursesData = {
                   <div class="syllabus-back">
                     <ul style="text-align: left; padding-left: 15px; margin: 0;">
                       <li>Array traversal techniques</li>
+                      <li>Searching algorithms</li>
                       <li>Searching algorithms</li>
                       <li>Sorting algorithms</li>
                       <li>Matrix operations</li>
@@ -1700,7 +1840,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-2: Basic Programs, Week 3-4: Array Manipulations...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [8, 15, 22, 29],
+                events: [
+                    { date: "May 8", title: "Programming Fundamentals", description: "Introduction to Python programming basics" },
+                    { date: "May 15", title: "Array Manipulations Lab", description: "Hands-on practice with array operations" },
+                    { date: "May 22", title: "Functions and Recursion", description: "Implementing and using functions in Python" },
+                    { date: "May 29", title: "File Handling Assignment", description: "Reading and writing data to files in Python" }
+                ]
+            },
             resources: "Lab Manual, Code Repository, Reference Programs",
             assignments: "Lab Assignment 1: Due on June 14, Lab Assignment 2: Due on July 14...",
             testsQuizzes: "Lab Test 1: May 27, Lab Test 2: July 7, Final Lab Exam: August 14",
@@ -1827,7 +1977,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-2: Probability Concepts, Week 3-4: Random Variables...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [6, 13, 20, 27],
+                events: [
+                    { date: "May 6", title: "Probability Fundamentals", description: "Axioms and basic probability concepts" },
+                    { date: "May 13", title: "Random Variables Quiz", description: "Discrete and continuous random variables" },
+                    { date: "May 20", title: "Probability Distributions Lab", description: "Working with common probability distributions" },
+                    { date: "May 27", title: "Statistical Inference Project", description: "Hypothesis testing and confidence intervals" }
+                ]
+            },
             resources: "Textbook: Probability and Statistics for Engineers, Statistical Software Tutorials",
             assignments: "Assignment 1: Due on June 8, Assignment 2: Due on July 12...",
             testsQuizzes: "Quiz 1: May 22, Mid-term: July 5, Final Exam: August 10",
@@ -1952,7 +2112,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-2: Introduction to OOP, Week 3-4: Classes and Objects...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [5, 12, 19, 26],
+                events: [
+                    { date: "May 5", title: "OOP Concepts Overview", description: "Inheritance, polymorphism, encapsulation" },
+                    { date: "May 12", title: "Classes & Objects Workshop", description: "Practical implementation of OOP concepts" },
+                    { date: "May 19", title: "Inheritance & Polymorphism Quiz", description: "Today's in-class assessment on inheritance" },
+                    { date: "May 26", title: "Design Patterns Project", description: "Implementation of common design patterns" }
+                ]
+            },
             resources: "Textbook: Thinking in Java, Object-Oriented Design Patterns",
             assignments: "Assignment 1: Due on June 10, Assignment 2: Due on July 15...",
             testsQuizzes: "Quiz 1: May 25, Mid-term: July 8, Final Exam: August 12",
@@ -2077,7 +2247,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-2: Data Models, Week 3-4: SQL Fundamentals...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [2, 9, 16, 23],
+                events: [
+                    { date: "May 2", title: "Data Models Overview", description: "Entity-Relationship and Relational models" },
+                    { date: "May 9", title: "SQL Fundamentals Quiz", description: "Basic SQL queries and operations" },
+                    { date: "May 16", title: "Database Normalization Lab", description: "Practical normalization exercises" },
+                    { date: "May 23", title: "Advanced SQL Project", description: "Complex queries and database design implementation" }
+                ]
+            },
             resources: "Textbook: Database System Concepts, MySQL Workbench Tutorial",
             assignments: "Assignment 1: Due on June 15, Assignment 2: Due on July 20...",
             testsQuizzes: "Quiz 1: May 30, Mid-term: July 12, Final Exam: August 18",
@@ -2202,7 +2382,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-2: Basic Structure of Computers, Week 3-4: Machine Instructions...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [3, 10, 17, 24],
+                events: [
+                    { date: "May 3", title: "Computer Organization Basics", description: "Computer architecture and organization principles" },
+                    { date: "May 10", title: "Machine Instructions Quiz", description: "Instruction formats and addressing modes" },
+                    { date: "May 17", title: "CPU Design Lab", description: "ALU and control unit implementation" },
+                    { date: "May 24", title: "Memory Hierarchy Project", description: "Cache design and performance analysis" }
+                ]
+            },
             resources: "Textbook: Computer Organization and Design, Assembly Language Programming Guide",
             assignments: "Assignment 1: Due on June 12, Assignment 2: Due on July 18...",
             testsQuizzes: "Quiz 1: May 28, Mid-term: July 10, Final Exam: August 15",
@@ -2327,7 +2517,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-2: Introduction to OS, Week 3-4: Process Management...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [7, 14, 21, 28],
+                events: [
+                    { date: "May 7", title: "OS Introduction", description: "Operating system concepts and evolution" },
+                    { date: "May 14", title: "Process Management Quiz", description: "Process scheduling and synchronization" },
+                    { date: "May 21", title: "Memory Management Lab", description: "Virtual memory and page replacement algorithms" },
+                    { date: "May 28", title: "File Systems Project", description: "Implementation of basic file system operations" }
+                ]
+            },
             resources: "Textbook: Operating System Concepts, Linux Tutorial, Shell Programming Guide",
             assignments: "Assignment 1: Due on June 18, Assignment 2: Due on July 22...",
             testsQuizzes: "Quiz 1: June 2, Mid-term: July 15, Final Exam: August 20",
@@ -2452,7 +2652,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-2: Network Models, Week 3-4: Physical Layer...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [5, 12, 19, 26],
+                events: [
+                    { date: "May 5", title: "Network Models Overview", description: "OSI and TCP/IP reference models" },
+                    { date: "May 12", title: "Physical Layer Quiz", description: "Transmission media and encoding techniques" },
+                    { date: "May 19", title: "Data Link Layer Lab", description: "Error detection and correction protocols" },
+                    { date: "May 26", title: "Network Layer Project", description: "IP addressing and routing implementation" }
+                ]
+            },
             resources: "Textbook: Computer Networking: A Top-Down Approach, Packet Tracer Tutorials",
             assignments: "Assignment 1: Due on June 20, Assignment 2: Due on July 25...",
             testsQuizzes: "Quiz 1: June 5, Mid-term: July 18, Final Exam: August 22",
@@ -2577,7 +2787,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-2: Basic Economic Concepts, Week 3-4: Market Structures...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [4, 11, 18, 25],
+                events: [
+                    { date: "May 4", title: "Economic Fundamentals", description: "Basic economic concepts and principles" },
+                    { date: "May 11", title: "Market Structures Quiz", description: "Perfect competition, monopoly, and oligopoly" },
+                    { date: "May 18", title: "Supply and Demand Analysis", description: "Market equilibrium and elasticity concepts" },
+                    { date: "May 25", title: "Macroeconomics Project", description: "National income accounting and economic policies" }
+                ]
+            },
             resources: "Textbook: Engineering Economics, Case Studies in Engineering Economics",
             assignments: "Assignment 1: Due on June 14, Assignment 2: Due on July 28...",
             testsQuizzes: "Quiz 1: May 27, Mid-term: July 7, Final Exam: August 14",
@@ -2702,7 +2922,17 @@ const coursesData = {
                 </div>
               </div>
             </div>`,
-            lessonCalendar: "Week 1-2: SQL Basics, Week 3-4: Database Design...",
+            lessonCalendar: {
+                currentMonth: "May 2025",
+                startDay: 4, // Thursday (0 = Sunday, 1 = Monday, etc.)
+                daysWithEvents: [8, 15, 22, 29],
+                events: [
+                    { date: "May 8", title: "SQL Fundamentals", description: "Basic SQL query syntax and operations" },
+                    { date: "May 15", title: "Database Design Quiz", description: "Normalization and schema design principles" },
+                    { date: "May 22", title: "Advanced Queries Lab", description: "Complex joins, subqueries, and views" },
+                    { date: "May 29", title: "Database Project", description: "Complete database application implementation" }
+                ]
+            },
             resources: "Lab Manual, SQL Reference Guide, Linux Command Reference",
             assignments: "Lab Assignment 1: Due on June 15, Lab Assignment 2: Due on July 15...",
             testsQuizzes: "Lab Test 1: May 30, Lab Test 2: July 10, Final Lab Exam: August 16",
@@ -2824,10 +3054,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const tabContent = document.createElement('div');
             tabContent.className = `tab-content ${index === 0 ? 'active' : ''}`;
             tabContent.id = `${tab.id}-content`;
-            
-            // Use innerHTML for HTML content (like syllabus cards) and textContent for plain text
+              // Use innerHTML for HTML content (like syllabus cards) and textContent for plain text
             if (tab.id === 'syllabus' && typeof tab.content === 'string' && tab.content.includes('<div class="syllabus-grid">')) {
                 tabContent.innerHTML = tab.content;
+            } else if (tab.id === 'lesson-calendar' && typeof tab.content === 'object') {
+                // Create interactive calendar for lesson calendar
+                createInteractiveCalendar(tabContent, tab.content);
             } else {
                 tabContent.textContent = tab.content;
             }
