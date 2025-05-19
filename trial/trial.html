@@ -2,24 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Subject Resources</title>
+  <title>Forums & Polls</title>
   <style>
     :root {
-    --primary-color: #D72638;
-    --primary-dark: #b31e2d;
-    --background-color: #FCE4EC;
-    --card-bg-color: #f9f2f2;
-    --text-color: #333333;
-    --white: #FFFFFF;
-    --light-gray: #f5f5f5;
-    --border-light: #dddddd;
-    --shadow-color: rgba(0, 0, 0, 0.1);
-    --dropdown-bg: #F4F4F4;
-}    body {
+      --primary-color: #D72638;
+      --primary-dark: #b31e2d;
+      --background-color: #FCE4EC;
+      --card-bg-color: #f9f2f2;
+      --text-color: #333333;
+      --white: #FFFFFF;
+      --light-gray: #f5f5f5;
+      --border-light: #dddddd;
+      --shadow-color: rgba(0, 0, 0, 0.1);
+      --dropdown-bg: #F4F4F4;
+    }
+
+    body {
       background: var(--background-color);
       font-family: 'Segoe UI', sans-serif;
       color: var(--text-color);
       padding: 2rem;
+      margin: 0;
     }
 
     h1 {
@@ -28,104 +31,177 @@
       margin-bottom: 2rem;
     }
 
-    .resources {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-    }    .card {
+    .container {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .forum {
       background: var(--card-bg-color);
       border-radius: 15px;
       padding: 1.5rem;
+      width: 600px;
+      max-height: 250px;
+      overflow-y: auto;
       box-shadow: 0 4px 10px var(--shadow-color);
-      transition: 0.3s ease;
+      border: 1px solid var(--border-light);
+      border-radius: 0.5rem;
+      flex-grow: 1;
     }
 
-    .card:hover {
-      transform: translateY(-5px);
-      background-color: var(--light-gray);
+    .polls {
+      background: var(--card-bg-color);
+      border-radius: 15px;
+      padding: 1.5rem;
+      width: 250px;
+      box-shadow: 0 4px 10px var(--shadow-color);
+      border: 1px solid var(--border-light);
+      flex-shrink: 0;
     }
 
-    .card h3 {
-      margin: 0.5rem 0;
-      color: var(--primary-dark);
-    }    .tag {
-      display: inline-block;
-      font-size: 0.75rem;
-      background: var(--primary-color);
-      color: var(--white);
-      padding: 2px 8px;
-      border-radius: 6px;
-      margin-bottom: 10px;
-    }
-
-    .desc {
-      color: var(--text-color);
-      font-size: 0.85rem;
-    }    .link {
-      display: inline-block;
-      margin-top: 10px;
+    .forum h2, .polls h2 {
       color: var(--primary-color);
-      text-decoration: none;
-      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
     }
 
-    .link:hover {
-      text-decoration: underline;
+    .thread {
+      background: var(--light-gray);
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      border: 1px solid var(--border-light);
+    }
+
+    .thread strong {
+      display: block;
+      margin-bottom: 5px;
       color: var(--primary-dark);
     }
 
-    .icon {
-      font-size: 1.5rem;
+    .thread span {
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    .poll-question {
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .poll-option {
+      display: flex;
+      align-items: center;
+      margin: 5px 0;
+    }
+
+    .poll-option input {
+      margin-right: 10px;
+      accent-color: var(--primary-color);
+    }
+
+    .submit-btn {
+      margin-top: 10px;
+      padding: 8px 16px;
+      border: none;
+      background-color: var(--primary-color);
+      color: var(--white);
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: var(--primary-dark);
+    }
+
+    /* Scrollbar styling (optional for aesthetics) */
+    .forum::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .forum::-webkit-scrollbar-thumb {
+      background-color: var(--primary-color);
+      border-radius: 6px;
+    }
+
+    .forum::-webkit-scrollbar-track {
+      background: var(--card-bg-color);
     }
   </style>
 </head>
 <body>
 
-  <h1>📚 Subject Resources</h1>
+  <h1>💬 Forums & Polls</h1>
 
-  <div class="resources">
+  <div class="container">
 
-    <div class="card">
-      <div class="icon">🎥</div>
-      <span class="tag">Video</span>
-      <h3>Recursion Explained</h3>
-      <p class="desc">Visual walkthrough of recursion and stack memory. Perfect for beginners.</p>
-      <a class="link" href="#" target="_blank">Watch on YouTube</a>
+    <!-- Forum Section -->
+    <div class="forum">
+      <h2>🧵 Active Threads</h2>
+
+      <!-- Add more threads as needed -->
+      <div class="thread">
+        <strong>How does AVL rotation work?</strong>
+        <span>Started by: Aman | Replies: 5 | Last reply: 1hr ago</span>
+      </div>
+
+      <div class="thread">
+        <strong>Why use stack for DFS?</strong>
+        <span>Started by: Priya | Replies: 3 | Last reply: 2d ago</span>
+      </div>
+
+      <div class="thread">
+        <strong>Tips for Midterm Prep?</strong>
+        <span>Started by: Riya | Replies: 8 | Last reply: 5h ago</span>
+      </div>
+
+      <div class="thread">
+        <strong>What is the difference between BFS and DFS?</strong>
+        <span>Started by: Karan | Replies: 6 | Last reply: 3h ago</span>
+      </div>
+
+      <div class="thread">
+        <strong>Time complexity of Merge Sort?</strong>
+        <span>Started by: Sanya | Replies: 2 | Last reply: 10m ago</span>
+      </div>
+
+      <div class="thread">
+        <strong>Mock test questions thread</strong>
+        <span>Started by: Ravi | Replies: 10 | Last reply: Yesterday</span>
+      </div>
     </div>
 
-    <div class="card">
-      <div class="icon">📚</div>
-      <span class="tag">Book</span>
-      <h3>Cracking DSA</h3>
-      <p class="desc">Downloadable PDF version of the essential DSA preparation book.</p>
-      <a class="link" href="#" target="_blank">Download PDF</a>
-    </div>
+    <!-- Poll Section -->
+    <div class="polls">
+      <h2>📊 Class Poll</h2>
 
-    <div class="card">
-      <div class="icon">📄</div>
-      <span class="tag">Notes</span>
-      <h3>Sorting Algorithms Summary</h3>
-      <p class="desc">One-pager cheat sheet for quick revision of all sorting methods.</p>
-      <a class="link" href="#" target="_blank">View Notes</a>
-    </div>
+      <div class="poll-question">Which topic needs revision?</div>
 
-    <div class="card">
-      <div class="icon">🌐</div>
-      <span class="tag">Website</span>
-      <h3>GeeksforGeeks - Graphs</h3>
-      <p class="desc">Graph algorithms, implementations, and practice problems.</p>
-      <a class="link" href="https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/" target="_blank">Visit Site</a>
-    </div>
+      <div class="poll-option">
+        <input type="radio" name="poll" id="opt1">
+        <label for="opt1">Graphs</label>
+      </div>
+      <div class="poll-option">
+        <input type="radio" name="poll" id="opt2">
+        <label for="opt2">Recursion</label>
+      </div>
+      <div class="poll-option">
+        <input type="radio" name="poll" id="opt3">
+        <label for="opt3">Sorting Algorithms</label>
+      </div>
+      <div class="poll-option">
+        <input type="radio" name="poll" id="opt4">
+        <label for="opt4">Greedy & DP</label>
+      </div>
 
-    <div class="card">
-      <div class="icon">🛠️</div>
-      <span class="tag">Tool</span>
-      <h3>Tree Visualizer</h3>
-      <p class="desc">Interactive BST/AVL visualizer to insert and delete nodes dynamically.</p>
-      <a class="link" href="#" target="_blank">Try It</a>
+      <button class="submit-btn">Submit Vote</button>
     </div>
 
   </div>
-
 </body>
 </html>

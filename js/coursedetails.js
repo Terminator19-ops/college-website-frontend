@@ -1,7 +1,7 @@
 // Sample course data for demonstration
 const coursesData = {
-    1: [
-        {
+    1:[
+          {
             code: "19MAT101",
             name: "Calculus and Linear Algebra",
             faculty: "Dr. Ramesh Kumar",
@@ -95,7 +95,47 @@ const coursesData = {
                     { date: "May 26", title: "Matrices Assignment Due", description: "Matrix operations and determinants" }
                 ]
             },
-            resources: "Textbook: Thomas' Calculus, Reference Books: Advanced Engineering Mathematics",            
+            resources: ` <div class="resources">
+                          <div class="card">
+                            <div class="icon">🎥</div>
+                            <span class="tag">Video</span>
+                            <h3>Recursion Explained</h3>
+                            <p class="desc">Visual walkthrough of recursion and stack memory. Perfect for beginners.</p>
+                            <a class="link" href="#" target="_blank">Watch on YouTube</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📚</div>
+                            <span class="tag">Book</span>
+                            <h3>Cracking DSA</h3>
+                            <p class="desc">Downloadable PDF version of the essential DSA preparation book.</p>
+                            <a class="link" href="#" target="_blank">Download PDF</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📄</div>
+                            <span class="tag">Notes</span>
+                            <h3>Sorting Algorithms Summary</h3>
+                            <p class="desc">One-pager cheat sheet for quick revision of all sorting methods.</p>
+                            <a class="link" href="#" target="_blank">View Notes</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🌐</div>
+                            <span class="tag">Website</span>
+                            <h3>GeeksforGeeks - Graphs</h3>
+                            <p class="desc">Graph algorithms, implementations, and practice problems.</p>
+                            <a class="link" href="https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/" target="_blank">Visit Site</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🛠️</div>
+                            <span class="tag">Tool</span>
+                            <h3>Tree Visualizer</h3>
+                            <p class="desc">Interactive BST/AVL visualizer to insert and delete nodes dynamically.</p>
+                            <a class="link" href="#" target="_blank">Try It</a>
+                          </div>
+                        </div>`,            
             testsQuizzes: `<table>    
                             <thead>
                               <tr>
@@ -139,8 +179,69 @@ const coursesData = {
                               </tr>
                             </tbody>
                           </table>`,
-            forums: "Course website: math.amrita.edu/calculus",
-            announcements: "Final exam pattern has been updated. Check the resources section."
+            forums: `<div class="forumsandpolls">
+                      <!-- Forum Section -->
+                      <div class="forum">
+                        <h2>🧵 Active Threads</h2>
+                        <!-- Add more threads as needed -->
+                        <div class="thread">
+                          <strong>How does AVL rotation work?</strong>
+                          <span>Started by: Aman | Replies: 5 | Last reply: 1hr ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Why use stack for DFS?</strong>
+                          <span>Started by: Priya | Replies: 3 | Last reply: 2d ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Tips for Midterm Prep?</strong>
+                          <span>Started by: Riya | Replies: 8 | Last reply: 5h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>What is the difference between BFS and DFS?</strong>
+                          <span>Started by: Karan | Replies: 6 | Last reply: 3h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Time complexity of Merge Sort?</strong>
+                          <span>Started by: Sanya | Replies: 2 | Last reply: 10m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Mock test questions thread</strong>
+                          <span>Started by: Ravi | Replies: 10 | Last reply: Yesterday</span>
+                        </div>
+                      </div>
+
+                      <!-- Poll Section -->
+                      <div class="polls">
+                        <h2>📊 Class Poll</h2>
+
+                        <div class="poll-question">Which topic needs revision?</div>
+
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt1">
+                          <label for="opt1">Graphs</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt2">
+                          <label for="opt2">Recursion</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt3">
+                          <label for="opt3">Sorting Algorithms</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt4">
+                          <label for="opt4">Greedy & DP</label>
+                        </div>
+
+                        <button class="submit-btn">Submit Vote</button>
+                      </div>
+
+                    </div>`,
         },
         {            code: "19PHY101",
             name: "Engineering Physics",
@@ -201,8 +302,48 @@ const coursesData = {
                     { date: "May 10", title: "Work & Energy Quiz", description: "Conservation principles and applications" },
                     { date: "May 17", title: "Momentum and Collisions", description: "Elastic and inelastic collisions" },
                     { date: "May 24", title: "Rotational Dynamics Assignment", description: "Angular momentum and torque problems" }
-                ]
-            },            resources: "Textbook: University Physics, Lab Manual: Basic Physics Experiments",
+                ]            },
+            resources: ` <div class="resources">
+                          <div class="card">
+                            <div class="icon">🎥</div>
+                            <span class="tag">Video</span>
+                            <h3>Physics Mechanics Explained</h3>
+                            <p class="desc">Visual demonstration of Newton's laws and mechanics principles.</p>
+                            <a class="link" href="#" target="_blank">Watch on YouTube</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📚</div>
+                            <span class="tag">Book</span>
+                            <h3>University Physics</h3>
+                            <p class="desc">Comprehensive textbook covering all course topics with practice problems.</p>
+                            <a class="link" href="#" target="_blank">Download PDF</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📄</div>
+                            <span class="tag">Notes</span>
+                            <h3>Electromagnetic Theory Summary</h3>
+                            <p class="desc">Concise notes on Maxwell's equations and electromagnetic waves.</p>
+                            <a class="link" href="#" target="_blank">View Notes</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🌐</div>
+                            <span class="tag">Website</span>
+                            <h3>PhysicsClassroom</h3>
+                            <p class="desc">Interactive simulations and tutorials on physics concepts.</p>
+                            <a class="link" href="https://www.physicsclassroom.com" target="_blank">Visit Site</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🛠️</div>
+                            <span class="tag">Tool</span>
+                            <h3>Physics Lab Manual</h3>
+                            <p class="desc">Experiment guides for the Physics laboratory sessions.</p>
+                            <a class="link" href="#" target="_blank">Access Manual</a>
+                          </div>
+                        </div>`,
             testsQuizzes: `<table>    
                             <thead>
                               <tr>
@@ -247,7 +388,6 @@ const coursesData = {
                             </tbody>
                           </table>`,
             forums: "Course website: physics.amrita.edu/engg",
-            announcements: "Physics Lab sessions start from next week."
         },
         {            code: "19CHE101",
             name: "Engineering Chemistry",
@@ -308,8 +448,48 @@ const coursesData = {
                     { date: "May 14", title: "Chemical Bonding Quiz", description: "Ionic, covalent, and metallic bonds" },
                     { date: "May 21", title: "Thermodynamics Lab", description: "Enthalpy and entropy experiments" },
                     { date: "May 28", title: "Reaction Kinetics Assignment", description: "Rate laws and reaction mechanisms" }
-                ]
-            },            resources: "Textbook: Chemistry for Engineers, Reference: Physical Chemistry",
+                ]            },
+            resources: ` <div class="resources">
+                          <div class="card">
+                            <div class="icon">🎥</div>
+                            <span class="tag">Video</span>
+                            <h3>Chemical Kinetics Lecture</h3>
+                            <p class="desc">Detailed explanation of reaction rates and mechanisms with examples.</p>
+                            <a class="link" href="#" target="_blank">Watch on YouTube</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📚</div>
+                            <span class="tag">Book</span>
+                            <h3>Chemistry for Engineers</h3>
+                            <p class="desc">The main textbook with engineering applications of chemistry principles.</p>
+                            <a class="link" href="#" target="_blank">Download PDF</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📄</div>
+                            <span class="tag">Notes</span>
+                            <h3>Thermodynamics Summary</h3>
+                            <p class="desc">Comprehensive notes on laws of thermodynamics and their applications.</p>
+                            <a class="link" href="#" target="_blank">View Notes</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🌐</div>
+                            <span class="tag">Website</span>
+                            <h3>Royal Society of Chemistry</h3>
+                            <p class="desc">Resources, experiments, and educational materials for chemistry students.</p>
+                            <a class="link" href="https://www.rsc.org/resources-tools/" target="_blank">Visit Site</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🛠️</div>
+                            <span class="tag">Tool</span>
+                            <h3>Periodic Table Interactive</h3>
+                            <p class="desc">Dynamic periodic table with element properties and interactive features.</p>
+                            <a class="link" href="#" target="_blank">Explore Tool</a>
+                          </div>
+                        </div>`,
             testsQuizzes: `<table>    
                             <thead>
                               <tr>
@@ -354,7 +534,6 @@ const coursesData = {
                             </tbody>
                           </table>`,
             forums: "Course website: chemistry.amrita.edu/engg",
-            announcements: "Chemistry Lab batch allocations updated."
         },
         {            code: "19CSE101",
             name: "Introduction to Programming",
@@ -482,8 +661,48 @@ const coursesData = {
                     { date: "May 11", title: "Control Structures Assignment", description: "Loops, conditionals, and switch statements" },
                     { date: "May 18", title: "Functions and Methods Lab", description: "Parameter passing and return values" },
                     { date: "May 25", title: "Arrays Exercise", description: "Array manipulation and algorithms" }
-                ]
-            },            resources: "Textbook: C Programming Language, Online tutorials: codecademy.com",
+                ]            },
+            resources: ` <div class="resources">
+                          <div class="card">
+                            <div class="icon">🎥</div>
+                            <span class="tag">Video</span>
+                            <h3>Pointers in C Explained</h3>
+                            <p class="desc">Step-by-step tutorial on memory management and pointer operations in C.</p>
+                            <a class="link" href="#" target="_blank">Watch on YouTube</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📚</div>
+                            <span class="tag">Book</span>
+                            <h3>C Programming Language</h3>
+                            <p class="desc">The classic K&R textbook - fundamental principles of C programming.</p>
+                            <a class="link" href="#" target="_blank">Download PDF</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📄</div>
+                            <span class="tag">Notes</span>
+                            <h3>Data Structures in C</h3>
+                            <p class="desc">Implementation details for arrays, linked lists, stacks, queues, and trees.</p>
+                            <a class="link" href="#" target="_blank">View Notes</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🌐</div>
+                            <span class="tag">Website</span>
+                            <h3>Codecademy C Course</h3>
+                            <p class="desc">Interactive coding exercises and challenges to practice C programming.</p>
+                            <a class="link" href="https://www.codecademy.com" target="_blank">Visit Site</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🛠️</div>
+                            <span class="tag">Tool</span>
+                            <h3>GCC Compiler Guide</h3>
+                            <p class="desc">Instructions for using the GNU C Compiler with command-line options.</p>
+                            <a class="link" href="#" target="_blank">Access Guide</a>
+                          </div>
+                        </div>`,
             testsQuizzes: `<table>    
                             <thead>
                               <tr>
@@ -529,7 +748,6 @@ const coursesData = {
                           </table>`,
             
             forums: "Course website: cse.amrita.edu/programming",
-            announcements: "Programming contest registrations open now."
         },
         {            code: "19ECE101",
             name: "Basic Electrical Engineering",
@@ -658,8 +876,48 @@ const coursesData = {
                     { date: "May 13", title: "Kirchhoff's Laws Quiz", description: "KVL and KCL applications" },
                     { date: "May 20", title: "Nodal Analysis Lab", description: "Hands-on exercise with circuit analysis" },
                     { date: "May 27", title: "Mesh Analysis Assignment", description: "Analysis of complex circuits using mesh method" }
-                ]
-            },            resources: "Textbook: Fundamentals of Electrical Engineering, Circuit Simulation Software",
+                ]            },
+            resources: ` <div class="resources">
+                          <div class="card">
+                            <div class="icon">🎥</div>
+                            <span class="tag">Video</span>
+                            <h3>Circuit Analysis Techniques</h3>
+                            <p class="desc">Detailed walkthrough of Kirchhoff's laws, node and mesh analysis methods.</p>
+                            <a class="link" href="#" target="_blank">Watch on YouTube</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📚</div>
+                            <span class="tag">Book</span>
+                            <h3>Fundamentals of Electrical Engineering</h3>
+                            <p class="desc">Comprehensive textbook covering circuit theory and electrical systems.</p>
+                            <a class="link" href="#" target="_blank">Download PDF</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📄</div>
+                            <span class="tag">Notes</span>
+                            <h3>Transient Response Analysis</h3>
+                            <p class="desc">Step-by-step solutions for RC, RL, and RLC circuit response calculation.</p>
+                            <a class="link" href="#" target="_blank">View Notes</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🌐</div>
+                            <span class="tag">Website</span>
+                            <h3>Circuit Simulator</h3>
+                            <p class="desc">Build and simulate electrical circuits with this interactive online tool.</p>
+                            <a class="link" href="https://www.circuitlab.com" target="_blank">Visit Site</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🛠️</div>
+                            <span class="tag">Tool</span>
+                            <h3>SPICE Simulation Guide</h3>
+                            <p class="desc">Tutorial on using SPICE for circuit simulation and analysis.</p>
+                            <a class="link" href="#" target="_blank">Access Guide</a>
+                          </div>
+                        </div>`,
             testsQuizzes: `<table>    
                             <thead>
                               <tr>
@@ -704,7 +962,6 @@ const coursesData = {
                             </tbody>
                           </table>`,
             forums: "Course website: ece.amrita.edu/basic",
-            announcements: "Virtual lab sessions will be conducted every Friday."
         },
         {            code: "19MEC101",
             name: "Engineering Mechanics",
@@ -834,8 +1091,48 @@ const coursesData = {
                     { date: "May 16", title: "Dynamics Lab", description: "Motion analysis experiments" },
                     { date: "May 23", title: "Equilibrium Project Due", description: "Group project on structural equilibrium" }
                 ]
-            },
-            resources: "Textbook: Engineering Mechanics by Hibbeler, Problem Set Collection",
+            },            
+            resources: ` <div class="resources">
+                          <div class="card">
+                            <div class="icon">🎥</div>
+                            <span class="tag">Video</span>
+                            <h3>Statics & Dynamics Fundamentals</h3>
+                            <p class="desc">Visual demonstrations of force equilibrium and motion principles.</p>
+                            <a class="link" href="#" target="_blank">Watch on YouTube</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📚</div>
+                            <span class="tag">Book</span>
+                            <h3>Engineering Mechanics by Hibbeler</h3>
+                            <p class="desc">Comprehensive textbook with solved examples and practice problems.</p>
+                            <a class="link" href="#" target="_blank">Download PDF</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📄</div>
+                            <span class="tag">Notes</span>
+                            <h3>Free Body Diagrams Reference</h3>
+                            <p class="desc">Step-by-step guide to creating and analyzing free body diagrams.</p>
+                            <a class="link" href="#" target="_blank">View Notes</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🌐</div>
+                            <span class="tag">Website</span>
+                            <h3>Engineering Toolbox</h3>
+                            <p class="desc">Reference data, formulas, and calculators for mechanics problems.</p>
+                            <a class="link" href="https://www.engineeringtoolbox.com" target="_blank">Visit Site</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🛠️</div>
+                            <span class="tag">Tool</span>
+                            <h3>Mechanics Simulator</h3>
+                            <p class="desc">Interactive tool to visualize and solve statics and dynamics problems.</p>
+                            <a class="link" href="#" target="_blank">Try It</a>
+                          </div>
+                        </div>`,
             testsQuizzes: `<table>    
                             <thead>
                               <tr>
@@ -877,11 +1174,11 @@ const coursesData = {
                                 <td class="status-na">N/A</td>
                                 <td class="returned-no">No</td>
                               </tr>
-                            </tbody>
-                          </table>`,
-            forums: "Course website: mechanical.amrita.edu/mechanics",
-            announcements: "Model-making competition details announced."
-        },
+                            </tbody>                          
+                            </table>`,            
+                            forums: "Course website: mechanical.amrita.edu/mechanics",
+        },],
+    "2": [
         {            code: "19ENG101",
             name: "Technical Communication",
             faculty: "Prof. Lisa Johnson",
@@ -1009,8 +1306,48 @@ const coursesData = {
                     { date: "May 15", title: "Technical Writing Assignment", description: "Technical report preparation" },
                     { date: "May 19", title: "Presentation Skills Practice", description: "Group presentations with feedback" },
                     { date: "May 30", title: "Professional Communication Exam", description: "Final evaluation of all topics covered" }
-                ]
-            },            resources: "Textbook: Technical Communication Today, Style Guide, Presentation Templates",
+                ]            },
+            resources: ` <div class="resources">
+                          <div class="card">
+                            <div class="icon">🎥</div>
+                            <span class="tag">Video</span>
+                            <h3>Effective Presentation Skills</h3>
+                            <p class="desc">Tips and techniques for delivering engaging technical presentations.</p>
+                            <a class="link" href="#" target="_blank">Watch on YouTube</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📚</div>
+                            <span class="tag">Book</span>
+                            <h3>Technical Communication Today</h3>
+                            <p class="desc">Modern guide to writing technical documents and reports.</p>
+                            <a class="link" href="#" target="_blank">Download PDF</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📄</div>
+                            <span class="tag">Notes</span>
+                            <h3>Business Writing Style Guide</h3>
+                            <p class="desc">Comprehensive guide to grammar, formatting, and style for business documents.</p>
+                            <a class="link" href="#" target="_blank">View Guide</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🌐</div>
+                            <span class="tag">Website</span>
+                            <h3>Purdue OWL</h3>
+                            <p class="desc">Online writing lab with resources for different writing styles and citations.</p>
+                            <a class="link" href="https://owl.purdue.edu" target="_blank">Visit Site</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🛠️</div>
+                            <span class="tag">Tool</span>
+                            <h3>Presentation Templates</h3>
+                            <p class="desc">Professional PowerPoint and document templates for technical presentations.</p>
+                            <a class="link" href="#" target="_blank">Download Templates</a>
+                          </div>
+                        </div>`,
             testsQuizzes: `<table>    
                             <thead>
                               <tr>
@@ -1055,7 +1392,6 @@ const coursesData = {
                             </tbody>
                           </table>`,
             forums: "Course website: humanities.amrita.edu/comm",
-            announcements: "Group presentation topics released."
         },
         {            code: "19ENV101",
             name: "Environmental Studies",
@@ -1230,7 +1566,6 @@ const coursesData = {
                             </tbody>
                           </table>`,
             forums: "Course website: envscience.amrita.edu",
-            announcements: "Field trip to water treatment plant scheduled for next month."
         }
     ],
     2: [
@@ -1362,7 +1697,47 @@ const coursesData = {
                     { date: "May 17", title: "Series Solutions Lab", description: "Power series methods for solving ODEs" },
                     { date: "May 24", title: "Laplace Transforms Assignment", description: "Applications of Laplace transforms in solving ODEs" }
                 ]
-            },            resources: "Textbook: Differential Equations with Applications by Zill, Problem Set Collection",
+            },            resources: ` <div class="resources">
+                          <div class="card">
+                            <div class="icon">🎥</div>
+                            <span class="tag">Video</span>
+                            <h3>Differential Equations Explained</h3>
+                            <p class="desc">Visual explanations of ODEs, PDEs, and their applications in engineering problems.</p>
+                            <a class="link" href="#" target="_blank">Watch on YouTube</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📚</div>
+                            <span class="tag">Book</span>
+                            <h3>Differential Equations with Applications by Zill</h3>
+                            <p class="desc">Comprehensive textbook covering all differential equations topics with examples.</p>
+                            <a class="link" href="#" target="_blank">Download PDF</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📄</div>
+                            <span class="tag">Notes</span>
+                            <h3>Laplace Transforms Cheat Sheet</h3>
+                            <p class="desc">Quick reference for common Laplace transform pairs and properties.</p>
+                            <a class="link" href="#" target="_blank">View Notes</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🌐</div>
+                            <span class="tag">Website</span>
+                            <h3>Paul's Online Math Notes</h3>
+                            <p class="desc">Detailed tutorials on differential equations with step-by-step solutions.</p>
+                            <a class="link" href="https://tutorial.math.lamar.edu/Classes/DE/DE.aspx" target="_blank">Visit Site</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🛠️</div>
+                            <span class="tag">Tool</span>
+                            <h3>Problem Set Collection</h3>
+                            <p class="desc">Curated problems for practice, organized by difficulty level.</p>
+                            <a class="link" href="#" target="_blank">Access Problems</a>
+                          </div>
+                        </div>`,
             testsQuizzes: `<table>    
                             <thead>
                               <tr>
@@ -1407,7 +1782,6 @@ const coursesData = {
                             </tbody>
                           </table>`,
             forums: "Course website: math.amrita.edu/diffequations",
-            announcements: "Extra tutorial sessions announced for Laplace Transforms."
         },
         {            code: "19PHY102",
             name: "Semiconductor Physics",
@@ -1536,8 +1910,47 @@ const coursesData = {
                     { date: "May 14", title: "Band Theory Quiz", description: "Energy bands in solids and band gaps" },
                     { date: "May 21", title: "Semiconductor Materials Lab", description: "Properties of semiconductor materials" },
                     { date: "May 28", title: "Quantum Physics Applications", description: "Practical applications in modern electronics" }
-                ]
-            },            resources: "Textbook: Semiconductor Physics and Devices, Lab Manual",
+                ]            },            resources: ` <div class="resources">
+                          <div class="card">
+                            <div class="icon">🎥</div>
+                            <span class="tag">Video</span>
+                            <h3>Semiconductor Physics Lectures</h3>
+                            <p class="desc">Comprehensive video series covering semiconductor fundamentals and device physics.</p>
+                            <a class="link" href="#" target="_blank">Watch on YouTube</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📚</div>
+                            <span class="tag">Book</span>
+                            <h3>Semiconductor Physics and Devices</h3>
+                            <p class="desc">Main textbook covering all course topics with detailed explanations.</p>
+                            <a class="link" href="#" target="_blank">Download PDF</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📄</div>
+                            <span class="tag">Notes</span>
+                            <h3>Quantum Mechanics in Semiconductors</h3>
+                            <p class="desc">Summarized notes on quantum mechanics principles in semiconductor applications.</p>
+                            <a class="link" href="#" target="_blank">View Notes</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🌐</div>
+                            <span class="tag">Website</span>
+                            <h3>Semiconductor Research Lab</h3>
+                            <p class="desc">Interactive simulations of semiconductor behavior and virtual experiments.</p>
+                            <a class="link" href="#" target="_blank">Visit Site</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🛠️</div>
+                            <span class="tag">Tool</span>
+                            <h3>Semiconductor Lab Manual</h3>
+                            <p class="desc">Detailed instructions for all laboratory experiments and safety guidelines.</p>
+                            <a class="link" href="#" target="_blank">Access Manual</a>
+                          </div>
+                        </div>`,
             testsQuizzes: `<table>    
                             <thead>
                               <tr>
@@ -1582,7 +1995,6 @@ const coursesData = {
                             </tbody>
                           </table>`,
             forums: "Course website: physics.amrita.edu/semiconductor",
-            announcements: "Device fabrication demonstration scheduled for next week."
         },
         {            code: "19CSE102",
             name: "Data Structures",
@@ -1711,8 +2123,47 @@ const coursesData = {
                     { date: "May 8", title: "Stack and Queue Assignment", description: "Implementation and applications" },
                     { date: "May 15", title: "Trees and Graphs Lab", description: "Hands-on implementation of tree traversals" },
                     { date: "May 22", title: "Searching & Sorting Algorithms Quiz", description: "Binary search and sorting techniques" }
-                ]
-            },            resources: "Textbook: Data Structures and Algorithm Analysis in C++, Online Practice Platform",
+                ]            },            resources: ` <div class="resources">
+                          <div class="card">
+                            <div class="icon">🎥</div>
+                            <span class="tag">Video</span>
+                            <h3>Data Structures Visualized</h3>
+                            <p class="desc">Animated explanations of data structures implementations and operations.</p>
+                            <a class="link" href="#" target="_blank">Watch on YouTube</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📚</div>
+                            <span class="tag">Book</span>
+                            <h3>Data Structures and Algorithm Analysis in C++</h3>
+                            <p class="desc">Comprehensive textbook with implementation details and analysis techniques.</p>
+                            <a class="link" href="#" target="_blank">Download PDF</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📄</div>
+                            <span class="tag">Notes</span>
+                            <h3>Algorithm Complexity Cheat Sheet</h3>
+                            <p class="desc">Quick reference for time and space complexity of common data structures operations.</p>
+                            <a class="link" href="#" target="_blank">View Notes</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🌐</div>
+                            <span class="tag">Website</span>
+                            <h3>Online Practice Platform</h3>
+                            <p class="desc">Interactive coding environment with hundreds of data structure problems.</p>
+                            <a class="link" href="https://leetcode.com/tag/data-structures/" target="_blank">Visit Site</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🛠️</div>
+                            <span class="tag">Tool</span>
+                            <h3>Algorithm Visualizer</h3>
+                            <p class="desc">Interactive tool to visualize searching, sorting, and tree algorithms in real-time.</p>
+                            <a class="link" href="#" target="_blank">Try It</a>
+                          </div>
+                        </div>`,
             testsQuizzes: `<table>    
                             <thead>
                               <tr>
@@ -1757,7 +2208,6 @@ const coursesData = {
                             </tbody>
                           </table>`,
             forums: "Course website: cse.amrita.edu/datastructures",
-            announcements: "Coding competition using data structures concepts next month."
         },
         {            code: "19ECE102",
             name: "Digital Electronics",
@@ -1886,8 +2336,47 @@ const coursesData = {
                     { date: "May 13", title: "Logic Gates Quiz", description: "Basic and universal logic gates" },
                     { date: "May 20", title: "Combinational Circuits Lab", description: "Design and implementation of combinational circuits" },
                     { date: "May 27", title: "Sequential Circuits Project", description: "Flip-flops and sequential circuit design" }
-                ]
-            },            resources: "Textbook: Digital Design by Morris Mano, Logic Design Simulator",
+                ]            },            resources: ` <div class="resources">
+                          <div class="card">
+                            <div class="icon">🎥</div>
+                            <span class="tag">Video</span>
+                            <h3>Digital Logic Design Tutorials</h3>
+                            <p class="desc">Step-by-step video tutorials on boolean algebra, logic gates and combinational circuits.</p>
+                            <a class="link" href="#" target="_blank">Watch on YouTube</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📚</div>
+                            <span class="tag">Book</span>
+                            <h3>Digital Design by Morris Mano</h3>
+                            <p class="desc">Standard textbook covering all aspects of digital electronics with examples.</p>
+                            <a class="link" href="#" target="_blank">Download PDF</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📄</div>
+                            <span class="tag">Notes</span>
+                            <h3>K-Map Simplification Guide</h3>
+                            <p class="desc">Comprehensive reference for Karnaugh maps with worked examples.</p>
+                            <a class="link" href="#" target="_blank">View Notes</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🌐</div>
+                            <span class="tag">Website</span>
+                            <h3>Digital Electronics Hub</h3>
+                            <p class="desc">Collection of articles, practice problems and study materials.</p>
+                            <a class="link" href="#" target="_blank">Visit Site</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🛠️</div>
+                            <span class="tag">Tool</span>
+                            <h3>Logic Design Simulator</h3>
+                            <p class="desc">Interactive tool for designing and testing digital circuits.</p>
+                            <a class="link" href="#" target="_blank">Try Simulator</a>
+                          </div>
+                        </div>`,
             testsQuizzes: `<table>    
                             <thead>
                               <tr>
@@ -1932,7 +2421,6 @@ const coursesData = {
                             </tbody>
                           </table>`,
             forums: "Course website: ece.amrita.edu/digital",
-            announcements: "Digital circuit mini-project topics released."
         },
         {            code: "19MEC102",
             name: "Engineering Graphics",
@@ -2061,8 +2549,47 @@ const coursesData = {
                     { date: "May 11", title: "Orthographic Projections", description: "First and third angle projection methods" },
                     { date: "May 18", title: "Isometric Drawing Exercise", description: "Creating 3D isometric views from 2D drawings" },
                     { date: "May 25", title: "AutoCAD Introduction", description: "Computer-aided drafting basics and tools" }
-                ]
-            },            resources: "Textbook: Engineering Drawing, AutoCAD Tutorials, Drawing Equipment List",
+                ]            },            resources: ` <div class="resources">
+                          <div class="card">
+                            <div class="icon">🎥</div>
+                            <span class="tag">Video</span>
+                            <h3>Engineering Drawing Fundamentals</h3>
+                            <p class="desc">Detailed video lessons on orthographic projections, isometric views and sectioning.</p>
+                            <a class="link" href="#" target="_blank">Watch on YouTube</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📚</div>
+                            <span class="tag">Book</span>
+                            <h3>Engineering Drawing Textbook</h3>
+                            <p class="desc">Comprehensive guide with numerous examples and drawing techniques.</p>
+                            <a class="link" href="#" target="_blank">Download PDF</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📄</div>
+                            <span class="tag">Notes</span>
+                            <h3>Drawing Standards Reference</h3>
+                            <p class="desc">Summary of ISO and ANSI standards for engineering drawings.</p>
+                            <a class="link" href="#" target="_blank">View Notes</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🌐</div>
+                            <span class="tag">Website</span>
+                            <h3>AutoCAD Tutorials</h3>
+                            <p class="desc">Step-by-step tutorials for AutoCAD from beginner to advanced level.</p>
+                            <a class="link" href="#" target="_blank">Visit Site</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🛠️</div>
+                            <span class="tag">Tool</span>
+                            <h3>Drawing Equipment List</h3>
+                            <p class="desc">Detailed list of required drawing instruments and equipment for the course.</p>
+                            <a class="link" href="#" target="_blank">View List</a>
+                          </div>
+                        </div>`,
             testsQuizzes: `<table>    
                             <thead>
                               <tr>
@@ -2107,7 +2634,6 @@ const coursesData = {
                             </tbody>
                           </table>`,
             forums: "Course website: mechanical.amrita.edu/graphics",
-            announcements: "CAD lab timings updated for next week."
         },
         {            code: "19HSS102",
             name: "Professional Ethics",
@@ -2236,8 +2762,47 @@ const coursesData = {
                     { date: "May 12", title: "Professional Codes Discussion", description: "Analysis of engineering code of ethics" },
                     { date: "May 19", title: "Case Studies Analysis", description: "Ethical dilemmas in engineering practice" },
                     { date: "May 26", title: "Social Responsibility Project", description: "Group presentations on ethical issues in technology" }
-                ]
-            },            resources: "Textbook: Ethics in Engineering, Case Studies Collection",
+                ]            },            resources: ` <div class="resources">
+                          <div class="card">
+                            <div class="icon">🎥</div>
+                            <span class="tag">Video</span>
+                            <h3>Ethics in Engineering Practice</h3>
+                            <p class="desc">Video series examining ethical dilemmas and decision-making in professional contexts.</p>
+                            <a class="link" href="#" target="_blank">Watch on YouTube</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📚</div>
+                            <span class="tag">Book</span>
+                            <h3>Ethics in Engineering</h3>
+                            <p class="desc">Main textbook covering ethical theories and their application in engineering.</p>
+                            <a class="link" href="#" target="_blank">Download PDF</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📄</div>
+                            <span class="tag">Notes</span>
+                            <h3>Professional Codes of Ethics</h3>
+                            <p class="desc">Compilation of ethics codes from IEEE, ACM, and other engineering organizations.</p>
+                            <a class="link" href="#" target="_blank">View Notes</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🌐</div>
+                            <span class="tag">Website</span>
+                            <h3>Engineering Ethics Center</h3>
+                            <p class="desc">Resource hub for ethics in technology, research, and professional practice.</p>
+                            <a class="link" href="#" target="_blank">Visit Site</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🛠️</div>
+                            <span class="tag">Tool</span>
+                            <h3>Case Studies Collection</h3>
+                            <p class="desc">Extensive collection of real-world ethical dilemmas in engineering with analyses.</p>
+                            <a class="link" href="#" target="_blank">Browse Cases</a>
+                          </div>
+                        </div>`,
             testsQuizzes: `<table>    
                             <thead>
                               <tr>
@@ -2282,7 +2847,6 @@ const coursesData = {
                             </tbody>
                           </table>`,
             forums: "Course website: humanities.amrita.edu/ethics",
-            announcements: "Guest lecture by industry expert scheduled next Thursday."
         },
         {            code: "19LAB102",
             name: "Programming Lab",
@@ -2412,8 +2976,47 @@ const coursesData = {
                     { date: "May 15", title: "Array Manipulations Lab", description: "Hands-on practice with array operations" },
                     { date: "May 22", title: "Functions and Recursion", description: "Implementing and using functions in Python" },
                     { date: "May 29", title: "File Handling Assignment", description: "Reading and writing data to files in Python" }
-                ]
-            },            resources: "Lab Manual, Code Repository, Reference Programs",
+                ]            },            resources: ` <div class="resources">
+                          <div class="card">
+                            <div class="icon">🎥</div>
+                            <span class="tag">Video</span>
+                            <h3>Programming Tutorials</h3>
+                            <p class="desc">Video tutorials covering all language features needed for lab assignments.</p>
+                            <a class="link" href="#" target="_blank">Watch on YouTube</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📚</div>
+                            <span class="tag">Book</span>
+                            <h3>Lab Manual</h3>
+                            <p class="desc">Comprehensive guide with all lab exercises, requirements and evaluation criteria.</p>
+                            <a class="link" href="#" target="_blank">Download PDF</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📄</div>
+                            <span class="tag">Notes</span>
+                            <h3>Programming Style Guide</h3>
+                            <p class="desc">Coding standards and best practices required for lab submissions.</p>
+                            <a class="link" href="#" target="_blank">View Guide</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🌐</div>
+                            <span class="tag">Website</span>
+                            <h3>Code Repository</h3>
+                            <p class="desc">Access to example code and solution templates for all lab exercises.</p>
+                            <a class="link" href="#" target="_blank">Visit Repository</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🛠️</div>
+                            <span class="tag">Tool</span>
+                            <h3>Reference Programs</h3>
+                            <p class="desc">Collection of well-documented reference implementations for common algorithms.</p>
+                            <a class="link" href="#" target="_blank">View Examples</a>
+                          </div>
+                        </div>`,
             testsQuizzes: `<table>    
                             <thead>
                               <tr>
@@ -2458,10 +3061,9 @@ const coursesData = {
                             </tbody>
                           </table>`,
             forums: "Course website: cse.amrita.edu/proglab",
-            announcements: "Lab equipment upgraded. New submission guidelines posted."
         }
     ],
-    3: [        {
+    3:[        {
             code: "19MAT201",
             name: "Probability and Statistics",
             faculty: "Dr. Lata Gupta",
@@ -2588,9 +3190,48 @@ const coursesData = {
                     { date: "May 6", title: "Probability Fundamentals", description: "Axioms and basic probability concepts" },
                     { date: "May 13", title: "Random Variables Quiz", description: "Discrete and continuous random variables" },
                     { date: "May 20", title: "Probability Distributions Lab", description: "Working with common probability distributions" },
-                    { date: "May 27", title: "Statistical Inference Project", description: "Hypothesis testing and confidence intervals" }
-                ]
-            },            resources: "Textbook: Probability and Statistics for Engineers, Statistical Software Tutorials",
+                    { date: "May 27", title: "Statistical Inference Project", description: "Hypothesis testing and confidence intervals" }                ]
+            },            resources: ` <div class="resources">
+                          <div class="card">
+                            <div class="icon">🎥</div>
+                            <span class="tag">Video</span>
+                            <h3>Probability Lectures</h3>
+                            <p class="desc">Video series covering fundamental probability concepts and statistical methods.</p>
+                            <a class="link" href="#" target="_blank">Watch on YouTube</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📚</div>
+                            <span class="tag">Book</span>
+                            <h3>Probability and Statistics for Engineers</h3>
+                            <p class="desc">Comprehensive textbook with engineering applications and practice problems.</p>
+                            <a class="link" href="#" target="_blank">Download PDF</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📄</div>
+                            <span class="tag">Notes</span>
+                            <h3>Statistical Distribution Reference</h3>
+                            <p class="desc">Quick guide to common probability distributions with formulas and examples.</p>
+                            <a class="link" href="#" target="_blank">View Notes</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🌐</div>
+                            <span class="tag">Website</span>
+                            <h3>Statistical Software Tutorials</h3>
+                            <p class="desc">Step-by-step guides for using R, SPSS, and Excel for statistical analysis.</p>
+                            <a class="link" href="#" target="_blank">Visit Site</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🛠️</div>
+                            <span class="tag">Tool</span>
+                            <h3>Statistics Calculator</h3>
+                            <p class="desc">Online tool for hypothesis testing, confidence intervals, and regression analysis.</p>
+                            <a class="link" href="#" target="_blank">Use Calculator</a>
+                          </div>
+                        </div>`,
             testsQuizzes: `<table>    
                             <thead>
                               <tr>
@@ -2635,7 +3276,6 @@ const coursesData = {
                             </tbody>
                           </table>`,
             forums: "Course website: math.amrita.edu/statistics",
-            announcements: "Statistical analysis project topics announced."
         },        {
             code: "19CSE201",
             name: "Object-Oriented Programming",
@@ -2763,9 +3403,48 @@ const coursesData = {
                     { date: "May 5", title: "OOP Concepts Overview", description: "Inheritance, polymorphism, encapsulation" },
                     { date: "May 12", title: "Classes & Objects Workshop", description: "Practical implementation of OOP concepts" },
                     { date: "May 19", title: "Inheritance & Polymorphism Quiz", description: "Today's in-class assessment on inheritance" },
-                    { date: "May 26", title: "Design Patterns Project", description: "Implementation of common design patterns" }
-                ]
-            },            resources: "Textbook: Thinking in Java, Object-Oriented Design Patterns",
+                    { date: "May 26", title: "Design Patterns Project", description: "Implementation of common design patterns" }                ]
+            },            resources: ` <div class="resources">
+                          <div class="card">
+                            <div class="icon">🎥</div>
+                            <span class="tag">Video</span>
+                            <h3>OOP Fundamentals</h3>
+                            <p class="desc">Comprehensive video series covering object-oriented programming principles and implementation.</p>
+                            <a class="link" href="#" target="_blank">Watch on YouTube</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📚</div>
+                            <span class="tag">Book</span>
+                            <h3>Thinking in Java</h3>
+                            <p class="desc">Industry-standard textbook on Java programming with emphasis on object-oriented concepts.</p>
+                            <a class="link" href="#" target="_blank">Download PDF</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📄</div>
+                            <span class="tag">Notes</span>
+                            <h3>Design Patterns Guide</h3>
+                            <p class="desc">Reference guide for common OOP design patterns with implementation examples.</p>
+                            <a class="link" href="#" target="_blank">View Notes</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🌐</div>
+                            <span class="tag">Website</span>
+                            <h3>Java Documentation</h3>
+                            <p class="desc">Official Java API documentation and tutorials for object-oriented programming.</p>
+                            <a class="link" href="https://docs.oracle.com/javase/tutorial/" target="_blank">Visit Site</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🛠️</div>
+                            <span class="tag">Tool</span>
+                            <h3>UML Modeling Tool</h3>
+                            <p class="desc">Create class diagrams and visualize object relationships for your projects.</p>
+                            <a class="link" href="#" target="_blank">Try It</a>
+                          </div>
+                        </div>`,
             testsQuizzes: `<table>    
                             <thead>
                               <tr>
@@ -2810,7 +3489,6 @@ const coursesData = {
                             </tbody>
                           </table>`,
             forums: "Course website: cse.amrita.edu/oop",
-            announcements: "OOP project teams must be finalized by this Friday."
         },
         {            code: "19CSE202",
             name: "Database Management Systems",
@@ -2938,10 +3616,49 @@ const coursesData = {
                     { date: "May 2", title: "Data Models Overview", description: "Entity-Relationship and Relational models" },
                     { date: "May 9", title: "SQL Fundamentals Quiz", description: "Basic SQL queries and operations" },
                     { date: "May 16", title: "Database Normalization Lab", description: "Practical normalization exercises" },
-                    { date: "May 23", title: "Advanced SQL Project", description: "Complex queries and database design implementation" }
-                ]
+                    { date: "May 23", title: "Advanced SQL Project", description: "Complex queries and database design implementation" }                ]
             },
-            resources: "Textbook: Database System Concepts, MySQL Workbench Tutorial",
+            resources: ` <div class="resources">
+                          <div class="card">
+                            <div class="icon">🎥</div>
+                            <span class="tag">Video</span>
+                            <h3>Database Design Tutorials</h3>
+                            <p class="desc">Comprehensive video tutorials on database modeling, normalization, and SQL.</p>
+                            <a class="link" href="#" target="_blank">Watch on YouTube</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📚</div>
+                            <span class="tag">Book</span>
+                            <h3>Database System Concepts</h3>
+                            <p class="desc">Standard textbook covering database theory, design, and implementation.</p>
+                            <a class="link" href="#" target="_blank">Download PDF</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📄</div>
+                            <span class="tag">Notes</span>
+                            <h3>SQL Command Reference</h3>
+                            <p class="desc">Comprehensive guide to SQL commands, functions, and best practices.</p>
+                            <a class="link" href="#" target="_blank">View Notes</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🌐</div>
+                            <span class="tag">Website</span>
+                            <h3>MySQL Workbench Tutorial</h3>
+                            <p class="desc">Step-by-step guide for database design and management using MySQL Workbench.</p>
+                            <a class="link" href="#" target="_blank">Visit Site</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🛠️</div>
+                            <span class="tag">Tool</span>
+                            <h3>SQL Sandbox</h3>
+                            <p class="desc">Online environment for practicing SQL queries with instant feedback.</p>
+                            <a class="link" href="#" target="_blank">Try SQL Sandbox</a>
+                          </div>
+                        </div>`,
             testsQuizzes: `<table>    
                             <thead>
                               <tr>
@@ -2986,7 +3703,6 @@ const coursesData = {
                             </tbody>
                           </table>`,
             forums: "Course website: cse.amrita.edu/dbms",
-            announcements: "Database design competition announced."
         },
         {            code: "19CSE203",
             name: "Computer Organization",
@@ -3114,10 +3830,49 @@ const coursesData = {
                     { date: "May 3", title: "Computer Organization Basics", description: "Computer architecture and organization principles" },
                     { date: "May 10", title: "Machine Instructions Quiz", description: "Instruction formats and addressing modes" },
                     { date: "May 17", title: "CPU Design Lab", description: "ALU and control unit implementation" },
-                    { date: "May 24", title: "Memory Hierarchy Project", description: "Cache design and performance analysis" }
-                ]
+                    { date: "May 24", title: "Memory Hierarchy Project", description: "Cache design and performance analysis" }                ]
             },
-            resources: "Textbook: Computer Organization and Design, Assembly Language Programming Guide",
+            resources: ` <div class="resources">
+                          <div class="card">
+                            <div class="icon">🎥</div>
+                            <span class="tag">Video</span>
+                            <h3>Computer Architecture Lectures</h3>
+                            <p class="desc">Video series covering CPU design, memory hierarchies, and instruction set architectures.</p>
+                            <a class="link" href="#" target="_blank">Watch on YouTube</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📚</div>
+                            <span class="tag">Book</span>
+                            <h3>Computer Organization and Design</h3>
+                            <p class="desc">Essential textbook covering hardware design principles and computer architecture.</p>
+                            <a class="link" href="#" target="_blank">Download PDF</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📄</div>
+                            <span class="tag">Notes</span>
+                            <h3>Assembly Language Reference</h3>
+                            <p class="desc">Comprehensive guide to assembly language programming with examples.</p>
+                            <a class="link" href="#" target="_blank">View Notes</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🌐</div>
+                            <span class="tag">Website</span>
+                            <h3>CPU Simulator</h3>
+                            <p class="desc">Interactive online tool for visualizing CPU operations and pipeline execution.</p>
+                            <a class="link" href="#" target="_blank">Visit Site</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🛠️</div>
+                            <span class="tag">Tool</span>
+                            <h3>Assembly Programming Guide</h3>
+                            <p class="desc">Hands-on guide for writing and debugging assembly language programs.</p>
+                            <a class="link" href="#" target="_blank">Access Guide</a>
+                          </div>
+                        </div>`,
             testsQuizzes: `<table>    
                             <thead>
                               <tr>
@@ -3162,7 +3917,6 @@ const coursesData = {
                             </tbody>
                           </table>`,
             forums: "Course website: cse.amrita.edu/organization",
-            announcements: "Hardware workshop rescheduled to next week."
         },
         {            code: "19CSE204",
             name: "Operating Systems",
@@ -3290,10 +4044,49 @@ const coursesData = {
                     { date: "May 7", title: "OS Introduction", description: "Operating system concepts and evolution" },
                     { date: "May 14", title: "Process Management Quiz", description: "Process scheduling and synchronization" },
                     { date: "May 21", title: "Memory Management Lab", description: "Virtual memory and page replacement algorithms" },
-                    { date: "May 28", title: "File Systems Project", description: "Implementation of basic file system operations" }
-                ]
+                    { date: "May 28", title: "File Systems Project", description: "Implementation of basic file system operations" }                ]
             },
-            resources: "Textbook: Operating System Concepts, Linux Tutorial, Shell Programming Guide",
+            resources: ` <div class="resources">
+                          <div class="card">
+                            <div class="icon">🎥</div>
+                            <span class="tag">Video</span>
+                            <h3>Operating Systems Fundamentals</h3>
+                            <p class="desc">Video lectures covering process management, memory management, and file systems.</p>
+                            <a class="link" href="#" target="_blank">Watch on YouTube</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📚</div>
+                            <span class="tag">Book</span>
+                            <h3>Operating System Concepts</h3>
+                            <p class="desc">Comprehensive textbook covering all major OS concepts and implementations.</p>
+                            <a class="link" href="#" target="_blank">Download PDF</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📄</div>
+                            <span class="tag">Notes</span>
+                            <h3>Linux Commands Cheatsheet</h3>
+                            <p class="desc">Quick reference guide for Linux commands and system administration.</p>
+                            <a class="link" href="#" target="_blank">View Notes</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🌐</div>
+                            <span class="tag">Website</span>
+                            <h3>Linux Tutorial</h3>
+                            <p class="desc">Step-by-step guide for understanding Linux kernel and system programming.</p>
+                            <a class="link" href="#" target="_blank">Visit Site</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🛠️</div>
+                            <span class="tag">Tool</span>
+                            <h3>Shell Programming Guide</h3>
+                            <p class="desc">Practical guide for Bash scripting and automating system tasks.</p>
+                            <a class="link" href="#" target="_blank">Access Guide</a>
+                          </div>
+                        </div>`,
             testsQuizzes: `<table>    
                             <thead>
                               <tr>
@@ -3338,9 +4131,7 @@ const coursesData = {
                             </tbody>
                           </table>`,
             forums: "Course website: cse.amrita.edu/os",
-            announcements: "Operating systems lab access extended hours announced."
-        },
-        {            code: "19CSE205",
+        },        {            code: "19CSE205",
             name: "Computer Networks",
             faculty: "Prof. Jayant Singh",
             credits: 3,
@@ -3469,7 +4260,47 @@ const coursesData = {
                     { date: "May 26", title: "Network Layer Project", description: "IP addressing and routing implementation" }
                 ]
             },
-            resources: "Textbook: Computer Networking: A Top-Down Approach, Packet Tracer Tutorials",
+            resources: ` <div class="resources">
+                          <div class="card">
+                            <div class="icon">🎥</div>
+                            <span class="tag">Video</span>
+                            <h3>Computer Networks Essentials</h3>
+                            <p class="desc">Comprehensive video series covering network protocols, architectures, and implementation.</p>
+                            <a class="link" href="#" target="_blank">Watch on YouTube</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📚</div>
+                            <span class="tag">Book</span>
+                            <h3>Computer Networking: A Top-Down Approach</h3>
+                            <p class="desc">Standard textbook for understanding network layers and protocols with examples.</p>
+                            <a class="link" href="#" target="_blank">Download PDF</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📄</div>
+                            <span class="tag">Notes</span>
+                            <h3>TCP/IP Protocol Suite Reference</h3>
+                            <p class="desc">Detailed notes on TCP/IP protocols, headers, and packet structures.</p>
+                            <a class="link" href="#" target="_blank">View Notes</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🌐</div>
+                            <span class="tag">Website</span>
+                            <h3>Cisco Networking Academy</h3>
+                            <p class="desc">Interactive learning resources for networking concepts and Cisco certification.</p>
+                            <a class="link" href="https://www.netacad.com" target="_blank">Visit Site</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🛠️</div>
+                            <span class="tag">Tool</span>
+                            <h3>Packet Tracer Tutorial</h3>
+                            <p class="desc">Step-by-step guide for network simulation and troubleshooting with Packet Tracer.</p>
+                            <a class="link" href="#" target="_blank">Access Tutorial</a>
+                          </div>
+                        </div>`,
             testsQuizzes: `<table>    
                             <thead>
                               <tr>
@@ -3514,7 +4345,6 @@ const coursesData = {
                             </tbody>
                           </table>`,
             forums: "Course website: cse.amrita.edu/networks",
-            announcements: "Network simulator demonstration scheduled for Thursday."
         },
         {            code: "19HSS201",
             name: "Economics for Engineers",
@@ -3645,7 +4475,47 @@ const coursesData = {
                     { date: "May 25", title: "Macroeconomics Project", description: "National income accounting and economic policies" }
                 ]
             },
-            resources: "Textbook: Engineering Economics, Case Studies in Engineering Economics",
+            resources: `<div class="resources">
+                          <div class="card">
+                            <div class="icon">📚</div>
+                            <span class="tag">Book</span>
+                            <h3>Engineering Economics</h3>
+                            <p class="desc">Official course textbook covering all fundamental economic principles for engineers.</p>
+                            <a class="link" href="#" target="_blank">Find in Library</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📄</div>
+                            <span class="tag">Notes</span>
+                            <h3>Microeconomics Review</h3>
+                            <p class="desc">Comprehensive notes on supply, demand, market equilibrium and elasticity concepts.</p>
+                            <a class="link" href="#" target="_blank">Download PDF</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🎥</div>
+                            <span class="tag">Video</span>
+                            <h3>Engineering Investment Analysis</h3>
+                            <p class="desc">Video series explaining NPV, IRR, and other investment evaluation methods.</p>
+                            <a class="link" href="#" target="_blank">Watch Playlist</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📊</div>
+                            <span class="tag">Case Study</span>
+                            <h3>Real-World Economic Analysis</h3>
+                            <p class="desc">Collection of industry case studies showing practical application of economic principles.</p>
+                            <a class="link" href="#" target="_blank">Browse Case Studies</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🌐</div>
+                            <span class="tag">Website</span>
+                            <h3>Economic Data Resources</h3>
+                            <p class="desc">Links to economic databases and statistical resources for projects and assignments.</p>
+                            <a class="link" href="#" target="_blank">Access Resources</a>
+                          </div>
+                        </div>`,
             testsQuizzes: `<table>    
                             <thead>
                               <tr>
@@ -3690,7 +4560,6 @@ const coursesData = {
                             </tbody>
                           </table>`,
             forums: "Course website: humanities.amrita.edu/economics",
-            announcements: "Economic analysis project guidelines updated."
         },
         {            code: "19LAB201",
             name: "DBMS and OS Lab",
@@ -3821,7 +4690,47 @@ const coursesData = {
                     { date: "May 29", title: "Database Project", description: "Complete database application implementation" }
                 ]
             },
-            resources: "Lab Manual, SQL Reference Guide, Linux Command Reference",
+            resources: `<div class="resources">
+                          <div class="card">
+                            <div class="icon">📘</div>
+                            <span class="tag">Manual</span>
+                            <h3>Complete Lab Manual</h3>
+                            <p class="desc">Comprehensive guide with step-by-step instructions for all DBMS and OS lab exercises.</p>
+                            <a class="link" href="#" target="_blank">Download Manual</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">📋</div>
+                            <span class="tag">Reference</span>
+                            <h3>SQL Quick Reference</h3>
+                            <p class="desc">Handy cheat sheet covering all essential SQL commands, functions, and syntax.</p>
+                            <a class="link" href="#" target="_blank">View Reference</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🐧</div>
+                            <span class="tag">Reference</span>
+                            <h3>Linux Command Guide</h3>
+                            <p class="desc">Comprehensive guide to Linux/Unix commands used throughout the OS portion of the lab.</p>
+                            <a class="link" href="#" target="_blank">View Commands</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🎬</div>
+                            <span class="tag">Tutorial</span>
+                            <h3>Database Design Walkthrough</h3>
+                            <p class="desc">Video tutorials demonstrating proper database design, normalization, and implementation.</p>
+                            <a class="link" href="#" target="_blank">Watch Tutorials</a>
+                          </div>
+
+                          <div class="card">
+                            <div class="icon">🔄</div>
+                            <span class="tag">Software</span>
+                            <h3>Virtual Lab Environment</h3>
+                            <p class="desc">Pre-configured virtual machine with all required database systems and OS tools installed.</p>
+                            <a class="link" href="#" target="_blank">Setup Instructions</a>
+                          </div>
+                        </div>`,
             testsQuizzes: `<table>    
                             <thead>
                               <tr>
@@ -3866,10 +4775,8 @@ const coursesData = {
                             </tbody>
                           </table>`,
             forums: "Course website: cse.amrita.edu/dboslab",
-            announcements: "Additional lab assistants assigned for the practical sessions."
         }
-    ]
-};
+    ]};
 
 document.addEventListener('DOMContentLoaded', function() {
     const semesterSelect = document.getElementById('semester-select');
@@ -3964,7 +4871,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const tabsData = [
             { id: 'syllabus', name: 'Syllabus', content: course.syllabus },
             { id: 'lesson-calendar', name: 'Lesson Calendar', content: course.lessonCalendar },
-            { id: 'announcements', name: 'Announcements', content: course.announcements },
             { id: 'resources', name: 'Resources', content: course.resources },
             { id: 'tests-quizzes', name: 'Tests & Quizzes', content: course.testsQuizzes },
             { id: 'forums', name: 'Forums', content: course.forums }
@@ -3990,7 +4896,15 @@ document.addEventListener('DOMContentLoaded', function() {
             } else if (tab.id === 'tests-quizzes' && typeof tab.content === 'string' && tab.content.includes('<table>')) {
                 // Use innerHTML for table content
                 tabContent.innerHTML = tab.content;
-            } else {
+            } else if (tab.id === 'resources' && typeof tab.content === 'string' && tab.content.includes('<div class="resources">')) {
+                // Use innerHTML for resources content
+                tabContent.innerHTML = tab.content;
+            }
+            else if (tab.id === 'forums' && typeof tab.content === 'string' && tab.content.includes('<div class="forumsandpolls">')) {
+                // Use innerHTML for forums content
+                tabContent.innerHTML = tab.content;
+            } 
+            else {
                 tabContent.textContent = tab.content;
             }
             
