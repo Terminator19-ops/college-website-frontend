@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment Calendar</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f172a;
+      color: white;
+      display: flex;
+      gap: 3rem;
+    }
+
+    .calendar {
+      width: 300px;
+      background: #1e293b;
+      padding: 1rem;
+      border-radius: 15px;
+    }
+
+    .calendar h2 {
+      text-align: center;
+      color: #38bdf8;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 0.5rem;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .day, .date {
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+
+    .date {
+      padding: 10px;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .date:hover {
+      background: #334155;
+      cursor: pointer;
+    }
+
+    .dot {
+      width: 6px;
+      height: 6px;
+      background: #facc15;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 6px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .tasks {
+      flex: 1;
+      background: #1e293b;
+      border-radius: 15px;
+      padding: 1.5rem;
+    }
+
+    .tasks h2 {
+      color: #f472b6;
+      margin-bottom: 1rem;
+    }
+
+    .task {
+      background: #334155;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .task span {
+      display: block;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <!-- Left Sidebar Calendar -->
+  <div class="calendar">
+    <h2>📅 May 2025</h2>
+    <div class="grid">
+      <!-- Weekdays -->
+      <div class="day">Sun</div><div class="day">Mon</div><div class="day">Tue</div><div class="day">Wed</div><div class="day">Thu</div><div class="day">Fri</div><div class="day">Sat</div>
+
+      <!-- Blank cells before May 1st (starts Thursday) -->
+      <div></div><div></div><div></div><div></div>
+      
+      <!-- Dates -->
+      <div class="date">1</div>
+      <div class="date">2</div>
+      <div class="date">3</div>
+      <div class="date">4</div>
+      <div class="date">5 <div class="dot"></div></div> <!-- Highlighted -->
+      <div class="date">6</div>
+      <div class="date">7</div>
+      <div class="date">8</div>
+      <div class="date">9</div>
+      <div class="date">10</div>
+      <div class="date">11</div>
+      <div class="date">12</div>
+      <div class="date">13</div>
+      <div class="date">14</div>
+      <div class="date">15</div>
+      <div class="date">16</div>
+      <div class="date">17</div>
+      <div class="date">18</div>
+      <div class="date">19 <div class="dot"></div></div> <!-- Highlighted -->
+      <div class="date">20</div>
+      <!-- Add more days if needed -->
+    </div>
+  </div>
+
+  <!-- Right-side Task List -->
+  <div class="tasks">
+    <h2>📘 DSA Assignments</h2>
+
+    <div class="task">
+      <strong>📝 May 5 - Quiz on Arrays</strong>
+      <span>Topics: 1D & 2D Arrays, Sliding Window</span>
+    </div>
+
+    <div class="task">
+      <strong>📂 May 19 - Assignment on Trees</strong>
+      <span>Topics: Binary Tree Traversals, BST Insertion</span>
+    </div>
+  </div>
+</body>
+</html>
