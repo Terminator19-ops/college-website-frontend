@@ -95,10 +95,51 @@ const coursesData = {
                     { date: "May 26", title: "Matrices Assignment Due", description: "Matrix operations and determinants" }
                 ]
             },
-            resources: "Textbook: Thomas' Calculus, Reference Books: Advanced Engineering Mathematics",
-            assignments: "Assignment 1: Due on June 15, Assignment 2: Due on July 20...",
-            testsQuizzes: "Quiz 1: May 25, Mid-term: July 10, Final Exam: August 15",
-            siteInfo: "Course website: math.amrita.edu/calculus",
+            resources: "Textbook: Thomas' Calculus, Reference Books: Advanced Engineering Mathematics",            
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>Limits & Continuity Quiz</td>
+                                <td>May 5</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Differentiation Problems</td>
+                                <td>May 12</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Integration Test</td>
+                                <td>May 19</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Matrices Assignment</td>
+                                <td>May 26</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Midterm Exam</td>
+                                <td>June 10</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            forums: "Course website: math.amrita.edu/calculus",
             announcements: "Final exam pattern has been updated. Check the resources section."
         },
         {            code: "19PHY101",
@@ -161,11 +202,51 @@ const coursesData = {
                     { date: "May 17", title: "Momentum and Collisions", description: "Elastic and inelastic collisions" },
                     { date: "May 24", title: "Rotational Dynamics Assignment", description: "Angular momentum and torque problems" }
                 ]
-            },
-            resources: "Textbook: University Physics, Lab Manual: Basic Physics Experiments",
-            assignments: "Assignment 1: Due on June 10, Assignment 2: Due on July 15...",
-            testsQuizzes: "Quiz 1: May 30, Mid-term: July 5, Final Exam: August 10",
-            siteInfo: "Course website: physics.amrita.edu/engg",
+            },            resources: "Textbook: University Physics, Lab Manual: Basic Physics Experiments",
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>Mechanics Quiz</td>
+                                <td>May 7</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Electromagnetism Problems</td>
+                                <td>May 14</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Optics Test</td>
+                                <td>May 21</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Quantum Physics Assignment</td>
+                                <td>May 28</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Midterm Exam</td>
+                                <td>June 12</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            forums: "Course website: physics.amrita.edu/engg",
             announcements: "Physics Lab sessions start from next week."
         },
         {            code: "19CHE101",
@@ -228,11 +309,51 @@ const coursesData = {
                     { date: "May 21", title: "Thermodynamics Lab", description: "Enthalpy and entropy experiments" },
                     { date: "May 28", title: "Reaction Kinetics Assignment", description: "Rate laws and reaction mechanisms" }
                 ]
-            },
-            resources: "Textbook: Chemistry for Engineers, Reference: Physical Chemistry",
-            assignments: "Assignment 1: Due on June 12, Assignment 2: Due on July 18...",
-            testsQuizzes: "Quiz 1: May 28, Mid-term: July 8, Final Exam: August 12",
-            siteInfo: "Course website: chemistry.amrita.edu/engg",
+            },            resources: "Textbook: Chemistry for Engineers, Reference: Physical Chemistry",
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>Atomic Structure Quiz</td>
+                                <td>May 9</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Chemical Bonding Problems</td>
+                                <td>May 16</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Thermodynamics Test</td>
+                                <td>May 23</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Electrochemistry Assignment</td>
+                                <td>May 30</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Midterm Exam</td>
+                                <td>June 14</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            forums: "Course website: chemistry.amrita.edu/engg",
             announcements: "Chemistry Lab batch allocations updated."
         },
         {            code: "19CSE101",
@@ -362,11 +483,52 @@ const coursesData = {
                     { date: "May 18", title: "Functions and Methods Lab", description: "Parameter passing and return values" },
                     { date: "May 25", title: "Arrays Exercise", description: "Array manipulation and algorithms" }
                 ]
-            },
-            resources: "Textbook: C Programming Language, Online tutorials: codecademy.com",
-            assignments: "Assignment 1: Due on June 5, Assignment 2: Due on July 25...",
-            testsQuizzes: "Quiz 1: May 22, Mid-term: July 12, Final Exam: August 18",
-            siteInfo: "Course website: cse.amrita.edu/programming",
+            },            resources: "Textbook: C Programming Language, Online tutorials: codecademy.com",
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>Programming Basics Quiz</td>
+                                <td>May 4</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Control Structures Assignment</td>
+                                <td>May 11</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Functions and Methods Lab</td>
+                                <td>May 18</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Arrays Exercise</td>
+                                <td>May 25</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Midterm Exam</td>
+                                <td>June 15</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            
+            forums: "Course website: cse.amrita.edu/programming",
             announcements: "Programming contest registrations open now."
         },
         {            code: "19ECE101",
@@ -497,11 +659,51 @@ const coursesData = {
                     { date: "May 20", title: "Nodal Analysis Lab", description: "Hands-on exercise with circuit analysis" },
                     { date: "May 27", title: "Mesh Analysis Assignment", description: "Analysis of complex circuits using mesh method" }
                 ]
-            },
-            resources: "Textbook: Fundamentals of Electrical Engineering, Circuit Simulation Software",
-            assignments: "Assignment 1: Due on June 8, Assignment 2: Due on July 22...",
-            testsQuizzes: "Quiz 1: May 26, Mid-term: July 15, Final Exam: August 20",
-            siteInfo: "Course website: ece.amrita.edu/basic",
+            },            resources: "Textbook: Fundamentals of Electrical Engineering, Circuit Simulation Software",
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>Circuit Elements Quiz</td>
+                                <td>May 6</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Kirchhoff's Laws Problems</td>
+                                <td>May 13</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Nodal Analysis Test</td>
+                                <td>May 20</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Mesh Analysis Assignment</td>
+                                <td>May 27</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Midterm Exam</td>
+                                <td>June 16</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            forums: "Course website: ece.amrita.edu/basic",
             announcements: "Virtual lab sessions will be conducted every Friday."
         },
         {            code: "19MEC101",
@@ -634,9 +836,50 @@ const coursesData = {
                 ]
             },
             resources: "Textbook: Engineering Mechanics by Hibbeler, Problem Set Collection",
-            assignments: "Assignment 1: Due on June 20, Assignment 2: Due on July 30...",
-            testsQuizzes: "Quiz 1: June 2, Mid-term: July 18, Final Exam: August 25",
-            siteInfo: "Course website: mechanical.amrita.edu/mechanics",
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>Mechanics Fundamentals Quiz</td>
+                                <td>May 2</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Force Analysis Problems</td>
+                                <td>May 9</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Dynamics Test</td>
+                                <td>May 16</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Equilibrium Project</td>
+                                <td>May 23</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Midterm Exam</td>
+                                <td>June 18</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            forums: "Course website: mechanical.amrita.edu/mechanics",
             announcements: "Model-making competition details announced."
         },
         {            code: "19ENG101",
@@ -767,11 +1010,51 @@ const coursesData = {
                     { date: "May 19", title: "Presentation Skills Practice", description: "Group presentations with feedback" },
                     { date: "May 30", title: "Professional Communication Exam", description: "Final evaluation of all topics covered" }
                 ]
-            },
-            resources: "Textbook: Technical Communication Today, Style Guide, Presentation Templates",
-            assignments: "Assignment 1: Due on June 14, Assignment 2: Due on July 14...",
-            testsQuizzes: "Quiz 1: May 27, Mid-term: July 7, Final Exam: August 14",
-            siteInfo: "Course website: humanities.amrita.edu/comm",
+            },            resources: "Textbook: Technical Communication Today, Style Guide, Presentation Templates",
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>Communication Fundamentals Quiz</td>
+                                <td>May 8</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Technical Report Writing</td>
+                                <td>May 15</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Presentation Skills Test</td>
+                                <td>May 19</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Professional Communication</td>
+                                <td>May 30</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Midterm Exam</td>
+                                <td>July 7</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            forums: "Course website: humanities.amrita.edu/comm",
             announcements: "Group presentation topics released."
         },
         {            code: "19ENV101",
@@ -902,11 +1185,51 @@ const coursesData = {
                     { date: "May 16", title: "Biodiversity Quiz", description: "Assessment on biodiversity and conservation" },
                     { date: "May 23", title: "Pollution Control Project", description: "Group presentations on pollution control measures" }
                 ]
-            },
-            resources: "Textbook: Environmental Science, Documentary Collection, Case Studies",
-            assignments: "Assignment 1: Due on June 18, Assignment 2: Due on July 28...",
-            testsQuizzes: "Quiz 1: June 5, Mid-term: July 20, Final Exam: August 22",
-            siteInfo: "Course website: envscience.amrita.edu",
+            },            resources: "Textbook: Environmental Science, Documentary Collection, Case Studies",
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>Environmental Science Quiz</td>
+                                <td>May 2</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Ecosystems Analysis</td>
+                                <td>May 9</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Biodiversity Test</td>
+                                <td>May 16</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Pollution Control Project</td>
+                                <td>May 23</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Midterm Exam</td>
+                                <td>July 20</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            forums: "Course website: envscience.amrita.edu",
             announcements: "Field trip to water treatment plant scheduled for next month."
         }
     ],
@@ -1039,11 +1362,51 @@ const coursesData = {
                     { date: "May 17", title: "Series Solutions Lab", description: "Power series methods for solving ODEs" },
                     { date: "May 24", title: "Laplace Transforms Assignment", description: "Applications of Laplace transforms in solving ODEs" }
                 ]
-            },
-            resources: "Textbook: Differential Equations with Applications by Zill, Problem Set Collection",
-            assignments: "Assignment 1: Due on June 22, Assignment 2: Due on July 25...",
-            testsQuizzes: "Quiz 1: June 5, Mid-term: July 15, Final Exam: August 20",
-            siteInfo: "Course website: math.amrita.edu/diffequations",
+            },            resources: "Textbook: Differential Equations with Applications by Zill, Problem Set Collection",
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>First Order ODEs Quiz</td>
+                                <td>May 3</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Second Order ODEs Problems</td>
+                                <td>May 10</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Series Solutions Test</td>
+                                <td>May 17</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Laplace Transforms Assignment</td>
+                                <td>May 24</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Midterm Exam</td>
+                                <td>July 15</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            forums: "Course website: math.amrita.edu/diffequations",
             announcements: "Extra tutorial sessions announced for Laplace Transforms."
         },
         {            code: "19PHY102",
@@ -1174,11 +1537,51 @@ const coursesData = {
                     { date: "May 21", title: "Semiconductor Materials Lab", description: "Properties of semiconductor materials" },
                     { date: "May 28", title: "Quantum Physics Applications", description: "Practical applications in modern electronics" }
                 ]
-            },
-            resources: "Textbook: Semiconductor Physics and Devices, Lab Manual",
-            assignments: "Assignment 1: Due on June 10, Assignment 2: Due on July 18...",
-            testsQuizzes: "Quiz 1: May 25, Mid-term: July 10, Final Exam: August 15",
-            siteInfo: "Course website: physics.amrita.edu/semiconductor",
+            },            resources: "Textbook: Semiconductor Physics and Devices, Lab Manual",
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>Crystal Structure Quiz</td>
+                                <td>May 7</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Band Theory Problems</td>
+                                <td>May 14</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Semiconductor Materials Test</td>
+                                <td>May 21</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Quantum Physics Assignment</td>
+                                <td>May 28</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Midterm Exam</td>
+                                <td>July 10</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            forums: "Course website: physics.amrita.edu/semiconductor",
             announcements: "Device fabrication demonstration scheduled for next week."
         },
         {            code: "19CSE102",
@@ -1309,11 +1712,51 @@ const coursesData = {
                     { date: "May 15", title: "Trees and Graphs Lab", description: "Hands-on implementation of tree traversals" },
                     { date: "May 22", title: "Searching & Sorting Algorithms Quiz", description: "Binary search and sorting techniques" }
                 ]
-            },
-            resources: "Textbook: Data Structures and Algorithm Analysis in C++, Online Practice Platform",
-            assignments: "Assignment 1: Due on June 15, Assignment 2: Due on July 20...",
-            testsQuizzes: "Quiz 1: May 30, Mid-term: July 12, Final Exam: August 18",
-            siteInfo: "Course website: cse.amrita.edu/datastructures",
+            },            resources: "Textbook: Data Structures and Algorithm Analysis in C++, Online Practice Platform",
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>Arrays and Linked Lists Quiz</td>
+                                <td>May 1</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Stack and Queue Implementation</td>
+                                <td>May 8</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Trees and Graphs Test</td>
+                                <td>May 15</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Searching & Sorting Algorithms</td>
+                                <td>May 22</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Midterm Exam</td>
+                                <td>July 12</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            forums: "Course website: cse.amrita.edu/datastructures",
             announcements: "Coding competition using data structures concepts next month."
         },
         {            code: "19ECE102",
@@ -1444,11 +1887,51 @@ const coursesData = {
                     { date: "May 20", title: "Combinational Circuits Lab", description: "Design and implementation of combinational circuits" },
                     { date: "May 27", title: "Sequential Circuits Project", description: "Flip-flops and sequential circuit design" }
                 ]
-            },
-            resources: "Textbook: Digital Design by Morris Mano, Logic Design Simulator",
-            assignments: "Assignment 1: Due on June 12, Assignment 2: Due on July 22...",
-            testsQuizzes: "Quiz 1: May 28, Mid-term: July 8, Final Exam: August 12",
-            siteInfo: "Course website: ece.amrita.edu/digital",
+            },            resources: "Textbook: Digital Design by Morris Mano, Logic Design Simulator",
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>Number Systems Quiz</td>
+                                <td>May 6</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Logic Gates Problems</td>
+                                <td>May 13</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Combinational Circuits Test</td>
+                                <td>May 20</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Sequential Circuits Project</td>
+                                <td>May 27</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Midterm Exam</td>
+                                <td>July 8</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            forums: "Course website: ece.amrita.edu/digital",
             announcements: "Digital circuit mini-project topics released."
         },
         {            code: "19MEC102",
@@ -1579,11 +2062,51 @@ const coursesData = {
                     { date: "May 18", title: "Isometric Drawing Exercise", description: "Creating 3D isometric views from 2D drawings" },
                     { date: "May 25", title: "AutoCAD Introduction", description: "Computer-aided drafting basics and tools" }
                 ]
-            },
-            resources: "Textbook: Engineering Drawing, AutoCAD Tutorials, Drawing Equipment List",
-            assignments: "Assignment 1: Due on June 18, Assignment 2: Due on July 28...",
-            testsQuizzes: "Quiz 1: June 2, Mid-term: July 18, Final Exam: August 22",
-            siteInfo: "Course website: mechanical.amrita.edu/graphics",
+            },            resources: "Textbook: Engineering Drawing, AutoCAD Tutorials, Drawing Equipment List",
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>Engineering Drawing Basics</td>
+                                <td>May 4</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Orthographic Projections</td>
+                                <td>May 11</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Isometric Drawing Test</td>
+                                <td>May 18</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>AutoCAD Project</td>
+                                <td>May 25</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Midterm Exam</td>
+                                <td>July 18</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            forums: "Course website: mechanical.amrita.edu/graphics",
             announcements: "CAD lab timings updated for next week."
         },
         {            code: "19HSS102",
@@ -1714,11 +2237,51 @@ const coursesData = {
                     { date: "May 19", title: "Case Studies Analysis", description: "Ethical dilemmas in engineering practice" },
                     { date: "May 26", title: "Social Responsibility Project", description: "Group presentations on ethical issues in technology" }
                 ]
-            },
-            resources: "Textbook: Ethics in Engineering, Case Studies Collection",
-            assignments: "Assignment 1: Due on June 20, Assignment 2: Due on July 30...",
-            testsQuizzes: "Quiz 1: June 5, Mid-term: July 20, Final Exam: August 25",
-            siteInfo: "Course website: humanities.amrita.edu/ethics",
+            },            resources: "Textbook: Ethics in Engineering, Case Studies Collection",
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>Ethical Theories Quiz</td>
+                                <td>May 5</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Professional Codes Analysis</td>
+                                <td>May 12</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Case Studies Test</td>
+                                <td>May 19</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Social Responsibility Project</td>
+                                <td>May 26</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Midterm Exam</td>
+                                <td>July 20</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            forums: "Course website: humanities.amrita.edu/ethics",
             announcements: "Guest lecture by industry expert scheduled next Thursday."
         },
         {            code: "19LAB102",
@@ -1850,11 +2413,51 @@ const coursesData = {
                     { date: "May 22", title: "Functions and Recursion", description: "Implementing and using functions in Python" },
                     { date: "May 29", title: "File Handling Assignment", description: "Reading and writing data to files in Python" }
                 ]
-            },
-            resources: "Lab Manual, Code Repository, Reference Programs",
-            assignments: "Lab Assignment 1: Due on June 14, Lab Assignment 2: Due on July 14...",
-            testsQuizzes: "Lab Test 1: May 27, Lab Test 2: July 7, Final Lab Exam: August 14",
-            siteInfo: "Course website: cse.amrita.edu/proglab",
+            },            resources: "Lab Manual, Code Repository, Reference Programs",
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>Programming Basics Quiz</td>
+                                <td>May 8</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Control Structures Lab</td>
+                                <td>May 15</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Array Manipulations Test</td>
+                                <td>May 22</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Functions & Recursion</td>
+                                <td>May 29</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Lab Test 1</td>
+                                <td>July 7</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            forums: "Course website: cse.amrita.edu/proglab",
             announcements: "Lab equipment upgraded. New submission guidelines posted."
         }
     ],
@@ -1987,11 +2590,51 @@ const coursesData = {
                     { date: "May 20", title: "Probability Distributions Lab", description: "Working with common probability distributions" },
                     { date: "May 27", title: "Statistical Inference Project", description: "Hypothesis testing and confidence intervals" }
                 ]
-            },
-            resources: "Textbook: Probability and Statistics for Engineers, Statistical Software Tutorials",
-            assignments: "Assignment 1: Due on June 8, Assignment 2: Due on July 12...",
-            testsQuizzes: "Quiz 1: May 22, Mid-term: July 5, Final Exam: August 10",
-            siteInfo: "Course website: math.amrita.edu/statistics",
+            },            resources: "Textbook: Probability and Statistics for Engineers, Statistical Software Tutorials",
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>Probability Fundamentals Quiz</td>
+                                <td>May 6</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Random Variables Problems</td>
+                                <td>May 13</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Probability Distributions Test</td>
+                                <td>May 20</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Statistical Inference Project</td>
+                                <td>May 27</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Midterm Exam</td>
+                                <td>July 5</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            forums: "Course website: math.amrita.edu/statistics",
             announcements: "Statistical analysis project topics announced."
         },        {
             code: "19CSE201",
@@ -2122,11 +2765,51 @@ const coursesData = {
                     { date: "May 19", title: "Inheritance & Polymorphism Quiz", description: "Today's in-class assessment on inheritance" },
                     { date: "May 26", title: "Design Patterns Project", description: "Implementation of common design patterns" }
                 ]
-            },
-            resources: "Textbook: Thinking in Java, Object-Oriented Design Patterns",
-            assignments: "Assignment 1: Due on June 10, Assignment 2: Due on July 15...",
-            testsQuizzes: "Quiz 1: May 25, Mid-term: July 8, Final Exam: August 12",
-            siteInfo: "Course website: cse.amrita.edu/oop",
+            },            resources: "Textbook: Thinking in Java, Object-Oriented Design Patterns",
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>OOP Concepts Quiz</td>
+                                <td>May 5</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Classes & Objects Workshop</td>
+                                <td>May 12</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Inheritance & Polymorphism Test</td>
+                                <td>May 19</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Design Patterns Project</td>
+                                <td>May 26</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Midterm Exam</td>
+                                <td>July 8</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            forums: "Course website: cse.amrita.edu/oop",
             announcements: "OOP project teams must be finalized by this Friday."
         },
         {            code: "19CSE202",
@@ -2259,9 +2942,50 @@ const coursesData = {
                 ]
             },
             resources: "Textbook: Database System Concepts, MySQL Workbench Tutorial",
-            assignments: "Assignment 1: Due on June 15, Assignment 2: Due on July 20...",
-            testsQuizzes: "Quiz 1: May 30, Mid-term: July 12, Final Exam: August 18",
-            siteInfo: "Course website: cse.amrita.edu/dbms",
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>SQL Fundamentals</td>
+                                <td>May 9</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Database Normalization</td>
+                                <td>May 20</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Database Design</td>
+                                <td>May 30</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Mid-term Examination</td>
+                                <td>July 12</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Final Examination</td>
+                                <td>August 18</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            forums: "Course website: cse.amrita.edu/dbms",
             announcements: "Database design competition announced."
         },
         {            code: "19CSE203",
@@ -2394,9 +3118,50 @@ const coursesData = {
                 ]
             },
             resources: "Textbook: Computer Organization and Design, Assembly Language Programming Guide",
-            assignments: "Assignment 1: Due on June 12, Assignment 2: Due on July 18...",
-            testsQuizzes: "Quiz 1: May 28, Mid-term: July 10, Final Exam: August 15",
-            siteInfo: "Course website: cse.amrita.edu/organization",
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>Computer Architecture Basics</td>
+                                <td>May 10</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Assembly Language Programming</td>
+                                <td>May 18</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Instruction Set Architecture</td>
+                                <td>May 28</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Mid-term Examination</td>
+                                <td>July 10</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Final Examination</td>
+                                <td>August 15</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            forums: "Course website: cse.amrita.edu/organization",
             announcements: "Hardware workshop rescheduled to next week."
         },
         {            code: "19CSE204",
@@ -2529,9 +3294,50 @@ const coursesData = {
                 ]
             },
             resources: "Textbook: Operating System Concepts, Linux Tutorial, Shell Programming Guide",
-            assignments: "Assignment 1: Due on June 18, Assignment 2: Due on July 22...",
-            testsQuizzes: "Quiz 1: June 2, Mid-term: July 15, Final Exam: August 20",
-            siteInfo: "Course website: cse.amrita.edu/os",
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>OS Concepts</td>
+                                <td>May 10</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Process Management</td>
+                                <td>May 14</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Memory Management Implementation</td>
+                                <td>May 25</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Mid-term Examination</td>
+                                <td>July 15</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Final Examination</td>
+                                <td>August 20</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            forums: "Course website: cse.amrita.edu/os",
             announcements: "Operating systems lab access extended hours announced."
         },
         {            code: "19CSE205",
@@ -2664,9 +3470,50 @@ const coursesData = {
                 ]
             },
             resources: "Textbook: Computer Networking: A Top-Down Approach, Packet Tracer Tutorials",
-            assignments: "Assignment 1: Due on June 20, Assignment 2: Due on July 25...",
-            testsQuizzes: "Quiz 1: June 5, Mid-term: July 18, Final Exam: August 22",
-            siteInfo: "Course website: cse.amrita.edu/networks",
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>Network Models</td>
+                                <td>May 8</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Physical Layer Concepts</td>
+                                <td>May 12</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Data Link Layer Implementation</td>
+                                <td>May 24</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Mid-term Examination</td>
+                                <td>July 18</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Final Examination</td>
+                                <td>August 22</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            forums: "Course website: cse.amrita.edu/networks",
             announcements: "Network simulator demonstration scheduled for Thursday."
         },
         {            code: "19HSS201",
@@ -2799,9 +3646,50 @@ const coursesData = {
                 ]
             },
             resources: "Textbook: Engineering Economics, Case Studies in Engineering Economics",
-            assignments: "Assignment 1: Due on June 14, Assignment 2: Due on July 28...",
-            testsQuizzes: "Quiz 1: May 27, Mid-term: July 7, Final Exam: August 14",
-            siteInfo: "Course website: humanities.amrita.edu/economics",
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>Economic Fundamentals</td>
+                                <td>May 7</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Market Structures Analysis</td>
+                                <td>May 11</td>
+                                <td class="type type-quiz">Quiz</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Macroeconomics Report</td>
+                                <td>May 27</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Mid-term Examination</td>
+                                <td>July 7</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Final Examination</td>
+                                <td>August 14</td>
+                                <td class="type type-test">Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            forums: "Course website: humanities.amrita.edu/economics",
             announcements: "Economic analysis project guidelines updated."
         },
         {            code: "19LAB201",
@@ -2934,9 +3822,50 @@ const coursesData = {
                 ]
             },
             resources: "Lab Manual, SQL Reference Guide, Linux Command Reference",
-            assignments: "Lab Assignment 1: Due on June 15, Lab Assignment 2: Due on July 15...",
-            testsQuizzes: "Lab Test 1: May 30, Lab Test 2: July 10, Final Lab Exam: August 16",
-            siteInfo: "Course website: cse.amrita.edu/dboslab",
+            testsQuizzes: `<table>    
+                            <thead>
+                              <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Returned</th>
+                              </tr>
+                            </thead>
+                            <tbody>      <tr>
+                                <td>SQL Basics Exercise</td>
+                                <td>May 8</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Database Design Implementation</td>
+                                <td>May 15</td>
+                                <td class="type type-assignment">Assignment</td>
+                                <td class="status-completed">Completed</td>
+                                <td class="returned-yes">Yes</td>
+                              </tr>      <tr>
+                                <td>Advanced SQL & Process Management</td>
+                                <td>May 30</td>
+                                <td class="type type-test">Lab Test</td>
+                                <td class="status-due">Due</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>OS Administration & Shell Scripting</td>
+                                <td>July 10</td>
+                                <td class="type type-test">Lab Test</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>      <tr>
+                                <td>Final Practical Examination</td>
+                                <td>August 16</td>
+                                <td class="type type-test">Lab Exam</td>
+                                <td class="status-na">N/A</td>
+                                <td class="returned-no">No</td>
+                              </tr>
+                            </tbody>
+                          </table>`,
+            forums: "Course website: cse.amrita.edu/dboslab",
             announcements: "Additional lab assistants assigned for the practical sessions."
         }
     ]
@@ -3037,9 +3966,8 @@ document.addEventListener('DOMContentLoaded', function() {
             { id: 'lesson-calendar', name: 'Lesson Calendar', content: course.lessonCalendar },
             { id: 'announcements', name: 'Announcements', content: course.announcements },
             { id: 'resources', name: 'Resources', content: course.resources },
-            { id: 'assignments', name: 'Assignments', content: course.assignments },
             { id: 'tests-quizzes', name: 'Tests & Quizzes', content: course.testsQuizzes },
-            { id: 'site-info', name: 'Site Info', content: course.siteInfo }
+            { id: 'forums', name: 'Forums', content: course.forums }
         ];
         
         // Create tabs and tab content
@@ -3053,13 +3981,15 @@ document.addEventListener('DOMContentLoaded', function() {
               // Create tab content
             const tabContent = document.createElement('div');
             tabContent.className = `tab-content ${index === 0 ? 'active' : ''}`;
-            tabContent.id = `${tab.id}-content`;
-              // Use innerHTML for HTML content (like syllabus cards) and textContent for plain text
+            tabContent.id = `${tab.id}-content`;            // Use innerHTML for HTML content (like syllabus cards) and textContent for plain text
             if (tab.id === 'syllabus' && typeof tab.content === 'string' && tab.content.includes('<div class="syllabus-grid">')) {
                 tabContent.innerHTML = tab.content;
             } else if (tab.id === 'lesson-calendar' && typeof tab.content === 'object') {
                 // Create interactive calendar for lesson calendar
                 createInteractiveCalendar(tabContent, tab.content);
+            } else if (tab.id === 'tests-quizzes' && typeof tab.content === 'string' && tab.content.includes('<table>')) {
+                // Use innerHTML for table content
+                tabContent.innerHTML = tab.content;
             } else {
                 tabContent.textContent = tab.content;
             }

@@ -2,140 +2,130 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Assignment Calendar</title>
+  <title>Subject Resources</title>
   <style>
-    body {
-      margin: 0;
-      padding: 2rem;
+    :root {
+    --primary-color: #D72638;
+    --primary-dark: #b31e2d;
+    --background-color: #FCE4EC;
+    --card-bg-color: #f9f2f2;
+    --text-color: #333333;
+    --white: #FFFFFF;
+    --light-gray: #f5f5f5;
+    --border-light: #dddddd;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --dropdown-bg: #F4F4F4;
+}    body {
+      background: var(--background-color);
       font-family: 'Segoe UI', sans-serif;
-      background-color: #0f172a;
-      color: white;
-      display: flex;
-      gap: 3rem;
+      color: var(--text-color);
+      padding: 2rem;
     }
 
-    .calendar {
-      width: 300px;
-      background: #1e293b;
-      padding: 1rem;
-      border-radius: 15px;
-    }
-
-    .calendar h2 {
+    h1 {
+      color: var(--primary-color);
       text-align: center;
-      color: #38bdf8;
+      margin-bottom: 2rem;
     }
 
-    .grid {
+    .resources {
       display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      gap: 0.5rem;
-      text-align: center;
-      margin-top: 1rem;
-    }
-
-    .day, .date {
-      color: #94a3b8;
-      font-size: 0.9rem;
-    }
-
-    .date {
-      padding: 10px;
-      border-radius: 50%;
-      position: relative;
-    }
-
-    .date:hover {
-      background: #334155;
-      cursor: pointer;
-    }
-
-    .dot {
-      width: 6px;
-      height: 6px;
-      background: #facc15;
-      border-radius: 50%;
-      position: absolute;
-      bottom: 6px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .tasks {
-      flex: 1;
-      background: #1e293b;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }    .card {
+      background: var(--card-bg-color);
       border-radius: 15px;
       padding: 1.5rem;
+      box-shadow: 0 4px 10px var(--shadow-color);
+      transition: 0.3s ease;
     }
 
-    .tasks h2 {
-      color: #f472b6;
-      margin-bottom: 1rem;
+    .card:hover {
+      transform: translateY(-5px);
+      background-color: var(--light-gray);
     }
 
-    .task {
-      background: #334155;
-      padding: 1rem;
-      border-radius: 10px;
-      margin-bottom: 1rem;
+    .card h3 {
+      margin: 0.5rem 0;
+      color: var(--primary-dark);
+    }    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      background: var(--primary-color);
+      color: var(--white);
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-bottom: 10px;
     }
 
-    .task span {
-      display: block;
+    .desc {
+      color: var(--text-color);
+      font-size: 0.85rem;
+    }    .link {
+      display: inline-block;
+      margin-top: 10px;
+      color: var(--primary-color);
+      text-decoration: none;
       font-size: 0.9rem;
-      color: #94a3b8;
+    }
+
+    .link:hover {
+      text-decoration: underline;
+      color: var(--primary-dark);
+    }
+
+    .icon {
+      font-size: 1.5rem;
     }
   </style>
 </head>
 <body>
-  <!-- Left Sidebar Calendar -->
-  <div class="calendar">
-    <h2>📅 May 2025</h2>
-    <div class="grid">
-      <!-- Weekdays -->
-      <div class="day">Sun</div><div class="day">Mon</div><div class="day">Tue</div><div class="day">Wed</div><div class="day">Thu</div><div class="day">Fri</div><div class="day">Sat</div>
 
-      <!-- Blank cells before May 1st (starts Thursday) -->
-      <div></div><div></div><div></div><div></div>
-      
-      <!-- Dates -->
-      <div class="date">1</div>
-      <div class="date">2</div>
-      <div class="date">3</div>
-      <div class="date">4</div>
-      <div class="date">5 <div class="dot"></div></div> <!-- Highlighted -->
-      <div class="date">6</div>
-      <div class="date">7</div>
-      <div class="date">8</div>
-      <div class="date">9</div>
-      <div class="date">10</div>
-      <div class="date">11</div>
-      <div class="date">12</div>
-      <div class="date">13</div>
-      <div class="date">14</div>
-      <div class="date">15</div>
-      <div class="date">16</div>
-      <div class="date">17</div>
-      <div class="date">18</div>
-      <div class="date">19 <div class="dot"></div></div> <!-- Highlighted -->
-      <div class="date">20</div>
-      <!-- Add more days if needed -->
+  <h1>📚 Subject Resources</h1>
+
+  <div class="resources">
+
+    <div class="card">
+      <div class="icon">🎥</div>
+      <span class="tag">Video</span>
+      <h3>Recursion Explained</h3>
+      <p class="desc">Visual walkthrough of recursion and stack memory. Perfect for beginners.</p>
+      <a class="link" href="#" target="_blank">Watch on YouTube</a>
     </div>
+
+    <div class="card">
+      <div class="icon">📚</div>
+      <span class="tag">Book</span>
+      <h3>Cracking DSA</h3>
+      <p class="desc">Downloadable PDF version of the essential DSA preparation book.</p>
+      <a class="link" href="#" target="_blank">Download PDF</a>
+    </div>
+
+    <div class="card">
+      <div class="icon">📄</div>
+      <span class="tag">Notes</span>
+      <h3>Sorting Algorithms Summary</h3>
+      <p class="desc">One-pager cheat sheet for quick revision of all sorting methods.</p>
+      <a class="link" href="#" target="_blank">View Notes</a>
+    </div>
+
+    <div class="card">
+      <div class="icon">🌐</div>
+      <span class="tag">Website</span>
+      <h3>GeeksforGeeks - Graphs</h3>
+      <p class="desc">Graph algorithms, implementations, and practice problems.</p>
+      <a class="link" href="https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/" target="_blank">Visit Site</a>
+    </div>
+
+    <div class="card">
+      <div class="icon">🛠️</div>
+      <span class="tag">Tool</span>
+      <h3>Tree Visualizer</h3>
+      <p class="desc">Interactive BST/AVL visualizer to insert and delete nodes dynamically.</p>
+      <a class="link" href="#" target="_blank">Try It</a>
+    </div>
+
   </div>
 
-  <!-- Right-side Task List -->
-  <div class="tasks">
-    <h2>📘 DSA Assignments</h2>
-
-    <div class="task">
-      <strong>📝 May 5 - Quiz on Arrays</strong>
-      <span>Topics: 1D & 2D Arrays, Sliding Window</span>
-    </div>
-
-    <div class="task">
-      <strong>📂 May 19 - Assignment on Trees</strong>
-      <span>Topics: Binary Tree Traversals, BST Insertion</span>
-    </div>
-  </div>
 </body>
 </html>

@@ -133,8 +133,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
         // Table body (same data but table will be styled more compactly)
         const tbody = document.createElement('tbody');
-        
-        // Data for semester 1
+          // Data for semester 1
         const sem1Data = [
             ['Assignment 1', '2024-25', 'Regular', '12.5', '10.0', '', '', 'NP', '2.0', '', ''],
             ['Assignment 2', '2024-25', 'Regular', '4.5', '', '', '', '', '7.0', '', ''],
@@ -144,9 +143,9 @@ document.addEventListener("DOMContentLoaded", function() {
             ['Lab Eval 3', '2024-25', 'Regular', '', '', '4.5', '', '', '', '11.0', ''],
             ['Midterm', '2024-25', 'Regular', 'NP', '23.0', '26.5', '38.5', '', '26.0', '17.5', '35.5'],
             ['Quiz 1', '2024-25', 'Regular', '', '3.0', '7.5', '6.5', '', '18.0', '5.0', '4.0'],
-            ['Quiz 2', '2024-25', 'Regular', '', '9.0', '6.5', '10.0', '', '3.0', '6.5', ''],
-            ['Quiz 3', '2024-25', 'Regular', '', '3.0', '', '', '', '', '', ''],
-            ['Quiz 4', '2024-25', 'Regular', '', '5.5', '', '', '', '', '', ''],
+            ['Quiz 2', '2024-25', 'Regular', '', '9.0', '6.5', '10.0', '', '3.0', '6.5', '7.5'],
+            ['Quiz 3', '2024-25', 'Regular', '', '3.0', '', '', '', '', '8.0', '6.0'],
+            ['Quiz 4', '2024-25', 'Regular', '', '5.5', '', '', '', '', '7.5', '8.0'],
             ['Yoga', '2024-25', 'Regular', '', '', '', '', '', '', '', '8.5']
         ];
         
