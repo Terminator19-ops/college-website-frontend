@@ -50,11 +50,11 @@ This is a web-based management system for Amrita University students that provid
 | Attendance | ✅ Completed |
 | Marks | ✅ Completed |
 | Fees | ✅ Completed |
-| Dues | 🚧 In Progress |
-| Scholarship | 🚧 In Progress |
-| Fines | 🚧 In Progress |
-| Library Features | 🚧 In Progress |
-| User Settings | 🚧 In Progress |
+| Dues | ✅ Completed  |
+| Scholarship | ✅ Completed  |
+| Fines | ✅ Completed  |
+| Library Features | ✅ Completed  |
+| User Settings | ✅ Completed  |
 
 ## Technology Stack
 
