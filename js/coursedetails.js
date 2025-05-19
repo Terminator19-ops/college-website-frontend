@@ -178,40 +178,39 @@ const coursesData = {
                                 <td class="returned-no">No</td>
                               </tr>
                             </tbody>
-                          </table>`,
-            forums: `<div class="forumsandpolls">
+                          </table>`,            forums: `<div class="forumsandpolls">
                       <!-- Forum Section -->
                       <div class="forum">
                         <h2>🧵 Active Threads</h2>
                         <!-- Add more threads as needed -->
                         <div class="thread">
-                          <strong>How does AVL rotation work?</strong>
-                          <span>Started by: Aman | Replies: 5 | Last reply: 1hr ago</span>
+                          <strong>Applications of partial derivatives in engineering</strong>
+                          <span>Started by: Arnav | Replies: 6 | Last reply: 1hr ago</span>
                         </div>
 
                         <div class="thread">
-                          <strong>Why use stack for DFS?</strong>
-                          <span>Started by: Priya | Replies: 3 | Last reply: 2d ago</span>
+                          <strong>Limits using L'Hôpital's rule examples</strong>
+                          <span>Started by: Neha | Replies: 4 | Last reply: 2d ago</span>
                         </div>
 
                         <div class="thread">
-                          <strong>Tips for Midterm Prep?</strong>
-                          <span>Started by: Riya | Replies: 8 | Last reply: 5h ago</span>
+                          <strong>Tips for integration techniques</strong>
+                          <span>Started by: Vivek | Replies: 8 | Last reply: 5h ago</span>
                         </div>
 
                         <div class="thread">
-                          <strong>What is the difference between BFS and DFS?</strong>
-                          <span>Started by: Karan | Replies: 6 | Last reply: 3h ago</span>
+                          <strong>Eigenvalues and diagonalization practice</strong>
+                          <span>Started by: Simran | Replies: 7 | Last reply: 3h ago</span>
                         </div>
 
                         <div class="thread">
-                          <strong>Time complexity of Merge Sort?</strong>
-                          <span>Started by: Sanya | Replies: 2 | Last reply: 10m ago</span>
+                          <strong>Convergence tests for infinite series</strong>
+                          <span>Started by: Tarun | Replies: 5 | Last reply: 30m ago</span>
                         </div>
 
                         <div class="thread">
-                          <strong>Mock test questions thread</strong>
-                          <span>Started by: Ravi | Replies: 10 | Last reply: Yesterday</span>
+                          <strong>Linear algebra midterm review questions</strong>
+                          <span>Started by: Meera | Replies: 11 | Last reply: Yesterday</span>
                         </div>
                       </div>
 
@@ -219,23 +218,23 @@ const coursesData = {
                       <div class="polls">
                         <h2>📊 Class Poll</h2>
 
-                        <div class="poll-question">Which topic needs revision?</div>
+                        <div class="poll-question">Which calculus topic is most challenging?</div>
 
                         <div class="poll-option">
                           <input type="radio" name="poll" id="opt1">
-                          <label for="opt1">Graphs</label>
+                          <label for="opt1">Integration</label>
                         </div>
                         <div class="poll-option">
                           <input type="radio" name="poll" id="opt2">
-                          <label for="opt2">Recursion</label>
+                          <label for="opt2">Sequences & Series</label>
                         </div>
                         <div class="poll-option">
                           <input type="radio" name="poll" id="opt3">
-                          <label for="opt3">Sorting Algorithms</label>
+                          <label for="opt3">Vector Calculus</label>
                         </div>
                         <div class="poll-option">
                           <input type="radio" name="poll" id="opt4">
-                          <label for="opt4">Greedy & DP</label>
+                          <label for="opt4">Matrix Operations</label>
                         </div>
 
                         <button class="submit-btn">Submit Vote</button>
@@ -387,7 +386,68 @@ const coursesData = {
                               </tr>
                             </tbody>
                           </table>`,
-            forums: "Course website: physics.amrita.edu/engg",
+            forums: `<div class="forumsandpolls">
+                      <!-- Forum Section -->
+                      <div class="forum">
+                        <h2>🧵 Active Threads</h2>
+                        <!-- Add more threads as needed -->
+                        <div class="thread">
+                          <strong>Why does a lens create real and virtual images?</strong>
+                          <span>Started by: Aditi | Replies: 7 | Last reply: 2hr ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Applications of electromagnetic induction?</strong>
+                          <span>Started by: Nikhil | Replies: 4 | Last reply: 1d ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Understanding wave-particle duality</strong>
+                          <span>Started by: Shreya | Replies: 9 | Last reply: 3h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Clarification on Newton's Third Law</strong>
+                          <span>Started by: Vikram | Replies: 5 | Last reply: 4h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Calculation mistake in homework problem 5?</strong>
+                          <span>Started by: Deepa | Replies: 3 | Last reply: 15m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Physics lab preparation discussion</strong>
+                          <span>Started by: Rahul | Replies: 12 | Last reply: Yesterday</span>
+                        </div>
+                      </div>
+
+                      <!-- Poll Section -->
+                      <div class="polls">
+                        <h2>📊 Class Poll</h2>
+
+                        <div class="poll-question">Which physics topic do you find most challenging?</div>
+
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt1">
+                          <label for="opt1">Electromagnetism</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt2">
+                          <label for="opt2">Quantum Physics</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt3">
+                          <label for="opt3">Optics & Waves</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt4">
+                          <label for="opt4">Mechanics</label>
+                        </div>
+
+                        <button class="submit-btn">Submit Vote</button>
+                      </div>
+                    </div>`,
         },
         {            code: "19CHE101",
             name: "Engineering Chemistry",
@@ -533,7 +593,68 @@ const coursesData = {
                               </tr>
                             </tbody>
                           </table>`,
-            forums: "Course website: chemistry.amrita.edu/engg",
+            forums: `<div class="forumsandpolls">
+                      <!-- Forum Section -->
+                      <div class="forum">
+                        <h2>🧵 Active Threads</h2>
+                        <!-- Add more threads as needed -->
+                        <div class="thread">
+                          <strong>Chemical equilibrium in industrial processes</strong>
+                          <span>Started by: Ishaan | Replies: 6 | Last reply: 45m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Differences between ionic and covalent bonds?</strong>
+                          <span>Started by: Sneha | Replies: 5 | Last reply: 3h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Organic chemistry nomenclature help</strong>
+                          <span>Started by: Varun | Replies: 8 | Last reply: 2h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Understanding redox reactions</strong>
+                          <span>Started by: Tanvi | Replies: 4 | Last reply: 6h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Lab safety protocols discussion</strong>
+                          <span>Started by: Aryan | Replies: 7 | Last reply: 30m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Electrochemistry practice problems</strong>
+                          <span>Started by: Manisha | Replies: 9 | Last reply: Yesterday</span>
+                        </div>
+                      </div>
+
+                      <!-- Poll Section -->
+                      <div class="polls">
+                        <h2>📊 Class Poll</h2>
+
+                        <div class="poll-question">Which chemistry topic needs more practice sessions?</div>
+
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt1">
+                          <label for="opt1">Organic Chemistry</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt2">
+                          <label for="opt2">Thermodynamics</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt3">
+                          <label for="opt3">Electrochemistry</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt4">
+                          <label for="opt4">Chemical Kinetics</label>
+                        </div>
+
+                        <button class="submit-btn">Submit Vote</button>
+                      </div>
+                    </div>`,
         },
         {            code: "19CSE101",
             name: "Introduction to Programming",
@@ -747,7 +868,68 @@ const coursesData = {
                             </tbody>
                           </table>`,
             
-            forums: "Course website: cse.amrita.edu/programming",
+            forums: `<div class="forumsandpolls">
+                      <!-- Forum Section -->
+                      <div class="forum">
+                        <h2>🧵 Active Threads</h2>
+                        <!-- Add more threads as needed -->
+                        <div class="thread">
+                          <strong>Understanding recursive functions</strong>
+                          <span>Started by: Rohan | Replies: 8 | Last reply: 1hr ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>How to debug segmentation faults?</strong>
+                          <span>Started by: Ananya | Replies: 6 | Last reply: 2d ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Arrays vs Linked Lists performance</strong>
+                          <span>Started by: Kabir | Replies: 7 | Last reply: 4h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Best practices for readable code</strong>
+                          <span>Started by: Meera | Replies: 9 | Last reply: 5h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Logic error in assignment 2?</strong>
+                          <span>Started by: Dhruv | Replies: 3 | Last reply: 20m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Programming project ideas discussion</strong>
+                          <span>Started by: Naina | Replies: 14 | Last reply: Yesterday</span>
+                        </div>
+                      </div>
+
+                      <!-- Poll Section -->
+                      <div class="polls">
+                        <h2>📊 Class Poll</h2>
+
+                        <div class="poll-question">Which programming language would you prefer for next semester?</div>
+
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt1">
+                          <label for="opt1">Java</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt2">
+                          <label for="opt2">Python</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt3">
+                          <label for="opt3">C++</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt4">
+                          <label for="opt4">JavaScript</label>
+                        </div>
+
+                        <button class="submit-btn">Submit Vote</button>
+                      </div>
+                    </div>`,
         },
         {            code: "19ECE101",
             name: "Basic Electrical Engineering",
@@ -961,7 +1143,68 @@ const coursesData = {
                               </tr>
                             </tbody>
                           </table>`,
-            forums: "Course website: ece.amrita.edu/basic",
+            forums: `<div class="forumsandpolls">
+                      <!-- Forum Section -->
+                      <div class="forum">
+                        <h2>🧵 Active Threads</h2>
+                        <!-- Add more threads as needed -->
+                        <div class="thread">
+                          <strong>Kirchhoff's laws application problems</strong>
+                          <span>Started by: Arjun | Replies: 5 | Last reply: 2hr ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Difference between AC and DC circuits</strong>
+                          <span>Started by: Diya | Replies: 7 | Last reply: 1d ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Transformer efficiency calculations</strong>
+                          <span>Started by: Aditya | Replies: 6 | Last reply: 3h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Three-phase power systems explanation</strong>
+                          <span>Started by: Pooja | Replies: 8 | Last reply: 5h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Circuit simulation software recommendations?</strong>
+                          <span>Started by: Rishab | Replies: 4 | Last reply: 30m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Lab experiment troubleshooting</strong>
+                          <span>Started by: Kavya | Replies: 11 | Last reply: Yesterday</span>
+                        </div>
+                      </div>
+
+                      <!-- Poll Section -->
+                      <div class="polls">
+                        <h2>📊 Class Poll</h2>
+
+                        <div class="poll-question">Which electrical topic do you find most interesting?</div>
+
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt1">
+                          <label for="opt1">Power Systems</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt2">
+                          <label for="opt2">Control Systems</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt3">
+                          <label for="opt3">Electronic Circuits</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt4">
+                          <label for="opt4">Electromagnetic Theory</label>
+                        </div>
+
+                        <button class="submit-btn">Submit Vote</button>
+                      </div>
+                    </div>`,
         },
         {            code: "19MEC101",
             name: "Engineering Mechanics",
@@ -1176,7 +1419,68 @@ const coursesData = {
                               </tr>
                             </tbody>                          
                             </table>`,            
-                            forums: "Course website: mechanical.amrita.edu/mechanics",
+                            forums: `<div class="forumsandpolls">
+                      <!-- Forum Section -->
+                      <div class="forum">
+                        <h2>🧵 Active Threads</h2>
+                        <!-- Add more threads as needed -->
+                        <div class="thread">
+                          <strong>Free body diagram examples</strong>
+                          <span>Started by: Vijay | Replies: 7 | Last reply: 1hr ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Friction problems troubleshooting</strong>
+                          <span>Started by: Neha | Replies: 4 | Last reply: 2d ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Center of mass calculations</strong>
+                          <span>Started by: Suresh | Replies: 6 | Last reply: 4h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Moment of inertia for complex shapes</strong>
+                          <span>Started by: Anjali | Replies: 8 | Last reply: 5h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Static equilibrium problem help</strong>
+                          <span>Started by: Rajesh | Replies: 3 | Last reply: 25m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Engineering drawing basics discussion</strong>
+                          <span>Started by: Tanya | Replies: 10 | Last reply: Yesterday</span>
+                        </div>
+                      </div>
+
+                      <!-- Poll Section -->
+                      <div class="polls">
+                        <h2>📊 Class Poll</h2>
+
+                        <div class="poll-question">Which mechanics topic needs more examples?</div>
+
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt1">
+                          <label for="opt1">Statics</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt2">
+                          <label for="opt2">Dynamics</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt3">
+                          <label for="opt3">Material Strength</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt4">
+                          <label for="opt4">Vibrational Analysis</label>
+                        </div>
+
+                        <button class="submit-btn">Submit Vote</button>
+                      </div>
+                    </div>`,
         },],
     "2": [
         {            code: "19ENG101",
@@ -1391,7 +1695,68 @@ const coursesData = {
                               </tr>
                             </tbody>
                           </table>`,
-            forums: "Course website: humanities.amrita.edu/comm",
+            forums: `<div class="forumsandpolls">
+                      <!-- Forum Section -->
+                      <div class="forum">
+                        <h2>🧵 Active Threads</h2>
+                        <!-- Add more threads as needed -->
+                        <div class="thread">
+                          <strong>Technical report writing tips</strong>
+                          <span>Started by: Rohit | Replies: 9 | Last reply: 30m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Effective presentation strategies</strong>
+                          <span>Started by: Priyanka | Replies: 6 | Last reply: 1d ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Email etiquette for professional communication</strong>
+                          <span>Started by: Akash | Replies: 5 | Last reply: 3h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Improving non-verbal communication skills</strong>
+                          <span>Started by: Ritika | Replies: 7 | Last reply: 4h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Grammar questions for assignment 3</strong>
+                          <span>Started by: Vihaan | Replies: 4 | Last reply: 15m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Group presentation planning</strong>
+                          <span>Started by: Sarika | Replies: 12 | Last reply: Yesterday</span>
+                        </div>
+                      </div>
+
+                      <!-- Poll Section -->
+                      <div class="polls">
+                        <h2>📊 Class Poll</h2>
+
+                        <div class="poll-question">Which communication skill do you want to improve most?</div>
+
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt1">
+                          <label for="opt1">Technical Writing</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt2">
+                          <label for="opt2">Public Speaking</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt3">
+                          <label for="opt3">Business Communication</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt4">
+                          <label for="opt4">Visual Communication</label>
+                        </div>
+
+                        <button class="submit-btn">Submit Vote</button>
+                      </div>
+                    </div>`,
         },
         {            code: "19ENV101",
             name: "Environmental Studies",
@@ -1565,7 +1930,68 @@ const coursesData = {
                               </tr>
                             </tbody>
                           </table>`,
-            forums: "Course website: envscience.amrita.edu",
+            forums: `<div class="forumsandpolls">
+                      <!-- Forum Section -->
+                      <div class="forum">
+                        <h2>🧵 Active Threads</h2>
+                        <!-- Add more threads as needed -->
+                        <div class="thread">
+                          <strong>Sustainable energy solutions discussion</strong>
+                          <span>Started by: Karthik | Replies: 8 | Last reply: 1hr ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Impact of plastic pollution on marine life</strong>
+                          <span>Started by: Shreya | Replies: 6 | Last reply: 2d ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Water conservation techniques for homes</strong>
+                          <span>Started by: Divya | Replies: 7 | Last reply: 3h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Climate change effects on local ecosystems</strong>
+                          <span>Started by: Ashwin | Replies: 9 | Last reply: 5h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Green building certification standards</strong>
+                          <span>Started by: Leela | Replies: 4 | Last reply: 40m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Environmental awareness project ideas</strong>
+                          <span>Started by: Mohit | Replies: 11 | Last reply: Yesterday</span>
+                        </div>
+                      </div>
+
+                      <!-- Poll Section -->
+                      <div class="polls">
+                        <h2>📊 Class Poll</h2>
+
+                        <div class="poll-question">Which environmental issue concerns you the most?</div>
+
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt1">
+                          <label for="opt1">Climate Change</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt2">
+                          <label for="opt2">Plastic Pollution</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt3">
+                          <label for="opt3">Deforestation</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt4">
+                          <label for="opt4">Water Scarcity</label>
+                        </div>
+
+                        <button class="submit-btn">Submit Vote</button>
+                      </div>
+                    </div>`,
         }
     ],
     2: [
@@ -1781,7 +2207,68 @@ const coursesData = {
                               </tr>
                             </tbody>
                           </table>`,
-            forums: "Course website: math.amrita.edu/diffequations",
+            forums: `<div class="forumsandpolls">
+                      <!-- Forum Section -->
+                      <div class="forum">
+                        <h2>🧵 Active Threads</h2>
+                        <!-- Add more threads as needed -->
+                        <div class="thread">
+                          <strong>Solving first-order differential equations</strong>
+                          <span>Started by: Amit | Replies: 7 | Last reply: 1hr ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Applications of Laplace transforms</strong>
+                          <span>Started by: Riya | Replies: 5 | Last reply: 2d ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Understanding Fourier series</strong>
+                          <span>Started by: Vikrant | Replies: 8 | Last reply: 3h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Second-order ODE with variable coefficients</strong>
+                          <span>Started by: Anita | Replies: 6 | Last reply: 5h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Help with partial differential equations</strong>
+                          <span>Started by: Rahul | Replies: 4 | Last reply: 20m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Z-transform problems for control systems</strong>
+                          <span>Started by: Deepika | Replies: 9 | Last reply: Yesterday</span>
+                        </div>
+                      </div>
+
+                      <!-- Poll Section -->
+                      <div class="polls">
+                        <h2>📊 Class Poll</h2>
+
+                        <div class="poll-question">Which differential equations topic is most challenging?</div>
+
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt1">
+                          <label for="opt1">First-order ODEs</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt2">
+                          <label for="opt2">Second-order ODEs</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt3">
+                          <label for="opt3">Laplace Transforms</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt4">
+                          <label for="opt4">Fourier Series</label>
+                        </div>
+
+                        <button class="submit-btn">Submit Vote</button>
+                      </div>
+                    </div>`,
         },
         {            code: "19PHY102",
             name: "Semiconductor Physics",
@@ -1994,7 +2481,68 @@ const coursesData = {
                               </tr>
                             </tbody>
                           </table>`,
-            forums: "Course website: physics.amrita.edu/semiconductor",
+            forums: `<div class="forumsandpolls">
+                      <!-- Forum Section -->
+                      <div class="forum">
+                        <h2>🧵 Active Threads</h2>
+                        <!-- Add more threads as needed -->
+                        <div class="thread">
+                          <strong>P-N junction behavior under bias</strong>
+                          <span>Started by: Vishal | Replies: 7 | Last reply: 1hr ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Difference between intrinsic and extrinsic semiconductors</strong>
+                          <span>Started by: Anjali | Replies: 5 | Last reply: 2d ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Energy band diagrams explained</strong>
+                          <span>Started by: Arun | Replies: 8 | Last reply: 4h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Diode equations and practical applications</strong>
+                          <span>Started by: Neeta | Replies: 6 | Last reply: 5h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Hall effect experiment clarification</strong>
+                          <span>Started by: Kunal | Replies: 4 | Last reply: 35m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Semiconductor lab preparation discussion</strong>
+                          <span>Started by: Tanya | Replies: 9 | Last reply: Yesterday</span>
+                        </div>
+                      </div>
+
+                      <!-- Poll Section -->
+                      <div class="polls">
+                        <h2>📊 Class Poll</h2>
+
+                        <div class="poll-question">Which semiconductor device is most interesting to you?</div>
+
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt1">
+                          <label for="opt1">Transistors</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt2">
+                          <label for="opt2">Solar Cells</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt3">
+                          <label for="opt3">LEDs</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt4">
+                          <label for="opt4">Integrated Circuits</label>
+                        </div>
+
+                        <button class="submit-btn">Submit Vote</button>
+                      </div>
+                    </div>`,
         },
         {            code: "19CSE102",
             name: "Data Structures",
@@ -2207,7 +2755,68 @@ const coursesData = {
                               </tr>
                             </tbody>
                           </table>`,
-            forums: "Course website: cse.amrita.edu/datastructures",
+            forums: `<div class="forumsandpolls">
+                      <!-- Forum Section -->
+                      <div class="forum">
+                        <h2>🧵 Active Threads</h2>
+                        <!-- Add more threads as needed -->
+                        <div class="thread">
+                          <strong>How does AVL rotation work?</strong>
+                          <span>Started by: Aman | Replies: 5 | Last reply: 1hr ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Why use stack for DFS?</strong>
+                          <span>Started by: Priya | Replies: 3 | Last reply: 2d ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Tips for Data Structures Midterm Prep</strong>
+                          <span>Started by: Riya | Replies: 8 | Last reply: 5h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>What is the difference between BFS and DFS?</strong>
+                          <span>Started by: Karan | Replies: 6 | Last reply: 3h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Time complexity of Merge Sort?</strong>
+                          <span>Started by: Sanya | Replies: 2 | Last reply: 10m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Hash table collision resolution techniques</strong>
+                          <span>Started by: Ravi | Replies: 10 | Last reply: Yesterday</span>
+                        </div>
+                      </div>
+
+                      <!-- Poll Section -->
+                      <div class="polls">
+                        <h2>📊 Class Poll</h2>
+
+                        <div class="poll-question">Which data structure topic needs revision?</div>
+
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt1">
+                          <label for="opt1">Graphs</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt2">
+                          <label for="opt2">Trees</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt3">
+                          <label for="opt3">Sorting Algorithms</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt4">
+                          <label for="opt4">Hashing</label>
+                        </div>
+
+                        <button class="submit-btn">Submit Vote</button>
+                      </div>
+                    </div>`,
         },
         {            code: "19ECE102",
             name: "Digital Electronics",
@@ -2420,7 +3029,68 @@ const coursesData = {
                               </tr>
                             </tbody>
                           </table>`,
-            forums: "Course website: ece.amrita.edu/digital",
+            forums: `<div class="forumsandpolls">
+                      <!-- Forum Section -->
+                      <div class="forum">
+                        <h2>🧵 Active Threads</h2>
+                        <!-- Add more threads as needed -->
+                        <div class="thread">
+                          <strong>K-map simplification examples</strong>
+                          <span>Started by: Rajat | Replies: 6 | Last reply: 1hr ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Flip-flop applications in sequential circuits</strong>
+                          <span>Started by: Megha | Replies: 4 | Last reply: 2d ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Boolean algebra simplification techniques</strong>
+                          <span>Started by: Suresh | Replies: 7 | Last reply: 3h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Designing a 4-bit counter circuit</strong>
+                          <span>Started by: Divya | Replies: 8 | Last reply: 4h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>VHDL code review for assignment 3</strong>
+                          <span>Started by: Karthik | Replies: 5 | Last reply: 25m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Digital lab practice questions</strong>
+                          <span>Started by: Bhavya | Replies: 11 | Last reply: Yesterday</span>
+                        </div>
+                      </div>
+
+                      <!-- Poll Section -->
+                      <div class="polls">
+                        <h2>📊 Class Poll</h2>
+
+                        <div class="poll-question">Which digital electronics topic is most challenging?</div>
+
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt1">
+                          <label for="opt1">Combinational Logic</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt2">
+                          <label for="opt2">Sequential Circuits</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt3">
+                          <label for="opt3">HDL Coding</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt4">
+                          <label for="opt4">Memory Devices</label>
+                        </div>
+
+                        <button class="submit-btn">Submit Vote</button>
+                      </div>
+                    </div>`,
         },
         {            code: "19MEC102",
             name: "Engineering Graphics",
@@ -2633,7 +3303,68 @@ const coursesData = {
                               </tr>
                             </tbody>
                           </table>`,
-            forums: "Course website: mechanical.amrita.edu/graphics",
+            forums: `<div class="forumsandpolls">
+                      <!-- Forum Section -->
+                      <div class="forum">
+                        <h2>🧵 Active Threads</h2>
+                        <!-- Add more threads as needed -->
+                        <div class="thread">
+                          <strong>Isometric projection techniques</strong>
+                          <span>Started by: Rajesh | Replies: 7 | Last reply: 1hr ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>AutoCAD troubleshooting help</strong>
+                          <span>Started by: Alisha | Replies: 5 | Last reply: 2d ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Orthographic projection practice</strong>
+                          <span>Started by: Dev | Replies: 8 | Last reply: 4h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Dimensioning standards explained</strong>
+                          <span>Started by: Tanvi | Replies: 6 | Last reply: 5h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Section view drawing techniques</strong>
+                          <span>Started by: Rohan | Replies: 4 | Last reply: 30m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Engineering drawing assignment clarifications</strong>
+                          <span>Started by: Preeti | Replies: 10 | Last reply: Yesterday</span>
+                        </div>
+                      </div>
+
+                      <!-- Poll Section -->
+                      <div class="polls">
+                        <h2>📊 Class Poll</h2>
+
+                        <div class="poll-question">Which CAD software do you prefer?</div>
+
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt1">
+                          <label for="opt1">AutoCAD</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt2">
+                          <label for="opt2">SolidWorks</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt3">
+                          <label for="opt3">CATIA</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt4">
+                          <label for="opt4">Fusion 360</label>
+                        </div>
+
+                        <button class="submit-btn">Submit Vote</button>
+                      </div>
+                    </div>`,
         },
         {            code: "19HSS102",
             name: "Professional Ethics",
@@ -2846,7 +3577,68 @@ const coursesData = {
                               </tr>
                             </tbody>
                           </table>`,
-            forums: "Course website: humanities.amrita.edu/ethics",
+            forums: `<div class="forumsandpolls">
+                      <!-- Forum Section -->
+                      <div class="forum">
+                        <h2>🧵 Active Threads</h2>
+                        <!-- Add more threads as needed -->
+                        <div class="thread">
+                          <strong>Ethical dilemmas in technology development</strong>
+                          <span>Started by: Harish | Replies: 9 | Last reply: 1hr ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Privacy concerns in data collection</strong>
+                          <span>Started by: Kavya | Replies: 7 | Last reply: 2d ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Case study: Engineering failures due to ethical lapses</strong>
+                          <span>Started by: Rahul | Replies: 8 | Last reply: 3h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Professional responsibility in safety-critical systems</strong>
+                          <span>Started by: Manisha | Replies: 6 | Last reply: 5h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Intellectual property rights in engineering</strong>
+                          <span>Started by: Varun | Replies: 5 | Last reply: 45m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Ethics case presentation preparation</strong>
+                          <span>Started by: Nidhi | Replies: 11 | Last reply: Yesterday</span>
+                        </div>
+                      </div>
+
+                      <!-- Poll Section -->
+                      <div class="polls">
+                        <h2>📊 Class Poll</h2>
+
+                        <div class="poll-question">Which ethical issue is most relevant today?</div>
+
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt1">
+                          <label for="opt1">AI Ethics</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt2">
+                          <label for="opt2">Data Privacy</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt3">
+                          <label for="opt3">Environmental Impact</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt4">
+                          <label for="opt4">Digital Divide</label>
+                        </div>
+
+                        <button class="submit-btn">Submit Vote</button>
+                      </div>
+                    </div>`,
         },
         {            code: "19LAB102",
             name: "Programming Lab",
@@ -3060,7 +3852,68 @@ const coursesData = {
                               </tr>
                             </tbody>
                           </table>`,
-            forums: "Course website: cse.amrita.edu/proglab",
+            forums: `<div class="forumsandpolls">
+                      <!-- Forum Section -->
+                      <div class="forum">
+                        <h2>🧵 Active Threads</h2>
+                        <!-- Add more threads as needed -->
+                        <div class="thread">
+                          <strong>Debugging segmentation faults in C</strong>
+                          <span>Started by: Vaibhav | Replies: 6 | Last reply: 1hr ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>String manipulation functions in C</strong>
+                          <span>Started by: Prerna | Replies: 5 | Last reply: 2d ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>File I/O operations help</strong>
+                          <span>Started by: Ayush | Replies: 7 | Last reply: 3h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Memory allocation best practices</strong>
+                          <span>Started by: Kiran | Replies: 6 | Last reply: 5h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Lab assignment 4 clarifications</strong>
+                          <span>Started by: Shreya | Replies: 4 | Last reply: 20m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Programming contest preparation tips</strong>
+                          <span>Started by: Aryan | Replies: 9 | Last reply: Yesterday</span>
+                        </div>
+                      </div>
+
+                      <!-- Poll Section -->
+                      <div class="polls">
+                        <h2>📊 Class Poll</h2>
+
+                        <div class="poll-question">Which programming topic needs more lab sessions?</div>
+
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt1">
+                          <label for="opt1">Pointers & Memory</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt2">
+                          <label for="opt2">Data Structures</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt3">
+                          <label for="opt3">File Handling</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt4">
+                          <label for="opt4">Algorithm Implementation</label>
+                        </div>
+
+                        <button class="submit-btn">Submit Vote</button>
+                      </div>
+                    </div>`,
         }
     ],
     3:[        {
@@ -3275,7 +4128,68 @@ const coursesData = {
                               </tr>
                             </tbody>
                           </table>`,
-            forums: "Course website: math.amrita.edu/statistics",
+            forums: `<div class="forumsandpolls">
+                      <!-- Forum Section -->
+                      <div class="forum">
+                        <h2>🧵 Active Threads</h2>
+                        <!-- Add more threads as needed -->
+                        <div class="thread">
+                          <strong>Understanding confidence intervals</strong>
+                          <span>Started by: Priya | Replies: 7 | Last reply: 1hr ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Difference between discrete and continuous probability distributions</strong>
+                          <span>Started by: Rahul | Replies: 5 | Last reply: 2d ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>How to calculate conditional probability?</strong>
+                          <span>Started by: Neha | Replies: 9 | Last reply: 4h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Application of Bayes' theorem in machine learning</strong>
+                          <span>Started by: Arjun | Replies: 6 | Last reply: 5h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Help with hypothesis testing problems</strong>
+                          <span>Started by: Tanya | Replies: 3 | Last reply: 30m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Understanding p-values and significance levels</strong>
+                          <span>Started by: Rohit | Replies: 8 | Last reply: Yesterday</span>
+                        </div>
+                      </div>
+
+                      <!-- Poll Section -->
+                      <div class="polls">
+                        <h2>📊 Class Poll</h2>
+
+                        <div class="poll-question">Which statistical concept is most challenging?</div>
+
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt1">
+                          <label for="opt1">Probability Distributions</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt2">
+                          <label for="opt2">Hypothesis Testing</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt3">
+                          <label for="opt3">Regression Analysis</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt4">
+                          <label for="opt4">Bayesian Statistics</label>
+                        </div>
+
+                        <button class="submit-btn">Submit Vote</button>
+                      </div>
+                    </div>`,
         },        {
             code: "19CSE201",
             name: "Object-Oriented Programming",
@@ -3488,7 +4402,68 @@ const coursesData = {
                               </tr>
                             </tbody>
                           </table>`,
-            forums: "Course website: cse.amrita.edu/oop",
+            forums: `<div class="forumsandpolls">
+                      <!-- Forum Section -->
+                      <div class="forum">
+                        <h2>🧵 Active Threads</h2>
+                        <!-- Add more threads as needed -->
+                        <div class="thread">
+                          <strong>Inheritance vs Composition - best practices</strong>
+                          <span>Started by: Ankit | Replies: 8 | Last reply: 2hr ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Implementing abstract classes and interfaces</strong>
+                          <span>Started by: Shreya | Replies: 6 | Last reply: 1d ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Polymorphism real-world examples</strong>
+                          <span>Started by: Vishal | Replies: 7 | Last reply: 3h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Help with design patterns assignment</strong>
+                          <span>Started by: Kavita | Replies: 9 | Last reply: 5h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Exception handling best practices in Java</strong>
+                          <span>Started by: Raj | Replies: 4 | Last reply: 45m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Understanding multithreading and synchronization</strong>
+                          <span>Started by: Meera | Replies: 12 | Last reply: Yesterday</span>
+                        </div>
+                      </div>
+
+                      <!-- Poll Section -->
+                      <div class="polls">
+                        <h2>📊 Class Poll</h2>
+
+                        <div class="poll-question">Which OOP concept do you find most useful?</div>
+
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt1">
+                          <label for="opt1">Inheritance</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt2">
+                          <label for="opt2">Encapsulation</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt3">
+                          <label for="opt3">Polymorphism</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt4">
+                          <label for="opt4">Abstraction</label>
+                        </div>
+
+                        <button class="submit-btn">Submit Vote</button>
+                      </div>
+                    </div>`,
         },
         {            code: "19CSE202",
             name: "Database Management Systems",
@@ -3702,7 +4677,68 @@ const coursesData = {
                               </tr>
                             </tbody>
                           </table>`,
-            forums: "Course website: cse.amrita.edu/dbms",
+            forums: `<div class="forumsandpolls">
+                      <!-- Forum Section -->
+                      <div class="forum">
+                        <h2>🧵 Active Threads</h2>
+                        <!-- Add more threads as needed -->
+                        <div class="thread">
+                          <strong>SQL vs NoSQL - When to use each?</strong>
+                          <span>Started by: Aryan | Replies: 8 | Last reply: 1hr ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Normalization techniques explained</strong>
+                          <span>Started by: Divya | Replies: 6 | Last reply: 2d ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Help with complex joins in SQL</strong>
+                          <span>Started by: Karan | Replies: 7 | Last reply: 4h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Transaction management and ACID properties</strong>
+                          <span>Started by: Priyanka | Replies: 5 | Last reply: 3h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Indexing strategies for performance optimization</strong>
+                          <span>Started by: Varun | Replies: 4 | Last reply: 35m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>ER diagram review for mini-project</strong>
+                          <span>Started by: Aditya | Replies: 10 | Last reply: Yesterday</span>
+                        </div>
+                      </div>
+
+                      <!-- Poll Section -->
+                      <div class="polls">
+                        <h2>📊 Class Poll</h2>
+
+                        <div class="poll-question">Which database technology would you like to learn more about?</div>
+
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt1">
+                          <label for="opt1">Traditional SQL Databases</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt2">
+                          <label for="opt2">MongoDB (Document Store)</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt3">
+                          <label for="opt3">Redis (Key-Value Store)</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt4">
+                          <label for="opt4">Graph Databases (Neo4j)</label>
+                        </div>
+
+                        <button class="submit-btn">Submit Vote</button>
+                      </div>
+                    </div>`,
         },
         {            code: "19CSE203",
             name: "Computer Organization",
@@ -3916,7 +4952,68 @@ const coursesData = {
                               </tr>
                             </tbody>
                           </table>`,
-            forums: "Course website: cse.amrita.edu/organization",
+            forums: `<div class="forumsandpolls">
+                      <!-- Forum Section -->
+                      <div class="forum">
+                        <h2>🧵 Active Threads</h2>
+                        <!-- Add more threads as needed -->
+                        <div class="thread">
+                          <strong>RISC vs CISC architecture comparison</strong>
+                          <span>Started by: Dhruv | Replies: 7 | Last reply: 2hr ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Understanding pipelining stages</strong>
+                          <span>Started by: Ishita | Replies: 5 | Last reply: 1d ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Cache coherence protocols explained</strong>
+                          <span>Started by: Prakash | Replies: 8 | Last reply: 3h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Memory hierarchy and performance optimization</strong>
+                          <span>Started by: Neeti | Replies: 6 | Last reply: 5h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Tips for assembly language programming</strong>
+                          <span>Started by: Siddharth | Replies: 4 | Last reply: 40m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Computer architecture project ideas discussion</strong>
+                          <span>Started by: Mira | Replies: 11 | Last reply: Yesterday</span>
+                        </div>
+                      </div>
+
+                      <!-- Poll Section -->
+                      <div class="polls">
+                        <h2>📊 Class Poll</h2>
+
+                        <div class="poll-question">Which computer organization topic is most interesting?</div>
+
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt1">
+                          <label for="opt1">Processor Architecture</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt2">
+                          <label for="opt2">Memory Systems</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt3">
+                          <label for="opt3">I/O Interfacing</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt4">
+                          <label for="opt4">Parallel Computing</label>
+                        </div>
+
+                        <button class="submit-btn">Submit Vote</button>
+                      </div>
+                    </div>`,
         },
         {            code: "19CSE204",
             name: "Operating Systems",
@@ -4130,7 +5227,68 @@ const coursesData = {
                               </tr>
                             </tbody>
                           </table>`,
-            forums: "Course website: cse.amrita.edu/os",
+            forums: `<div class="forumsandpolls">
+                      <!-- Forum Section -->
+                      <div class="forum">
+                        <h2>🧵 Active Threads</h2>
+                        <!-- Add more threads as needed -->
+                        <div class="thread">
+                          <strong>Process vs Thread differences and use cases</strong>
+                          <span>Started by: Akash | Replies: 9 | Last reply: 1hr ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Avoiding deadlocks in concurrent programming</strong>
+                          <span>Started by: Renu | Replies: 7 | Last reply: 2d ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Memory management techniques comparison</strong>
+                          <span>Started by: Sameer | Replies: 8 | Last reply: 3h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>File system organization and implementation</strong>
+                          <span>Started by: Lakshmi | Replies: 6 | Last reply: 4h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>CPU scheduling algorithms visualization</strong>
+                          <span>Started by: Tarun | Replies: 5 | Last reply: 25m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Linux kernel module programming help</strong>
+                          <span>Started by: Nitin | Replies: 10 | Last reply: Yesterday</span>
+                        </div>
+                      </div>
+
+                      <!-- Poll Section -->
+                      <div class="polls">
+                        <h2>📊 Class Poll</h2>
+
+                        <div class="poll-question">Which operating system topic is most challenging?</div>
+
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt1">
+                          <label for="opt1">Process Synchronization</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt2">
+                          <label for="opt2">Memory Management</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt3">
+                          <label for="opt3">File Systems</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt4">
+                          <label for="opt4">CPU Scheduling</label>
+                        </div>
+
+                        <button class="submit-btn">Submit Vote</button>
+                      </div>
+                    </div>`,
         },        {            code: "19CSE205",
             name: "Computer Networks",
             faculty: "Prof. Jayant Singh",
@@ -4559,7 +5717,68 @@ const coursesData = {
                               </tr>
                             </tbody>
                           </table>`,
-            forums: "Course website: humanities.amrita.edu/economics",
+            forums: `<div class="forumsandpolls">
+                      <!-- Forum Section -->
+                      <div class="forum">
+                        <h2>🧵 Active Threads</h2>
+                        <!-- Add more threads as needed -->
+                        <div class="thread">
+                          <strong>Understanding microeconomics vs macroeconomics</strong>
+                          <span>Started by: Ankur | Replies: 6 | Last reply: 2hr ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Supply and demand curve analysis help</strong>
+                          <span>Started by: Sarika | Replies: 4 | Last reply: 1d ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>How to calculate elasticity of demand?</strong>
+                          <span>Started by: Kunal | Replies: 7 | Last reply: 3h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Market structures comparison for project</strong>
+                          <span>Started by: Tina | Replies: 5 | Last reply: 4h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Current economic trends analysis</strong>
+                          <span>Started by: Vikas | Replies: 3 | Last reply: 45m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Engineering projects cost-benefit analysis</strong>
+                          <span>Started by: Leela | Replies: 9 | Last reply: Yesterday</span>
+                        </div>
+                      </div>
+
+                      <!-- Poll Section -->
+                      <div class="polls">
+                        <h2>📊 Class Poll</h2>
+
+                        <div class="poll-question">Which economic topic is most relevant to your engineering field?</div>
+
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt1">
+                          <label for="opt1">Project Valuation</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt2">
+                          <label for="opt2">Market Analysis</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt3">
+                          <label for="opt3">Risk Assessment</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt4">
+                          <label for="opt4">Resource Allocation</label>
+                        </div>
+
+                        <button class="submit-btn">Submit Vote</button>
+                      </div>
+                    </div>`,
         },
         {            code: "19LAB201",
             name: "DBMS and OS Lab",
@@ -4774,7 +5993,68 @@ const coursesData = {
                               </tr>
                             </tbody>
                           </table>`,
-            forums: "Course website: cse.amrita.edu/dboslab",
+            forums: `<div class="forumsandpolls">
+                      <!-- Forum Section -->
+                      <div class="forum">
+                        <h2>🧵 Active Threads</h2>
+                        <!-- Add more threads as needed -->
+                        <div class="thread">
+                          <strong>Creating complex SQL queries for lab assignment</strong>
+                          <span>Started by: Pavan | Replies: 8 | Last reply: 1hr ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Troubleshooting shell script errors</strong>
+                          <span>Started by: Monika | Replies: 6 | Last reply: 2d ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Database normalization practical examples</strong>
+                          <span>Started by: Rajat | Replies: 7 | Last reply: 3h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Linux process management commands</strong>
+                          <span>Started by: Sunita | Replies: 5 | Last reply: 4h ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Trigger implementation in MySQL</strong>
+                          <span>Started by: Anand | Replies: 4 | Last reply: 30m ago</span>
+                        </div>
+
+                        <div class="thread">
+                          <strong>Mini project ideas for DBMS lab</strong>
+                          <span>Started by: Krishna | Replies: 10 | Last reply: Yesterday</span>
+                        </div>
+                      </div>
+
+                      <!-- Poll Section -->
+                      <div class="polls">
+                        <h2>📊 Class Poll</h2>
+
+                        <div class="poll-question">Which lab topic needs more practice sessions?</div>
+
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt1">
+                          <label for="opt1">Database Design & SQL</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt2">
+                          <label for="opt2">Shell Scripting</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt3">
+                          <label for="opt3">Process Management</label>
+                        </div>
+                        <div class="poll-option">
+                          <input type="radio" name="poll" id="opt4">
+                          <label for="opt4">File System Operations</label>
+                        </div>
+
+                        <button class="submit-btn">Submit Vote</button>
+                      </div>
+                    </div>`,
         }
     ]};
 
